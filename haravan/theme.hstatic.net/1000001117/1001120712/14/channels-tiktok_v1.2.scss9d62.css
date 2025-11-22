@@ -1,0 +1,1014 @@
+/*============ 0. Reset =============*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'sfuiText_regular',Helvetica,sans-serif;
+  font-size: 16px;
+  color: #3c3c3c;
+  line-height: 1.6;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px; } }
+
+/* 1.2 - HTML5 Elements */
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a, a:hover {
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+a:hover {
+  text-decoration: none; }
+
+img, svg {
+  max-width: 100%; }
+
+ol, ul {
+  margin: 0; }
+
+p {
+  margin: 0 0 10px; }
+
+/*============ 1. GENERAL ==============*/
+.os-animation, .staggered-animation {
+  opacity: 0; }
+
+.os-animation.animated, .staggered-animation.animated {
+  opacity: 1; }
+
+@media (max-width: 991px) {
+  .os-animation, .staggered-animation {
+    opacity: 1;
+    animation-name: none !important; }
+  .os-animation.animated, .staggered-animation.animated {
+    opacity: 1;
+    animation-name: none !important; } }
+
+.container-full-width {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; }
+
+[class^="section-tiktok-"] {
+  padding: 70px 0; }
+
+@media (max-width: 767px) {
+  [class^="section-tiktok-"] {
+    padding: 45px 0; } }
+
+.sitebox-header {
+  margin-bottom: 25px; }
+  .sitebox-header h2 {
+    line-height: 1.25;
+    margin: 0 0;
+    color: #0047BA;
+    font-size: 36px;
+    font-family: var(--hrv-font-family-bold); }
+  .sitebox-header h2.color-white {
+    color: #ffffff; }
+  .sitebox-header .subtitle {
+    font-size: 18px;
+    color: #00294d;
+    margin: 0; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .sitebox-header h2 {
+      font-size: 32px; } }
+  @media (max-width: 767px) {
+    .sitebox-header {
+      margin-bottom: 18px; }
+    .sitebox-header h2 {
+      font-size: 26px; }
+    .sitebox-header .subtitle {
+      font-size: 18px; } }
+
+.sitebox-actions .btn-trial {
+  font-size: 20px;
+  font-family: var(--hrv-font-family-bold);
+  min-width: 250px;
+  color: #ffffff;
+  background: #FF0B53;
+  border: 1px solid #FF0B53;
+  padding: 14px 18px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2); }
+  .sitebox-actions .btn-trial:before {
+    background-color: #0047BA; }
+  .sitebox-actions .btn-trial.disabled {
+    pointer-events: none;
+    opacity: 0.7; }
+  .sitebox-actions .btn-trial--white {
+    color: #FF0B53;
+    background: #ffffff;
+    box-shadow: none; }
+  .sitebox-actions .btn-trial--blue {
+    color: #ffffff;
+    background: #2962FF;
+    border-color: #2962FF;
+    box-shadow: none; }
+  .sitebox-actions .btn-trial--tiktok {
+    background: #000000;
+    border-color: #000000;
+    box-shadow: 4px 4px 0px #0afefb, -4px -4px 0px #ff2d56; }
+  .sitebox-actions .btn-trial:hover, .sitebox-actions .btn-trial:focus {
+    color: #ffffff;
+    background: #0047BA;
+    border-color: #0047BA; }
+  .sitebox-actions .btn-trial--white:hover, .sitebox-actions .btn-trial--white:focus, .sitebox-actions .btn-trial--blue:hover, .sitebox-actions .btn-trial--blue:focus {
+    color: #ffffff;
+    background: #0047BA;
+    border-color: #0047BA;
+    box-shadow: none; }
+  .sitebox-actions .btn-trial--tiktok:hover, .sitebox-actions .btn-trial--tiktok:focus {
+    color: #ffffff;
+    background: #000000;
+    border-color: #000000;
+    box-shadow: 12px 6px 0px #fe2c57, -12px -10px 0px #0afefb; }
+
+.sitebox-actions .txt-only {
+  position: relative;
+  z-index: 2;
+  margin: 0 0; }
+  .sitebox-actions .txt-only span {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: var(--hrv-font-family-bold);
+    line-height: 1.2;
+    padding: 8px 12px 4px;
+    background: #FF2D56;
+    text-transform: uppercase;
+    border-radius: 100px; }
+
+.sitebox-actions .txt-only + .btn-trial--tiktok {
+  margin-top: -10px; }
+
+.sitebox-actions .txt-note {
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0; }
+
+@media (max-width: 767px) {
+  .sitebox-actions .btn-trial {
+    font-size: 16px;
+    min-width: auto;
+    width: 100%; }
+  .sitebox-actions .txt-only {
+    font-size: 13px; }
+  .sitebox-actions .txt-only + .btn-trial--tiktok {
+    margin-top: -8px; } }
+
+.section-tiktok-overview {
+  padding: 0;
+  background: linear-gradient(90deg, #0c3795 0%, #a11ea8 100%); }
+  .section-tiktok-overview .wrapper-overview {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 30px 0 30px; }
+    .section-tiktok-overview .wrapper-overview:before {
+      content: "";
+      background-image: url("../../../../file.hstatic.net/1000001117/file/tiktok-bgtop_968bdb94698748eab92c9abe7721c8c6.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0px; }
+    .section-tiktok-overview .wrapper-overview:after {
+      content: "";
+      background-image: url("../../../../file.hstatic.net/1000001117/file/tiktok-banner-vector_d0e16691e9f74224926f9a4208e8dddd.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      z-index: -1;
+      left: 55%;
+      width: 45%;
+      top: 0;
+      bottom: 0px;
+      max-width: 570px; }
+  .section-tiktok-overview .overview-detail h1 {
+    margin: 0 0 10px;
+    line-height: 1.3;
+    color: #ffffff;
+    font-size: 42px;
+    font-family: var(--hrv-font-family-bold); }
+  .section-tiktok-overview .overview-detail .txtdesc {
+    color: #ffffff;
+    margin: 0px 0 30px;
+    font-size: 26px;
+    line-height: 1.3;
+    font-family: var(--hrv-font-family-regular); }
+  .section-tiktok-overview .overview-detail .wrap-prmt {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 12px; }
+    .section-tiktok-overview .overview-detail .wrap-prmt__desc {
+      padding: 24px 18px 24px;
+      background: #000000;
+      box-shadow: 8px 8px 0px #0AFEFB, -8px -8px 0px #FF2D56;
+      position: relative;
+      border-radius: 4px;
+      max-width: 460px; }
+      .section-tiktok-overview .overview-detail .wrap-prmt__desc .prmt--tag {
+        margin: 0;
+        position: absolute;
+        top: -26px;
+        left: 15px;
+        right: 15px; }
+        .section-tiktok-overview .overview-detail .wrap-prmt__desc .prmt--tag span {
+          color: #ffffff;
+          font-size: 20px;
+          font-family: var(--hrv-font-family-bold);
+          background: #FF0B53;
+          box-shadow: 4px 9px 12px #6F0C29;
+          line-height: 120%;
+          display: inline-block;
+          border-radius: 24px;
+          padding: 12px 18px 8px;
+          text-transform: uppercase; }
+      .section-tiktok-overview .overview-detail .wrap-prmt__desc .prmt--hero {
+        margin: 0 0 3px;
+        font-size: 26px;
+        line-height: 120%;
+        letter-spacing: -0.6px;
+        color: #0AFEFB;
+        font-family: var(--hrv-font-family-bold);
+        text-shadow: 1px 1px 0px #ff0b53;
+        text-transform: uppercase; }
+      .section-tiktok-overview .overview-detail .wrap-prmt__desc .prmt--txt {
+        margin: 0;
+        color: #ffffff;
+        font-family: 'sfuiText_medium',sans-serif; }
+  .section-tiktok-overview .overview-detail .sitebox-actions .txt-note {
+    color: #ffffff;
+    font-family: 'sfuiText_medium',sans-serif;
+    font-style: inherit;
+    margin-top: 4px; }
+  .section-tiktok-overview .overview-image {
+    max-width: 800px; }
+    .section-tiktok-overview .overview-image .wraplist-frame {
+      position: relative;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto; }
+    .section-tiktok-overview .overview-image .frame-item {
+      padding-left: 10px;
+      padding-right: 10px; }
+    .section-tiktok-overview .overview-image .block-sync {
+      text-align: right;
+      padding: 28px 0;
+      margin-right: -10px; }
+      .section-tiktok-overview .overview-image .block-sync svg {
+        height: auto;
+        max-width: 35%; }
+    .section-tiktok-overview .overview-image .block-frame {
+      width: 100%; }
+      .section-tiktok-overview .overview-image .block-frame--device, .section-tiktok-overview .overview-image .block-frame--boximg {
+        border-radius: 30px; }
+      .section-tiktok-overview .overview-image .block-frame--device {
+        position: relative;
+        margin: 0 auto;
+        background: #3A4245;
+        padding: 3px;
+        box-shadow: 0px 2px 4px rgba(0, 21, 64, 0.05), 0px 0px 2px rgba(0, 21, 64, 0.14); }
+      .section-tiktok-overview .overview-image .block-frame--boximg {
+        background: #121515;
+        padding: 15px 12px 13px; }
+        .section-tiktok-overview .overview-image .block-frame--boximg .boximg-notch {
+          height: 22px;
+          background: #131515;
+          width: 50%;
+          border-radius: 0 0 18px 18px;
+          position: absolute;
+          top: 15px;
+          left: 0;
+          right: 0;
+          z-index: 1;
+          margin: 0 auto;
+          padding-bottom: 6px;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          justify-content: center; }
+          .section-tiktok-overview .overview-image .block-frame--boximg .boximg-notch span {
+            margin: 0 3px; }
+          .section-tiktok-overview .overview-image .block-frame--boximg .boximg-notch span:nth-child(1) {
+            display: block;
+            width: 32px;
+            height: 4px;
+            border-radius: 12px;
+            background: #262C2D; }
+          .section-tiktok-overview .overview-image .block-frame--boximg .boximg-notch span:nth-child(2) {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #262C2D; }
+          .section-tiktok-overview .overview-image .block-frame--boximg .boximg-notch span:nth-child(2):before {
+            content: "";
+            width: 1px;
+            height: 1px;
+            background: #636F73;
+            opacity: 0.4;
+            display: block;
+            margin: 2px auto 0; }
+        .section-tiktok-overview .overview-image .block-frame--boximg .boximg-lazy {
+          box-sizing: content-box;
+          display: block;
+          overflow: hidden;
+          position: relative;
+          width: 100%; }
+        .section-tiktok-overview .overview-image .block-frame--boximg .boximg-lazy--insert {
+          display: block;
+          width: 100%;
+          height: 0;
+          padding-bottom: 216.25%; }
+        .section-tiktok-overview .overview-image .block-frame--boximg .boximg-lazy--insert .box--img {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          bottom: 0;
+          left: 0; }
+        .section-tiktok-overview .overview-image .block-frame--boximg .boximg-lazy--insert .box--img .lazyloaded + .lds-spinner {
+          display: none; }
+        .section-tiktok-overview .overview-image .block-frame--boximg .boximg-lazy {
+          border-radius: 20px;
+          overflow: hidden; }
+  @media (min-width: 992px) {
+    .section-tiktok-overview .overview-detail {
+      -webkit-align-self: center;
+      align-self: center; }
+    .section-tiktok-overview .overview-image {
+      -webkit-align-self: center;
+      align-self: center;
+      padding-right: 45px; }
+    .section-tiktok-overview .overview-detail .txtdesc {
+      max-width: 500px; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .section-tiktok-overview .overview-detail h1 {
+      font-size: 36px; }
+    .section-tiktok-overview .overview-detail .txtdesc {
+      font-size: 24px; }
+    .section-tiktok-overview .overview-detail .wrap-prmt__desc {
+      max-width: 96%; }
+    .section-tiktok-overview .overview-detail .wrap-prmt .prmt--hero {
+      font-size: 24px; }
+    .section-tiktok-overview .overview-image {
+      padding-right: 0px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-tiktok-overview {
+      /*.mainBanner-infor--inner{float: right;  width: 100%;  max-width: calc((720px/2) - 30px);}*/ }
+      .section-tiktok-overview .wrapper-overview:before {
+        background-position: 40% 50%; }
+      .section-tiktok-overview .wrapper-overview:after {
+        background-position: 100% 82%;
+        left: 18%;
+        width: 100%;
+        height: 68%;
+        max-width: 82%;
+        margin-top: auto; }
+      .section-tiktok-overview .overview-detail {
+        padding-bottom: 40px;
+        padding-top: 30px;
+        text-align: center; }
+        .section-tiktok-overview .overview-detail h1 {
+          font-size: 40px;
+          max-width: 95%;
+          margin-left: auto;
+          margin-right: auto; }
+        .section-tiktok-overview .overview-detail .txtdesc {
+          font-size: 24px;
+          max-width: 96%;
+          margin-left: auto;
+          margin-right: auto; }
+        .section-tiktok-overview .overview-detail .wrap-prmt__desc {
+          margin-left: auto;
+          margin-right: auto;
+          text-align: left; }
+      .section-tiktok-overview .sitebox-actions .btn-trial {
+        min-width: 50%; }
+      .section-tiktok-overview .container-fluid {
+        max-width: 720px; } }
+  @media (max-width: 767px) {
+    .section-tiktok-overview .wrapper-overview:before {
+      background-position: 35% 50%; }
+    .section-tiktok-overview .wrapper-overview:after {
+      background-position: 100% 80%;
+      left: 15%;
+      width: 100%;
+      height: 60%;
+      max-width: 90%;
+      margin-top: auto; }
+    .section-tiktok-overview .overview-detail {
+      padding-bottom: 25px; }
+      .section-tiktok-overview .overview-detail h1 {
+        font-size: 28px; }
+      .section-tiktok-overview .overview-detail .txtdesc {
+        font-size: 20px;
+        margin-bottom: 20px; }
+      .section-tiktok-overview .overview-detail .wrap-prmt {
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 5px;
+        margin-bottom: 30px; }
+        .section-tiktok-overview .overview-detail .wrap-prmt__desc {
+          padding: 30px 12px 20px; }
+          .section-tiktok-overview .overview-detail .wrap-prmt__desc .prmt--tag {
+            top: -21px; }
+            .section-tiktok-overview .overview-detail .wrap-prmt__desc .prmt--tag span {
+              font-size: 13px; }
+          .section-tiktok-overview .overview-detail .wrap-prmt__desc .prmt--hero {
+            font-size: 19px; }
+      .section-tiktok-overview .overview-detail .sitebox-actions {
+        text-align: center; }
+    .section-tiktok-overview .overview-image {
+      text-align: center;
+      padding-right: 0; }
+    .section-tiktok-overview .container-fluid {
+      max-width: 540px; } }
+
+.section-tiktok-deals {
+  position: relative;
+  z-index: 1;
+  margin-top: -2px;
+  background: linear-gradient(97.55deg, #0A3CBB 7.28%, #194ACB 34.23%, #F4306E 93.07%); }
+  .section-tiktok-deals .sitebox-action p {
+    margin: 0 0 3px;
+    color: #aa2728;
+    font-family: 'sfuiText_medium',sans-serif; }
+  .section-tiktok-deals .deal-item {
+    margin-bottom: 30px; }
+    .section-tiktok-deals .deal-item__inner {
+      filter: drop-shadow(0px 8px 28px #E12DB9); }
+  @media (max-width: 767px) {
+    .section-tiktok-deals {
+      background: linear-gradient(140deg, #0A3CBB 4%, #194ACB 20.23%, #F4306E 100%);
+      padding-top: 30px; }
+    .section-tiktok-deals .list-deals {
+      margin: 0 -6px;
+      margin-bottom: 5px; }
+    .section-tiktok-deals .deal-item {
+      margin-bottom: 16px;
+      padding: 0 6px; }
+    .section-tiktok-deals .deal-item:last-child {
+      margin-bottom: 16px; }
+    .section-tiktok-deals .sitebox-actions .btn-trial {
+      width: auto; } }
+
+.section-tiktok-solutions {
+  background: linear-gradient(288.42deg, #DCFDFF 2.49%, #E3F3FF 47.97%, #FFD9D9 86.8%); }
+  .section-tiktok-solutions .solution-loop--inner {
+    padding: 10px 18px 14px;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C1FFFB;
+    box-shadow: 0px 8px 28px -6px rgba(34, 75, 24, 0.12), 0px 18px 88px -4px #B3FCEF;
+    border-radius: 8px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-justify-content: space-between;
+    justify-content: space-between; }
+  .section-tiktok-solutions .solution-loop--photo {
+    margin-bottom: 12px; }
+    .section-tiktok-solutions .solution-loop--photo .slt-img {
+      margin-left: -8px;
+      margin-right: -8px;
+      margin-bottom: 12px; }
+    .section-tiktok-solutions .solution-loop--photo p {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -0.6px;
+      line-height: 1.3;
+      color: #262C38;
+      font-family: var(--hrv-font-family-regular); }
+  .section-tiktok-solutions .solution-loop .sitebox-actions .btn-trial {
+    font-size: 18px;
+    min-width: auto;
+    padding-top: 12px;
+    padding-bottom: 8px; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-tiktok-solutions .solution-loop {
+      margin-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .section-tiktok-solutions .solution-loop {
+      margin-bottom: 10px; }
+      .section-tiktok-solutions .solution-loop--inner {
+        padding: 8px 10px 12px;
+        border-radius: 4px;
+        box-shadow: 0px 8px 28px -6px rgba(34, 75, 24, 0.12), 0px 18px 88px -4px #B3FCEF; }
+      .section-tiktok-solutions .solution-loop--photo {
+        margin-bottom: 12px; }
+        .section-tiktok-solutions .solution-loop--photo .slt-img {
+          margin-left: -4px;
+          margin-right: -4px;
+          margin-bottom: 10px; }
+        .section-tiktok-solutions .solution-loop--photo p {
+          font-size: 18px; }
+      .section-tiktok-solutions .solution-loop .sitebox-actions .btn-trial {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 6px; }
+    .section-tiktok-solutions .solution-loop:nth-child(even) {
+      padding-left: 5px; }
+    .section-tiktok-solutions .solution-loop:nth-child(odd) {
+      padding-right: 5px; } }
+
+.section-tiktok-features {
+  position: relative;
+  background: #fff;
+  z-index: 1; }
+  .section-tiktok-features .feature-flexrow {
+    margin-top: 65px; }
+  .section-tiktok-features .feature-detail__title h3 {
+    position: relative;
+    margin: 0 0;
+    line-height: 1.35;
+    color: #0047BA;
+    font-size: 30px;
+    font-family: var(--hrv-font-family-bold); }
+  .section-tiktok-features .feature-detail__title .s-title {
+    margin: 4px 0 0;
+    color: #2d2d2d;
+    font-size: 18px; }
+  .section-tiktok-features .feature-detail__textlist {
+    padding-bottom: 10px; }
+    .section-tiktok-features .feature-detail__textlist .box-item {
+      margin-top: 10px; }
+    .section-tiktok-features .feature-detail__textlist .box-item h4 {
+      margin: 0 0 10px;
+      color: #000000;
+      font-size: 18px;
+      font-family: 'sfuiText_medium'; }
+    .section-tiktok-features .feature-detail__textlist .box-item p {
+      margin: 0px 0;
+      font-size: 18px; }
+    .section-tiktok-features .feature-detail__textlist .sitebox-actions {
+      margin-top: 25px; }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .section-tiktok-features .feature-detail__title h3 {
+      font-size: 26px; } }
+  @media (min-width: 992px) {
+    .section-tiktok-features .feature-flexrow {
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-tiktok-features .feature-flexrow {
+      margin-top: 45px; }
+    .section-tiktok-features .feature-flexrow:first-child {
+      margin-top: 25px; }
+    .section-tiktok-features .feature-detail {
+      text-align: center; }
+      .section-tiktok-features .feature-detail__image {
+        margin-top: 20px;
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto; }
+      .section-tiktok-features .feature-detail__title .sTitle {
+        font-size: 18px; }
+    .section-tiktok-features .sitebox-actions .btn-trial {
+      min-width: 50%; } }
+  @media (max-width: 767px) {
+    .section-tiktok-features .feature-flexrow {
+      margin-top: 35px; }
+    .section-tiktok-features .feature-flexrow:first-child {
+      margin-top: 25px; }
+    .section-tiktok-features .feature-detail__image {
+      margin-top: 15px; }
+    .section-tiktok-features .feature-detail__title h3 {
+      font-size: 24px; }
+    .section-tiktok-features .feature-detail__title .sTitle {
+      font-size: 18px; }
+    .section-tiktok-features .feature-detail__mrgin {
+      margin-bottom: 0px; }
+    .section-tiktok-features .feature-detail__textlist .box-item h4 {
+      font-size: 16px; }
+    .section-tiktok-features .feature-detail__textlist .box-item p {
+      font-size: 16px; }
+    .section-tiktok-features .feature-detail__textlist .sitebox-actions {
+      margin-top: 15px; }
+    .section-tiktok-features .feature-detail__textlist .sitebox-actions .btn-trial {
+      width: 100%; } }
+
+.section-tiktok-costs {
+  background: linear-gradient(249deg, #DBFDFF 0%, #9CE1FF 100%);
+  padding-bottom: 0;
+  position: relative; }
+  .section-tiktok-costs:before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    bottom: -100%;
+    right: 0;
+    background: linear-gradient(98deg, #008FF6 1%, #0E6FFF 32%, #FF3474 100%);
+    box-shadow: 300px 300px 300px;
+    border-radius: 102px;
+    filter: blur(300px); }
+  .section-tiktok-costs .costs-desc {
+    color: #19191B;
+    font-size: 22px;
+    font-family: var(--hrv-font-family-regular);
+    margin-top: 10px; }
+  .section-tiktok-costs .tag-new {
+    position: relative;
+    top: -5px;
+    padding: 4px 24px;
+    color: #fff;
+    background: #000;
+    box-shadow: -3px -3px 0px #FF2D56;
+    border-radius: 63px;
+    font-size: 16px;
+    font-family: 'sfuiText_bold',sans-serif;
+    z-index: 1; }
+    .section-tiktok-costs .tag-new:before {
+      content: '';
+      background: #0afefb;
+      position: absolute;
+      bottom: -3px;
+      right: -3px;
+      width: 100%;
+      height: 100%;
+      border-radius: 63px;
+      z-index: -1; }
+    .section-tiktok-costs .tag-new.new-mb {
+      opacity: 0;
+      height: 0;
+      display: none; }
+  @media (max-width: 767px) {
+    .section-tiktok-costs .tag-new.new-mb {
+      opacity: 1;
+      height: auto;
+      display: initial;
+      top: 5px; }
+    .section-tiktok-costs .tag-new.new-pc {
+      display: none; }
+    .section-tiktok-costs .costs-desc {
+      margin-top: 15px;
+      font-size: 18px; } }
+
+.section-tiktok-manage {
+  background: linear-gradient(268.83deg, #DBFDFF 0%, #F0F8FF 100.01%);
+  position: relative; }
+  .section-tiktok-manage .manage-detail .sitebox-header {
+    margin-bottom: 0; }
+  .section-tiktok-manage .manage-detail .wrap-desc {
+    margin: 5px 0 20px; }
+  .section-tiktok-manage .manage-detail .wrap-desc p {
+    margin: 0;
+    line-height: 1.4;
+    color: #19191B;
+    font-size: 22px;
+    font-family: var(--hrv-font-family-regular);
+    letter-spacing: -0.6px; }
+  @media (min-width: 991px) {
+    .section-tiktok-manage .manage-detail__inner {
+      padding-left: 15px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-tiktok-manage .sitebox-actions .btn-trial {
+      min-width: 50%; } }
+  @media (max-width: 767px) {
+    .section-tiktok-manage .manage-detail .d-xs-block {
+      display: block; }
+    .section-tiktok-manage .manage-detail .wrap-desc p {
+      font-size: 18px; } }
+
+.section-tiktok-guides {
+  position: relative;
+  background: #fff;
+  z-index: 1; }
+  .section-tiktok-guides .guide-item__inner {
+    padding: 0 15px; }
+  .section-tiktok-guides .guide-item__image {
+    position: relative; }
+  .section-tiktok-guides .guide-item__detail {
+    padding: 15px 0px 0; }
+  .section-tiktok-guides .guide-item__detail .text-bold {
+    color: #3c3c3c;
+    margin: 0 0 5px;
+    font-family: 'sfuiText_semibold'; }
+  .section-tiktok-guides .guide-item__detail .text-init {
+    color: #737373;
+    margin: 0; }
+  .section-tiktok-guides .guide-item + .guide-item .guide-item__image:before {
+    content: "";
+    width: 54px;
+    height: 18px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='54' height='18' viewBox='0 0 54 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27 2.58187L27.1812 2.11587L27 2.58187ZM53.1348 14.5634C53.4007 14.4889 53.5559 14.213 53.4815 13.9471L52.2681 9.61372C52.1937 9.3478 51.9178 9.19259 51.6519 9.26705C51.3859 9.34151 51.2307 9.61743 51.3052 9.88335L52.3837 13.7352L48.5318 14.8137C48.2659 14.8882 48.1107 15.1641 48.1852 15.43C48.2596 15.6959 48.5356 15.8511 48.8015 15.7767L53.1348 14.5634ZM2.67118 12.023C2.81456 11.787 2.73949 11.4794 2.5035 11.336C2.2675 11.1927 1.95995 11.2677 1.81656 11.5037L2.67118 12.023ZM5.02432 7.20146C4.8384 7.40563 4.85319 7.72187 5.05737 7.90779C5.26154 8.09371 5.57778 8.07891 5.7637 7.87474L5.02432 7.20146ZM9.63729 4.48262C9.86579 4.32758 9.92534 4.01664 9.77029 3.78814C9.61525 3.55963 9.30432 3.50008 9.07581 3.65513L9.63729 4.48262ZM13.937 1.2878C13.6734 1.37004 13.5264 1.65042 13.6086 1.91403C13.6909 2.17764 13.9712 2.32466 14.2348 2.24241L13.937 1.2878ZM19.2839 1.50044C19.56 1.50239 19.7855 1.28012 19.7874 1.00399C19.7894 0.727852 19.5671 0.502416 19.291 0.500463L19.2839 1.50044ZM24.6175 1.26534C24.3511 1.19251 24.0761 1.3494 24.0033 1.61577C23.9305 1.88213 24.0874 2.1571 24.3537 2.22993L24.6175 1.26534ZM29.0292 3.91462C29.286 4.01615 29.5765 3.89029 29.6781 3.63349C29.7796 3.37669 29.6537 3.08621 29.3969 2.98467L29.0292 3.91462ZM33.7993 4.75587C33.5438 4.65121 33.2518 4.77352 33.1471 5.02906C33.0425 5.2846 33.1648 5.5766 33.4203 5.68126L33.7993 4.75587ZM37.7907 7.50584C38.0448 7.61403 38.3385 7.49578 38.4467 7.24171C38.5549 6.98765 38.4366 6.69398 38.1825 6.58579L37.7907 7.50584ZM42.5349 8.47985C42.2826 8.36754 41.9871 8.481 41.8748 8.73327C41.7625 8.98554 41.8759 9.28109 42.1282 9.3934L42.5349 8.47985ZM46.4294 11.3587C46.6794 11.4761 46.9772 11.3687 47.0946 11.1187C47.212 10.8688 47.1046 10.571 46.8547 10.4536L46.4294 11.3587ZM51.1334 12.5364C50.8872 12.4114 50.5863 12.5097 50.4613 12.756C50.3363 13.0022 50.4346 13.3032 50.6809 13.4281L51.1334 12.5364ZM1 14.0819C1.45893 14.2803 1.45891 14.2804 1.45889 14.2804C1.45889 14.2804 1.45887 14.2805 1.45886 14.2805C1.45885 14.2805 1.45884 14.2805 1.45884 14.2805C1.45883 14.2806 1.45885 14.2805 1.45889 14.2804C1.45898 14.2802 1.45916 14.2798 1.45944 14.2791C1.46001 14.2778 1.46098 14.2756 1.46233 14.2726C1.46505 14.2664 1.46936 14.2567 1.47525 14.2435C1.48704 14.2173 1.50519 14.1774 1.52974 14.1248C1.57884 14.0196 1.65353 13.8637 1.75416 13.665C1.95545 13.2676 2.26022 12.6993 2.67118 12.023L1.81656 11.5037C1.39062 12.2047 1.07346 12.7958 0.862041 13.2132C0.756308 13.422 0.67695 13.5875 0.623594 13.7018C0.596914 13.759 0.576729 13.8033 0.562992 13.8339C0.556124 13.8492 0.550867 13.8611 0.547215 13.8694C0.54539 13.8735 0.543965 13.8768 0.542941 13.8791C0.54243 13.8803 0.542018 13.8812 0.541706 13.882C0.54155 13.8823 0.54142 13.8826 0.541314 13.8829C0.541261 13.883 0.541214 13.8831 0.541174 13.8832C0.541154 13.8832 0.541128 13.8833 0.541118 13.8833C0.541094 13.8834 0.541071 13.8834 1 14.0819ZM5.7637 7.87474C6.84611 6.68606 8.1352 5.50183 9.63729 4.48262L9.07581 3.65513C7.4968 4.72653 6.14924 5.96609 5.02432 7.20146L5.7637 7.87474ZM14.2348 2.24241C15.7687 1.76385 17.4498 1.48746 19.2839 1.50044L19.291 0.500463C17.3502 0.486731 15.5663 0.779454 13.937 1.2878L14.2348 2.24241ZM24.3537 2.22993C25.1518 2.44813 25.9733 2.71909 26.8188 3.04787L27.1812 2.11587C26.3048 1.77503 25.4503 1.49304 24.6175 1.26534L24.3537 2.22993ZM26.8188 3.04787C27.5732 3.34124 28.3099 3.6302 29.0292 3.91462L29.3969 2.98467C28.6759 2.69957 27.9373 2.40992 27.1812 2.11587L26.8188 3.04787ZM33.4203 5.68126C34.9762 6.31847 36.4323 6.92736 37.7907 7.50584L38.1825 6.58579C36.8198 6.00548 35.3594 5.39482 33.7993 4.75587L33.4203 5.68126ZM42.1282 9.3934C43.7559 10.118 45.1876 10.7752 46.4294 11.3587L46.8547 10.4536C45.6066 9.86717 44.1687 9.20722 42.5349 8.47985L42.1282 9.3934ZM50.6809 13.4281C51.3836 13.7848 51.9037 14.0581 52.2473 14.2417C52.4191 14.3335 52.5468 14.403 52.6311 14.4492C52.6733 14.4723 52.7046 14.4897 52.7252 14.5011C52.7355 14.5068 52.7431 14.5111 52.7481 14.5138C52.7505 14.5152 52.7523 14.5162 52.7535 14.5169C52.754 14.5172 52.7544 14.5174 52.7547 14.5175C52.7548 14.5176 52.7549 14.5177 52.7549 14.5177C52.7549 14.5177 52.7549 14.5177 52.7549 14.5177C52.7549 14.5177 52.7549 14.5177 52.7549 14.5177C52.7549 14.5177 52.7549 14.5177 53 14.0819C53.2451 13.6461 53.2451 13.6461 53.2451 13.6461C53.2451 13.6461 53.245 13.646 53.245 13.646C53.245 13.646 53.2449 13.646 53.2449 13.6459C53.2447 13.6459 53.2446 13.6458 53.2443 13.6456C53.2439 13.6454 53.2433 13.6451 53.2425 13.6446C53.241 13.6438 53.2388 13.6425 53.236 13.6409C53.2302 13.6377 53.2218 13.6331 53.2108 13.6269C53.1886 13.6146 53.1557 13.5964 53.1119 13.5724C53.0245 13.5244 52.8936 13.4533 52.7187 13.3598C52.3688 13.1728 51.8425 12.8962 51.1334 12.5364L50.6809 13.4281ZM27 2.58187L27.3624 1.64987L27 2.58187ZM53.2696 15.0448C53.8015 14.8959 54.1119 14.3441 53.963 13.8122L51.5363 5.14556C51.3874 4.61373 50.8355 4.30332 50.3037 4.45223C49.7719 4.60114 49.4615 5.15299 49.6104 5.68482L51.7674 13.3885L44.0637 15.5456C43.5319 15.6945 43.2214 16.2463 43.3704 16.7782C43.5193 17.31 44.0711 17.6204 44.603 17.4715L53.2696 15.0448ZM3.09848 12.2826C3.38526 11.8106 3.23512 11.1955 2.76312 10.9087C2.29113 10.622 1.67603 10.7721 1.38925 11.2441L3.09848 12.2826ZM4.65462 6.86482C4.28278 7.27317 4.31238 7.90564 4.72073 8.27748C5.12908 8.64933 5.76155 8.61973 6.1334 8.21138L4.65462 6.86482ZM9.91802 4.89637C10.375 4.58627 10.4941 3.96441 10.184 3.5074C9.87395 3.05039 9.25208 2.93129 8.79507 3.24138L9.91802 4.89637ZM13.7881 0.81049C13.2609 0.974983 12.9668 1.53573 13.1313 2.06295C13.2958 2.59017 13.8565 2.88421 14.3838 2.71972L13.7881 0.81049ZM19.2804 2.00043C19.8326 2.00433 20.2835 1.5598 20.2874 1.00753C20.2913 0.455254 19.8468 0.00438255 19.2945 0.000475109L19.2804 2.00043ZM24.7493 0.783045C24.2166 0.637383 23.6667 0.951164 23.521 1.48389C23.3753 2.01662 23.6891 2.56657 24.2219 2.71223L24.7493 0.783045ZM28.8454 4.37959C29.359 4.58266 29.94 4.33093 30.143 3.81734C30.3461 3.30374 30.0944 2.72277 29.5808 2.5197L28.8454 4.37959ZM33.9888 4.29317C33.4777 4.08385 32.8937 4.32848 32.6844 4.83956C32.4751 5.35064 32.7197 5.93464 33.2308 6.14396L33.9888 4.29317ZM37.5949 7.96587C38.103 8.18225 38.6903 7.94574 38.9067 7.43761C39.1231 6.92947 38.8866 6.34214 38.3784 6.12576L37.5949 7.96587ZM42.7382 8.02307C42.2337 7.79845 41.6426 8.02537 41.418 8.52992C41.1934 9.03446 41.4203 9.62557 41.9248 9.85018L42.7382 8.02307ZM46.2168 11.8112C46.7167 12.0461 47.3123 11.8312 47.5471 11.3314C47.782 10.8315 47.5672 10.2359 47.0673 10.001L46.2168 11.8112ZM51.3597 12.0905C50.8672 11.8406 50.2654 12.0372 50.0154 12.5297C49.7655 13.0222 49.9621 13.624 50.4546 13.874L51.3597 12.0905ZM1 14.0819C1.91786 14.4788 1.91782 14.4789 1.91778 14.479C1.91777 14.479 1.91773 14.4791 1.91771 14.4791C1.91766 14.4792 1.91763 14.4793 1.9176 14.4794C1.91753 14.4795 1.9175 14.4796 1.91748 14.4796C1.91746 14.4797 1.91753 14.4795 1.9177 14.4792C1.91804 14.4784 1.91877 14.4767 1.91989 14.4741C1.92215 14.469 1.92597 14.4604 1.93138 14.4484C1.9422 14.4243 1.95932 14.3866 1.98281 14.3363C2.02979 14.2356 2.10215 14.0846 2.20021 13.8909C2.39644 13.5035 2.69502 12.9466 3.09848 12.2826L1.38925 11.2441C0.955818 11.9575 0.632463 12.5599 0.415984 12.9873C0.307695 13.2011 0.226004 13.3715 0.170522 13.4903C0.142777 13.5498 0.121573 13.5964 0.106863 13.6291C0.0995069 13.6455 0.0937732 13.6584 0.0896556 13.6678C0.0875968 13.6725 0.0859418 13.6762 0.08469 13.6791C0.0840641 13.6805 0.0835389 13.6817 0.0831144 13.6827C0.0829023 13.6832 0.0827152 13.6836 0.0825533 13.684C0.0824723 13.6842 0.0823976 13.6844 0.0823293 13.6845C0.0822951 13.6846 0.0822484 13.6847 0.0822314 13.6848C0.0821864 13.6849 0.0821429 13.685 1 14.0819ZM6.1334 8.21138C7.19454 7.04605 8.4544 5.88947 9.91802 4.89637L8.79507 3.24138C7.17759 4.33888 5.8008 5.6061 4.65462 6.86482L6.1334 8.21138ZM14.3838 2.71972C15.8699 2.25604 17.4996 1.98783 19.2804 2.00043L19.2945 0.000475109C17.3004 -0.0136341 15.4651 0.287257 13.7881 0.81049L14.3838 2.71972ZM24.2219 2.71223C25.0025 2.92568 25.8076 3.19113 26.6376 3.51387L27.3624 1.64987C26.4705 1.30299 25.5995 1.0155 24.7493 0.783045L24.2219 2.71223ZM26.6376 3.51387C27.3911 3.8069 28.127 4.09552 28.8454 4.37959L29.5808 2.5197C28.8588 2.23425 28.1194 1.94425 27.3624 1.64987L26.6376 3.51387ZM33.2308 6.14396C34.7845 6.7803 36.2385 7.3883 37.5949 7.96587L38.3784 6.12576C37.0135 5.54455 35.551 4.93299 33.9888 4.29317L33.2308 6.14396ZM41.9248 9.85018C43.5494 10.5734 44.9781 11.2291 46.2168 11.8112L47.0673 10.001C45.8162 9.41318 44.3752 8.75181 42.7382 8.02307L41.9248 9.85018ZM50.4546 13.874C51.1542 14.2291 51.6711 14.5007 52.0116 14.6827C52.1818 14.7737 52.3079 14.8422 52.3907 14.8876C52.4321 14.9103 52.4626 14.9272 52.4824 14.9382C52.4923 14.9437 52.4996 14.9477 52.5041 14.9503C52.5064 14.9516 52.508 14.9525 52.5089 14.953C52.5094 14.9532 52.5097 14.9534 52.5098 14.9535C52.5099 14.9535 52.5099 14.9535 52.5099 14.9535C52.5099 14.9535 52.5099 14.9535 52.5099 14.9535C52.5098 14.9535 52.5098 14.9535 52.5098 14.9535C52.5098 14.9535 52.5097 14.9534 53 14.0819C53.4903 13.2103 53.4902 13.2103 53.4902 13.2102C53.4902 13.2102 53.4901 13.2102 53.4901 13.2102C53.49 13.2102 53.4899 13.2101 53.4898 13.2101C53.4897 13.21 53.4894 13.2098 53.4892 13.2097C53.4886 13.2094 53.4879 13.209 53.4871 13.2085C53.4854 13.2075 53.483 13.2062 53.4799 13.2045C53.4738 13.2011 53.465 13.1962 53.4535 13.1898C53.4306 13.177 53.3969 13.1584 53.3524 13.134C53.2633 13.0852 53.1309 13.0132 52.9544 12.9188C52.6014 12.7301 52.0719 12.452 51.3597 12.0905L50.4546 13.874Z' fill='%2365D2E9'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: -57px;
+    top: calc(50% - 9px); }
+  .section-tiktok-guides .guide-item:nth-child(3) .guide-item__image:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='54' height='19' viewBox='0 0 54 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27 15.4999L27.1812 15.9659L27 15.4999ZM53.1348 3.51844C53.4007 3.59289 53.5559 3.86882 53.4815 4.13473L52.2681 8.46807C52.1937 8.73398 51.9178 8.88919 51.6519 8.81474C51.3859 8.74028 51.2307 8.46436 51.3052 8.19844L52.3837 4.34658L48.5318 3.26806C48.2659 3.19361 48.1107 2.91768 48.1852 2.65177C48.2596 2.38585 48.5356 2.23064 48.8015 2.3051L53.1348 3.51844ZM2.67118 6.05881C2.81456 6.2948 2.73949 6.60236 2.5035 6.74575C2.2675 6.88914 1.95995 6.81406 1.81656 6.57807L2.67118 6.05881ZM5.02432 10.8803C4.8384 10.6762 4.85319 10.3599 5.05737 10.174C5.26154 9.98808 5.57778 10.0029 5.7637 10.207L5.02432 10.8803ZM9.63729 13.5992C9.86579 13.7542 9.92534 14.0651 9.77029 14.2936C9.61525 14.5222 9.30432 14.5817 9.07581 14.4267L9.63729 13.5992ZM13.937 16.794C13.6734 16.7117 13.5264 16.4314 13.6086 16.1678C13.6909 15.9042 13.9712 15.7571 14.2348 15.8394L13.937 16.794ZM19.2839 16.5813C19.56 16.5794 19.7855 16.8017 19.7874 17.0778C19.7894 17.3539 19.5671 17.5794 19.291 17.5813L19.2839 16.5813ZM24.6175 16.8164C24.3511 16.8893 24.0761 16.7324 24.0033 16.466C23.9305 16.1997 24.0874 15.9247 24.3537 15.8519L24.6175 16.8164ZM29.0292 14.1672C29.286 14.0656 29.5765 14.1915 29.6781 14.4483C29.7796 14.7051 29.6537 14.9956 29.3969 15.0971L29.0292 14.1672ZM33.7993 13.3259C33.5438 13.4306 33.2518 13.3083 33.1471 13.0527C33.0425 12.7972 33.1648 12.5052 33.4203 12.4005L33.7993 13.3259ZM37.7907 10.5759C38.0448 10.4678 38.3385 10.586 38.4467 10.8401C38.5549 11.0941 38.4366 11.3878 38.1825 11.496L37.7907 10.5759ZM42.5349 9.60194C42.2826 9.71425 41.9871 9.60079 41.8748 9.34852C41.7625 9.09624 41.8759 8.80069 42.1282 8.68838L42.5349 9.60194ZM46.4294 6.72313C46.6794 6.6057 46.9772 6.71311 47.0946 6.96304C47.212 7.21297 47.1046 7.51077 46.8547 7.6282L46.4294 6.72313ZM51.1334 5.54539C50.8872 5.67036 50.5863 5.57205 50.4613 5.32581C50.3363 5.07956 50.4346 4.77863 50.6809 4.65366L51.1334 5.54539ZM1 3.99992C1.45893 3.80146 1.45891 3.80142 1.45889 3.80138C1.45889 3.80137 1.45887 3.80133 1.45886 3.80131C1.45885 3.80128 1.45884 3.80125 1.45884 3.80125C1.45883 3.80123 1.45885 3.80127 1.45889 3.80137C1.45898 3.80157 1.45916 3.802 1.45944 3.80264C1.46001 3.80394 1.46098 3.80615 1.46233 3.80923C1.46505 3.8154 1.46936 3.82511 1.47525 3.83824C1.48704 3.86449 1.50519 3.90441 1.52974 3.957C1.57884 4.0622 1.65353 4.21807 1.75416 4.41675C1.95545 4.81421 2.26022 5.38244 2.67118 6.05881L1.81656 6.57807C1.39062 5.87704 1.07346 5.28601 0.862041 4.86856C0.756308 4.65979 0.67695 4.49428 0.623594 4.37997C0.596914 4.32282 0.576729 4.27845 0.562992 4.24785C0.556124 4.23256 0.550867 4.2207 0.547215 4.21241C0.54539 4.20827 0.543965 4.20502 0.542941 4.20267C0.54243 4.2015 0.542018 4.20055 0.541706 4.19984C0.54155 4.19948 0.54142 4.19918 0.541314 4.19893C0.541261 4.19881 0.541214 4.1987 0.541174 4.19861C0.541154 4.19856 0.541128 4.1985 0.541118 4.19848C0.541094 4.19842 0.541071 4.19837 1 3.99992ZM5.7637 10.207C6.84611 11.3957 8.1352 12.58 9.63729 13.5992L9.07581 14.4267C7.4968 13.3553 6.14924 12.1157 5.02432 10.8803L5.7637 10.207ZM14.2348 15.8394C15.7687 16.3179 17.4498 16.5943 19.2839 16.5813L19.291 17.5813C17.3502 17.5951 15.5663 17.3023 13.937 16.794L14.2348 15.8394ZM24.3537 15.8519C25.1518 15.6337 25.9733 15.3627 26.8188 15.0339L27.1812 15.9659C26.3048 16.3068 25.4503 16.5887 24.6175 16.8164L24.3537 15.8519ZM26.8188 15.0339C27.5732 14.7405 28.3099 14.4516 29.0292 14.1672L29.3969 15.0971C28.6759 15.3822 27.9373 15.6719 27.1812 15.9659L26.8188 15.0339ZM33.4203 12.4005C34.9762 11.7633 36.4323 11.1544 37.7907 10.5759L38.1825 11.496C36.8198 12.0763 35.3594 12.687 33.7993 13.3259L33.4203 12.4005ZM42.1282 8.68838C43.7559 7.96375 45.1876 7.30663 46.4294 6.72313L46.8547 7.6282C45.6066 8.21462 44.1687 8.87457 42.5349 9.60194L42.1282 8.68838ZM50.6809 4.65366C51.3836 4.29699 51.9037 4.02373 52.2473 3.84007C52.4191 3.74824 52.5468 3.67881 52.6311 3.63256C52.6733 3.60944 52.7046 3.59211 52.7252 3.58067C52.7355 3.57495 52.7431 3.57071 52.7481 3.56795C52.7505 3.56656 52.7523 3.56556 52.7535 3.56492C52.754 3.5646 52.7544 3.56438 52.7547 3.56424C52.7548 3.56418 52.7549 3.56414 52.7549 3.56412C52.7549 3.56411 52.7549 3.5641 52.7549 3.56411C52.7549 3.56411 52.7549 3.56411 52.7549 3.56411C52.7549 3.56412 52.7549 3.56413 53 3.99992C53.2451 4.43571 53.2451 4.43572 53.2451 4.43573C53.2451 4.43574 53.245 4.43575 53.245 4.43576C53.245 4.43579 53.2449 4.43582 53.2449 4.43586C53.2447 4.43593 53.2446 4.43603 53.2443 4.43615C53.2439 4.43639 53.2433 4.43673 53.2425 4.43716C53.241 4.43801 53.2388 4.43924 53.236 4.44084C53.2302 4.44404 53.2218 4.44873 53.2108 4.45488C53.1886 4.46719 53.1557 4.48539 53.1119 4.50938C53.0245 4.55735 52.8936 4.62848 52.7187 4.72199C52.3688 4.909 51.8425 5.18554 51.1334 5.54539L50.6809 4.65366ZM27 15.4999L27.3624 16.4319L27 15.4999ZM53.2696 3.03695C53.8015 3.18587 54.1119 3.73772 53.963 4.26955L51.5363 12.9362C51.3874 13.4681 50.8355 13.7785 50.3037 13.6296C49.7719 13.4806 49.4615 12.9288 49.6104 12.397L51.7674 4.69325L44.0637 2.53621C43.5319 2.3873 43.2214 1.83545 43.3704 1.30362C43.5193 0.771788 44.0711 0.46137 44.603 0.610283L53.2696 3.03695ZM3.09848 5.79918C3.38526 6.27117 3.23512 6.88628 2.76312 7.17305C2.29113 7.45983 1.67603 7.30969 1.38925 6.8377L3.09848 5.79918ZM4.65462 11.217C4.28278 10.8086 4.31238 10.1761 4.72073 9.8043C5.12908 9.43246 5.76155 9.46206 6.1334 9.87041L4.65462 11.217ZM9.91802 13.1854C10.375 13.4955 10.4941 14.1174 10.184 14.5744C9.87395 15.0314 9.25208 15.1505 8.79507 14.8404L9.91802 13.1854ZM13.7881 17.2713C13.2609 17.1068 12.9668 16.5461 13.1313 16.0188C13.2958 15.4916 13.8565 15.1976 14.3838 15.3621L13.7881 17.2713ZM19.2804 16.0814C19.8326 16.0775 20.2835 16.522 20.2874 17.0743C20.2913 17.6265 19.8468 18.0774 19.2945 18.0813L19.2804 16.0814ZM24.7493 17.2987C24.2166 17.4444 23.6667 17.1306 23.521 16.5979C23.3753 16.0652 23.6891 15.5152 24.2219 15.3696L24.7493 17.2987ZM28.8454 13.7022C29.359 13.4991 29.94 13.7509 30.143 14.2644C30.3461 14.778 30.0944 15.359 29.5808 15.5621L28.8454 13.7022ZM33.9888 13.7886C33.4777 13.9979 32.8937 13.7533 32.6844 13.2422C32.4751 12.7311 32.7197 12.1471 33.2308 11.9378L33.9888 13.7886ZM37.5949 10.1159C38.103 9.89954 38.6903 10.136 38.9067 10.6442C39.1231 11.1523 38.8866 11.7396 38.3784 11.956L37.5949 10.1159ZM42.7382 10.0587C42.2337 10.2833 41.6426 10.0564 41.418 9.55187C41.1934 9.04733 41.4203 8.45622 41.9248 8.2316L42.7382 10.0587ZM46.2168 6.27059C46.7167 6.03573 47.3123 6.25055 47.5471 6.75041C47.782 7.25027 47.5672 7.84588 47.0673 8.08074L46.2168 6.27059ZM51.3597 5.99125C50.8672 6.2412 50.2654 6.04458 50.0154 5.55209C49.7655 5.0596 49.9621 4.45774 50.4546 4.20779L51.3597 5.99125ZM1 3.99992C1.91786 3.60301 1.91782 3.60291 1.91778 3.60282C1.91777 3.6028 1.91773 3.60271 1.91771 3.60266C1.91766 3.60256 1.91763 3.60247 1.9176 3.6024C1.91753 3.60226 1.9175 3.60217 1.91748 3.60214C1.91746 3.60208 1.91753 3.60224 1.9177 3.60263C1.91804 3.60341 1.91877 3.60508 1.91989 3.60764C1.92215 3.61275 1.92597 3.62139 1.93138 3.63343C1.9422 3.65752 1.95932 3.69521 1.98281 3.74552C2.02979 3.84616 2.10215 3.99721 2.20021 4.19084C2.39644 4.57831 2.69502 5.13514 3.09848 5.79918L1.38925 6.8377C0.955818 6.12434 0.632463 5.52191 0.415984 5.09446C0.307695 4.88064 0.226004 4.71032 0.170522 4.59146C0.142777 4.53202 0.121573 4.48542 0.106863 4.45266C0.0995069 4.43628 0.0937732 4.42335 0.0896556 4.41401C0.0875968 4.40933 0.0859418 4.40555 0.08469 4.40269C0.0840641 4.40125 0.0835389 4.40005 0.0831144 4.39907C0.0829023 4.39858 0.0827152 4.39815 0.0825533 4.39778C0.0824723 4.39759 0.0823976 4.39742 0.0823293 4.39726C0.0822951 4.39718 0.0822484 4.39707 0.0822314 4.39703C0.0821864 4.39693 0.0821429 4.39683 1 3.99992ZM6.1334 9.87041C7.19454 11.0357 8.4544 12.1923 9.91802 13.1854L8.79507 14.8404C7.17759 13.7429 5.8008 12.4757 4.65462 11.217L6.1334 9.87041ZM14.3838 15.3621C15.8699 15.8257 17.4996 16.094 19.2804 16.0814L19.2945 18.0813C17.3004 18.0954 15.4651 17.7945 13.7881 17.2713L14.3838 15.3621ZM24.2219 15.3696C25.0025 15.1561 25.8076 14.8907 26.6376 14.5679L27.3624 16.4319C26.4705 16.7788 25.5995 17.0663 24.7493 17.2987L24.2219 15.3696ZM26.6376 14.5679C27.3911 14.2749 28.127 13.9863 28.8454 13.7022L29.5808 15.5621C28.8588 15.8475 28.1194 16.1375 27.3624 16.4319L26.6376 14.5679ZM33.2308 11.9378C34.7845 11.3015 36.2385 10.6935 37.5949 10.1159L38.3784 11.956C37.0135 12.5372 35.551 13.1488 33.9888 13.7886L33.2308 11.9378ZM41.9248 8.2316C43.5494 7.50835 44.9781 6.85264 46.2168 6.27059L47.0673 8.08074C45.8162 8.66861 44.3752 9.32998 42.7382 10.0587L41.9248 8.2316ZM50.4546 4.20779C51.1542 3.85272 51.6711 3.58109 52.0116 3.39911C52.1818 3.30812 52.3079 3.23954 52.3907 3.19416C52.4321 3.17146 52.4626 3.15457 52.4824 3.14357C52.4923 3.13807 52.4996 3.13404 52.5041 3.1315C52.5064 3.13023 52.508 3.12933 52.5089 3.1288C52.5094 3.12854 52.5097 3.12837 52.5098 3.12829C52.5099 3.12825 52.5099 3.12824 52.5099 3.12825C52.5099 3.12825 52.5099 3.12826 52.5099 3.12828C52.5098 3.12828 52.5098 3.1283 52.5098 3.1283C52.5098 3.12832 52.5097 3.12834 53 3.99992C53.4903 4.87149 53.4902 4.87151 53.4902 4.87154C53.4902 4.87155 53.4901 4.87157 53.4901 4.87159C53.49 4.87163 53.4899 4.87168 53.4898 4.87173C53.4897 4.87183 53.4894 4.87196 53.4892 4.8721C53.4886 4.8724 53.4879 4.87279 53.4871 4.87328C53.4854 4.87424 53.483 4.87558 53.4799 4.87729C53.4738 4.88071 53.465 4.88562 53.4535 4.89199C53.4306 4.90474 53.3969 4.92337 53.3524 4.94779C53.2633 4.99662 53.1309 5.0686 52.9544 5.16295C52.6014 5.35164 52.0719 5.62981 51.3597 5.99125L50.4546 4.20779Z' fill='%2365D2E9'/%3E%3C/svg%3E%0A"); }
+  .section-tiktok-guides .sitebox-actions {
+    display: none;
+    padding-top: 20px; }
+  @media (max-width: 991px) {
+    .section-tiktok-guides .guides-overflow {
+      position: relative;
+      overflow: hidden;
+      margin: 0 -15px; }
+    .section-tiktok-guides .guides-row {
+      margin-left: 0;
+      margin-right: 0px;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 30px;
+      margin-bottom: -30px; }
+    .section-tiktok-guides .guide-item {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%; }
+      .section-tiktok-guides .guide-item__inner {
+        padding-left: 0;
+        padding-right: 30px; }
+    .section-tiktok-guides .sitebox-actions {
+      display: block; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-tiktok-guides .guide-item {
+      -ms-flex: 0 0 45%;
+      flex: 0 0 45%;
+      max-width: 45%; } }
+
+.section-tiktok-begins {
+  padding-top: 0; }
+  .section-tiktok-begins .wrapper-begins {
+    position: relative;
+    overflow: hidden;
+    margin: 0 -15px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    background-image: url("../../../../file.hstatic.net/1000001117/file/tiktok-bg-bottom-min_d9add89d488b4c858d825779fe826a52.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .section-tiktok-begins .begins-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 730px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #ffffff; }
+    .section-tiktok-begins .begins-inner h2 {
+      line-height: 1.35;
+      color: #ffffff;
+      font-size: 28px;
+      margin: 0 auto;
+      font-family: var(--hrv-font-family-bold);
+      text-transform: uppercase; }
+    .section-tiktok-begins .begins-inner p {
+      margin: 0; }
+    .section-tiktok-begins .begins-inner .sitebox-actions {
+      margin-top: 25px; }
+  .section-tiktok-begins .begins-shapes svg {
+    height: 100%; }
+  .section-tiktok-begins .begins-shapes .shape-1 {
+    position: absolute;
+    bottom: 0;
+    left: 1.5%;
+    width: 28%; }
+  .section-tiktok-begins .begins-shapes .shape-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    width: 33%; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-tiktok-begins .begins-inner {
+      max-width: 640px; }
+      .section-tiktok-begins .begins-inner h2 {
+        font-size: 26px; } }
+  @media (max-width: 767px) {
+    .section-tiktok-begins {
+      padding-bottom: 0; }
+    .section-tiktok-begins .wrapper-begins {
+      border-radius: 0px;
+      padding: 30px 12px; }
+    .section-tiktok-begins .begins-inner h2 {
+      font-size: 22px; }
+    .section-tiktok-begins .begins-inner .sitebox-actions {
+      margin-top: 20px; }
+    .section-tiktok-begins .begins-inner .sitebox-actions .btn-trial {
+      min-width: 70%;
+      width: auto; }
+    .section-tiktok-begins .begins-shapes .shape-1 {
+      left: -22%;
+      width: 40%;
+      height: 100%; }
+    .section-tiktok-begins .begins-shapes .shape-2 {
+      right: -25%;
+      width: 50%;
+      height: 100%; } }
+
+.section-tiktok-hrvservice {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0 0;
+  border-top: 1px solid #dfe3e8; }
+  .section-tiktok-hrvservice:before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='800' height='608' viewBox='0 0 800 608' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1417.65 -124.7L640.646 690.699C499.046 839.299 263.846 844.899 115.246 703.399C-33.3543 561.8 -38.9543 326.6 102.546 178L879.546 -637.4C1021.15 -786 1256.35 -791.6 1404.95 -650.1C1553.55 -508.5 1559.15 -273.3 1417.65 -124.7Z' fill='url(%23paint0_linear_1317_4361)'/%3E%3Cpath d='M1646.27 -124.537L760.928 804.516C599.568 973.805 331.598 980.234 162.309 818.981C-6.97963 657.621 -13.4083 389.651 147.845 220.363L1033.18 -708.691C1194.54 -877.98 1462.51 -884.408 1631.8 -723.155C1801.09 -561.795 1807.63 -293.826 1646.27 -124.537Z' fill='url(%23paint1_linear_1317_4361)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1317_4361' x1='187.46' y1='733.068' x2='809.144' y2='-33.9007' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFE794'/%3E%3Cstop offset='1' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1317_4361' x1='292.5' y1='637.499' x2='969.5' y2='223.999' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.0989583' stop-color='%23FFC267'/%3E%3Cstop offset='0.9914' stop-color='white' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    position: absolute;
+    left: 50%;
+    right: -20px;
+    bottom: 0;
+    height: 100%;
+    max-width: 800px; }
+  .section-tiktok-hrvservice .services-detail {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .section-tiktok-hrvservice .services-detail .sitebox-header {
+      margin-bottom: 0; }
+      .section-tiktok-hrvservice .services-detail .sitebox-header h2 {
+        line-height: 1.2; }
+    .section-tiktok-hrvservice .services-detail .block-desc {
+      margin: 12px 0 24px;
+      line-height: 1.4;
+      color: #2a363b;
+      font-size: 27px;
+      max-width: 475px;
+      font-family: var(--hrv-font-family-regular);
+      letter-spacing: -0.6px; }
+      .section-tiktok-hrvservice .services-detail .block-desc p {
+        margin: 0; }
+  .section-tiktok-hrvservice .services-image .block-image {
+    position: relative;
+    z-index: 1;
+    padding-right: 8%; }
+    .section-tiktok-hrvservice .services-image .block-image:before {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg width='275' height='289' viewBox='0 0 275 289' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M255.826 120.315L115.606 267.459C90.0499 294.271 47.6088 295.289 20.7968 269.75C-6.01522 244.193 -7.0334 201.752 18.5059 174.94L158.726 27.7968C184.282 0.984784 226.723 -0.0333929 253.535 25.5059C280.347 51.0621 281.382 93.5032 255.826 120.315Z' fill='url(%23paint0_linear_1317_4361)'/%3E%3Cpath d='M216.345 96.6937L97.7646 222.254C76.1525 245.133 40.2614 246.002 17.5872 224.209C-5.08689 202.401 -5.94793 166.185 15.6499 143.306L134.23 17.7462C155.842 -5.13288 191.733 -6.00171 214.407 15.7914C237.081 37.5989 237.957 73.8146 216.345 96.6937Z' fill='url(%23paint1_linear_1317_4361)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1317_4361' x1='46.761' y1='262.982' x2='136.778' y2='160.924' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2361F7F2'/%3E%3Cstop offset='1' stop-color='%23D3FDFB'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1317_4361' x1='53.9408' y1='190.993' x2='130.837' y2='104.593' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4D6F'/%3E%3Cstop offset='1' stop-color='%23FFB1C9'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      left: 50%;
+      right: -20px;
+      bottom: 0;
+      height: 80%; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-tiktok-hrvservice:before {
+      left: 10%;
+      height: 71%; }
+    .section-tiktok-hrvservice .services-detail {
+      padding-bottom: 40px;
+      position: relative;
+      z-index: 2; }
+      .section-tiktok-hrvservice .services-detail .block-desc {
+        max-width: 90%; }
+      .section-tiktok-hrvservice .services-detail .sitebox-actions .btn-trial {
+        min-width: 40%; } }
+  @media (max-width: 767px) {
+    .section-tiktok-hrvservice {
+      border-top: 0; }
+    .section-tiktok-hrvservice:before {
+      display: none; }
+    .section-tiktok-hrvservice .services-detail {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      background: #ffffff;
+      position: relative;
+      z-index: 2; }
+      .section-tiktok-hrvservice .services-detail .block-desc {
+        font-size: 20px;
+        max-width: 100%;
+        margin: 10px 0 15px; }
+    .section-tiktok-hrvservice .services-image {
+      background-image: url("data:image/svg+xml,%3Csvg width='800' height='608' viewBox='0 0 800 608' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1417.65 -124.7L640.646 690.699C499.046 839.299 263.846 844.899 115.246 703.399C-33.3543 561.8 -38.9543 326.6 102.546 178L879.546 -637.4C1021.15 -786 1256.35 -791.6 1404.95 -650.1C1553.55 -508.5 1559.15 -273.3 1417.65 -124.7Z' fill='url(%23paint0_linear_1317_4361)'/%3E%3Cpath d='M1646.27 -124.537L760.928 804.516C599.568 973.805 331.598 980.234 162.309 818.981C-6.97963 657.621 -13.4083 389.651 147.845 220.363L1033.18 -708.691C1194.54 -877.98 1462.51 -884.408 1631.8 -723.155C1801.09 -561.795 1807.63 -293.826 1646.27 -124.537Z' fill='url(%23paint1_linear_1317_4361)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1317_4361' x1='187.46' y1='733.068' x2='809.144' y2='-33.9007' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFE794'/%3E%3Cstop offset='1' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1317_4361' x1='292.5' y1='637.499' x2='969.5' y2='223.999' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.0989583' stop-color='%23FFC267'/%3E%3Cstop offset='0.9914' stop-color='white' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 10px 100%; }
+      .section-tiktok-hrvservice .services-image .block-image {
+        padding-right: 6%; }
+        .section-tiktok-hrvservice .services-image .block-image:before {
+          right: -10px;
+          bottom: 0; } }
+
+.section-tiktok-training {
+  position: relative;
+  background: linear-gradient(268.83deg, #DBFDFF 0%, #F0F8FF 100.01%); }
+  .section-tiktok-training .training-detail .sitebox-header {
+    margin-bottom: 15px; }
+  .section-tiktok-training .training-detail .block-desc {
+    margin: 0px 0 24px;
+    line-height: 1.4;
+    color: #191914;
+    font-size: 22px;
+    font-family: var(--hrv-font-family-regular);
+    letter-spacing: -0.6px; }
+    .section-tiktok-training .training-detail .block-desc p {
+      margin: 0; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-tiktok-training .training-image {
+      margin-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .section-tiktok-training .training-image {
+      padding-right: 0;
+      margin-bottom: 20px; } }
+
+.section-tiktok-connect {
+  position: relative;
+  background: linear-gradient(112deg, #EEFFFC 0%, white 49%, #FFF0F1 100%); }
+  .section-tiktok-connect .sitebox-header h2 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 8px; }
+  .section-tiktok-connect .list-connect {
+    margin-bottom: 18px; }
+  .section-tiktok-connect .connect-item {
+    padding: 22px 0;
+    border-top: 1px solid #A5CDFD;
+    display: flex;
+    gap: 6px; }
+    .section-tiktok-connect .connect-item .item-img {
+      flex: 0 0 50px; }
+    .section-tiktok-connect .connect-item .item-detail .title {
+      color: #0047BA;
+      font-size: 24px;
+      font-family: var(--hrv-font-family-bold);
+      margin-bottom: 4px; }
+    .section-tiktok-connect .connect-item .item-detail .desc {
+      color: #2A363B;
+      margin: 0; }
+      .section-tiktok-connect .connect-item .item-detail .desc b {
+        font-family: 'sfuiText_bold'; }
+    .section-tiktok-connect .connect-item:last-child {
+      border-bottom: 1px solid #A5CDFD; }
+  .section-tiktok-connect .connect-note {
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 18px; }
+  .section-tiktok-connect .btn-mb {
+    display: none;
+    margin-top: 18px; }
+  @media (min-width: 992px) {
+    .section-tiktok-connect .row > div:first-child {
+      padding: 0; } }
+  @media (max-width: 991px) {
+    .section-tiktok-connect .btn-mb {
+      display: block; }
+    .section-tiktok-connect .btn-pc {
+      display: none; }
+    .section-tiktok-connect .connect-note {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .section-tiktok-connect .sitebox-header h2 {
+      font-size: 25px;
+      gap: 0 2px; }
+      .section-tiktok-connect .sitebox-header h2 .tag-new2 {
+        font-size: 11px;
+        padding: 2px 6px; }
+    .section-tiktok-connect .connect-item {
+      padding: 15px 0; }
+      .section-tiktok-connect .connect-item .item-img {
+        flex: 0 0 40px; }
+      .section-tiktok-connect .connect-item .item-detail .title {
+        font-size: 18px; } }
+
+.tag-new2 {
+  font-size: 16px;
+  font-family: 'sfuiText_bold';
+  background: #FF4E4E;
+  color: #fff;
+  padding: 2px 12px;
+  border-radius: 30px;
+  margin-top: 5px; }

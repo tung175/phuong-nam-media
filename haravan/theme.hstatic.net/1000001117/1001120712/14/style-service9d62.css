@@ -1,0 +1,91 @@
+* { margin: 0; padding: 0}
+/* 1.2 - HTML5 Elements */
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display: block;}
+html {-webkit-overflow-scrolling: touch;-webkit-text-size-adjust: none;-ms-text-size-adjust: 100%;}
+body {
+	margin: 0;
+	padding: 0;
+	font-family:'sfuiText_regular',Helvetica,sans-serif;
+	font-size: 16px;
+	color: #2a363b;
+	overflow-x: hidden;
+	background:#fff;
+	-webkit-font-smoothing: antialiased;
+}
+a,a:hover {-moz-transition: all .5s ease;-webkit-transition: all .5s ease;-ms-transition: all .5s ease;-o-transition: all .5s ease;transition: all .5s ease}
+a:hover {text-decoration: none;}
+img, svg {max-width: 100%;}
+ol, ul {margin:0;}
+
+
+.section-service-lowlight{background-color: #1976d2; padding:90px 0 100px;text-align: center;}
+.section-service-lowlight h1{font-size:40px;color: #ffffff;    font-family: var(--hrv-font-family-bold);}
+.section-service-light { text-align: justify;padding: 70px 0; line-height: 1.65;font-size: 16px;background-color: #f5f5f5;border-bottom: 1px solid #e3e3e3;}
+.service-light-content p{margin:0 0 15px;text-indent: 30px;}
+.service-light-content strong,.service-light-content b{font-family:'sfuiText_bold';font-weight: initial;}
+.service-light-content ul {list-style-type: disc;margin-bottom:15px; margin-top: 0; margin-left:20px; }
+.service-light-content ul li {list-style-position: outside; }
+.service-light-content ul li + li {margin-top: 2px; }
+.service-light-content ul li::marker {font-size: 14px; color: #000; }
+.service-light-content .txtlink{
+	cursor: pointer;letter-spacing: -0.43px;color: #1876d2;
+	background-image: linear-gradient(to right, #1876d2 0%, #1876d2 100%);
+	background-size: 100% 1px;background-position: 0px 96%;background-repeat: no-repeat;
+	transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+}
+.service-light-content .txtlink:hover {background-size: 0px 1px;}
+.section-service-listTerms{margin-bottom:65px;}
+.groupTerms-item{margin-top:55px;line-height: 1.5; text-align: justify}
+.groupTerms-item h2{margin: 0 0 25px;font-size: 30px;color: #3d5067;line-height: 1.3;    font-family: var(--hrv-font-family-medium);}
+.groupTerms-item ol{list-style-type: decimal;padding-left:20px;}
+.groupTerms-item ol>li{margin-bottom:15px; }
+.groupTerms-item li i{font-size:95%}
+.groupTerms-item li strong,.groupTerms-item li b{color: #212326;font-family:'sfuiText_bold';font-weight: initial;}
+.groupTerms-item ol ul {list-style-type: disc;margin-bottom:15px; margin-top: 15px; margin-left:20px; }
+.groupTerms-item ol ul li {list-style-position: outside; }
+.groupTerms-item ol ul li + li {margin-top: 2px; }
+.groupTerms-item .aside-gti-bg{
+	background: #f0f8ff;border: 1px solid #bae5ff;
+	padding:15px 18px 10px; text-align: justify
+}
+.groupTerms-item .gti-short{
+	text-transform: uppercase;margin:0px 0 12px;text-align: center;
+	font-size: 15px;color: #212326;font-family: 'sfuiText_bold';
+}
+.groupTerms-item .gti-light{line-height: 1.5;letter-spacing: -0.25px;color: #6b7177;}
+.groupTerms-item .txtlink{
+	cursor: pointer;letter-spacing: -0.43px;color: #1876d2;
+	background-image: linear-gradient(to right, #1876d2 0%, #1876d2 100%);
+	background-size: 100% 1px;background-position: 0px 90%;background-repeat: no-repeat;
+	transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+}
+.groupTerms-item .txtlink:hover {background-size: 0px 1px;}
+.groupTerms-line{padding-top: 50px;border-top: 1px dashed #bbbbbb;}
+.groupTerms-item__blocklight{
+	border: 1px solid #fdeed8;
+	background-color: #fff9f1;
+	padding:20px 25px 10px;margin-bottom:30px;
+}
+@media(max-width:991px) and (min-width:768px){
+	.section-service-lowlight h1 {font-size: 34px;}
+	.groupTerms-item h2 {font-size: 28px;}
+	.groupTerms-item .aside-gti-bg{padding: 15px 15px 10px;    font-size: 15px;}
+
+}
+@media(max-width:767px){
+	.section-service-lowlight{padding:50px 0 60px}
+	.section-service-lowlight h1 {font-size: 30px;}
+	.section-service-light {padding: 60px 5px;font-size: 16px;}
+	.groupTerms-item h2 {font-size: 24px;}
+	.groupTerms-item .aside-gti-bg{margin-top:10px;padding: 15px 15px 10px;}
+	.groupTerms-item .gti-short{font-size: 14px;margin: 0px 0 10px;}
+	.groupTerms-item{font-size:14px;}
+	.groupTerms-item .gti-light{font-size:14px;}
+}
+div#fb-root {
+    display: none !important;
+}
+
+
+
+

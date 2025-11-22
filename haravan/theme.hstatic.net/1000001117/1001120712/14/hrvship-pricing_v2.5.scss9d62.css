@@ -1,0 +1,2347 @@
+[class^="shipping-pricing-"] {
+  padding: 70px 0; }
+
+@media (max-width: 767px) {
+  [class^="shipping-pricing-"] {
+    padding: 45px 0; } }
+
+.shipping-pricing-overview {
+  position: relative;
+  z-index: 1;
+  padding: 5px 0 65px;
+  background: #006cea;
+  overflow: hidden; }
+  .shipping-pricing-overview:before {
+    content: "";
+    position: absolute;
+    left: 52%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 960px;
+    z-index: -1;
+    background-image: url("../../../../file.hstatic.net/1000001117/file/ship-pricing-vector_14aff0d073f543c1b5e217df65bebdff.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%; }
+  .shipping-pricing-overview .overview-insert {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    z-index: -1;
+    background-image: url("../../../../file.hstatic.net/1000001117/file/ship-pricing-bg-bottom_d0ec33997abf40a196ab968a8afe8bfa.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%; }
+  .shipping-pricing-overview .overview-detail h1 {
+    line-height: 1.3;
+    color: #fff;
+    font-size: 40px;
+    margin: 0px;
+    font-family: var(--hrv-font-family-bold); }
+  .shipping-pricing-overview .overview-detail .subhead {
+    color: #ffffff;
+    margin: 12px 0px;
+    font-size: 26px;
+    font-family: var(--hrv-font-family-regular); }
+  .shipping-pricing-overview .overview-detail .subhead b {
+    font-weight: initial;
+    font-family: var(--hrv-font-family-medium); }
+  .shipping-pricing-overview .overview-detail .block-info ul {
+    margin: 0;
+    padding: 0; }
+  .shipping-pricing-overview .overview-detail .block-info ul li {
+    position: relative;
+    padding-left: 32px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 5px; }
+  .shipping-pricing-overview .overview-detail .block-info ul li:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='%23fcd905' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.80002 18.22L4.51001 12.94L6.27002 11.18L9.80002 14.7L17.73 6.77L19.49 8.53L9.80002 18.22Z' /%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .shipping-pricing-overview .overview-image {
+    position: relative; }
+    .shipping-pricing-overview .overview-image__inner {
+      position: relative; }
+    .shipping-pricing-overview .overview-image .block-logos {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 90%;
+      max-width: 490px; }
+      .shipping-pricing-overview .overview-image .block-logos__inner {
+        background: #FFFFFF;
+        padding: 6px;
+        box-shadow: 0px 6.45161px 22.5806px -4.83871px rgba(24, 39, 75, 0.12), 0px 14.5161px 70.9677px -3.22581px rgba(24, 39, 75, 0.14);
+        border-radius: 3px;
+        margin-top: -2px; }
+    .shipping-pricing-overview .overview-image .shipment-logo {
+      background: #E4F7FF;
+      padding: 3px; }
+      .shipping-pricing-overview .overview-image .shipment-logo + .shipment-logo {
+        margin-top: 3px; }
+      .shipping-pricing-overview .overview-image .shipment-logo__title {
+        text-align: center;
+        padding: 2px 0 5px; }
+      .shipping-pricing-overview .overview-image .shipment-logo__list {
+        margin-left: 1px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap; }
+        .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item {
+          text-align: center;
+          background: #fff;
+          -ms-flex: 0 0 calc((100%/7) + 1px);
+          flex: 0 0 calc((100%/7) + 1px);
+          max-width: calc((100%/7) + 1px);
+          border: 1px solid #f3f3f3;
+          margin-left: -1px;
+          margin-bottom: -1px;
+          -webkit-transition: all .5s;
+          -o-transition: all .5s;
+          transition: all .5s; }
+          .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner {
+            box-sizing: content-box;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            margin: auto; }
+          .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .txtbold {
+            padding: 2px 0 5px;
+            margin: 0;
+            font-size: 13px;
+            color: #0047ba;
+            font-family: 'sfuiText_bold', sans-serif; }
+          .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .logo--insert {
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 65%; }
+          .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .logo--insert img,
+          .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .logo--insert svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 75%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display: block;
+            font-family: "blur-up: auto", "object-fit: cover";
+            object-fit: contain; }
+          .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .lazyload {
+            opacity: 0;
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+            transition: opacity 500ms, filter 700ms;
+            -webkit-transition: opacity 500ms, filter 700ms; }
+          .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .lazyloading {
+            opacity: 0.3;
+            -webkit-filter: blur(8px);
+            filter: blur(8px);
+            transition: opacity 500ms, filter 700ms;
+            -webkit-transition: opacity 500ms, filter 700ms; }
+          .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .lazyloaded {
+            opacity: 1;
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            transition: opacity 500ms, filter 700ms;
+            -webkit-transition: opacity 500ms, filter 700ms; }
+        .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item.wrap-title {
+          background: transparent;
+          border-color: transparent; }
+        .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item-vnpots .logo-item--inner .logo--insert img {
+          width: 72%; }
+    .shipping-pricing-overview .overview-image .shipment-logo-1 .shipment-logo__list .logo-item.wrap-title {
+      -ms-flex: 0 0 calc(100% + 1px);
+      flex: 0 0 calc(100% + 1px);
+      max-width: calc(100% + 1px); }
+    .shipping-pricing-overview .overview-image .shipment-logo-2 .shipment-logo__list .logo-item {
+      -ms-flex: 0 0 calc((100%/3) + 1px);
+      flex: 0 0 calc((100%/3) + 1px);
+      max-width: calc((100%/3) + 1px); }
+    .shipping-pricing-overview .overview-image .shipment-logo-2 .shipment-logo__list .logo-item--inner {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-align-items: center;
+      align-items: center;
+      -ms-justify-content: center;
+      justify-content: center; }
+    .shipping-pricing-overview .overview-image .shipment-logo-2 .shipment-logo__list .logo-item--inner .logo--insert {
+      padding-bottom: 32%; }
+  .shipping-pricing-overview .groupAction-shipment {
+    margin-top: 35px; }
+  .shipping-pricing-overview .groupAction-shipment .btn-shipment {
+    border: 0; }
+  @media (min-width: 1200px) {
+    .shipping-pricing-overview .overview-detail {
+      -webkit-align-self: center;
+      align-self: center;
+      padding-right: 50px;
+      padding-bottom: 40px; }
+    .shipping-pricing-overview .overview-image {
+      -webkit-align-self: flex-end;
+      align-self: flex-end;
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .shipping-pricing-overview .overview-detail {
+      -webkit-align-self: center;
+      align-self: center;
+      padding-right: 35px;
+      padding-bottom: 30px;
+      padding-top: 50px; }
+    .shipping-pricing-overview .overview-image {
+      -webkit-align-self: flex-end;
+      align-self: flex-end;
+      padding-left: 0;
+      padding-right: 0; }
+    .shipping-pricing-overview .overview-detail h1 {
+      font-size: 35px; }
+    .shipping-pricing-overview .overview-detail .subhead {
+      font-size: 24px; }
+    .shipping-pricing-overview .overview-detail .block-info ul li {
+      font-size: 16px; }
+    .shipping-pricing-overview .overview-image .block-logos {
+      width: 100%;
+      max-width: 100%; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .shipping-pricing-overview {
+      padding-top: 70px; }
+    .shipping-pricing-overview .overview-detail {
+      text-align: center; }
+      .shipping-pricing-overview .overview-detail h1 {
+        font-size: 36px;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto; }
+      .shipping-pricing-overview .overview-detail .subhead {
+        font-size: 22px; }
+      .shipping-pricing-overview .overview-detail .block-info ul {
+        display: inline-block; }
+    .shipping-pricing-overview .overview-image .block-logos {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      max-width: 100%; } }
+  @media (max-width: 767px) {
+    .shipping-pricing-overview {
+      padding-top: 45px; }
+    .shipping-pricing-overview .container-fluid {
+      max-width: 540px; }
+    .shipping-pricing-overview .overview-detail h1 {
+      font-size: 26px; }
+    .shipping-pricing-overview .overview-detail .subhead {
+      font-size: 20px; }
+    .shipping-pricing-overview .overview-detail .block-info ul li {
+      font-size: 16px; }
+    .shipping-pricing-overview .overview-image {
+      padding-left: 12px;
+      padding-right: 12px; }
+      .shipping-pricing-overview .overview-image__inner {
+        padding-bottom: 20%; }
+      .shipping-pricing-overview .overview-image .block-logos {
+        width: 100%;
+        max-width: 100%; }
+        .shipping-pricing-overview .overview-image .block-logos__inner {
+          padding: 4px; }
+      .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item {
+        -ms-flex: 0 0 calc((100%/5) + 1px);
+        flex: 0 0 calc((100%/5) + 1px);
+        max-width: calc((100%/5) + 1px); }
+        .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .logo--insert {
+          padding-bottom: 60%; }
+        .shipping-pricing-overview .overview-image .shipment-logo__list .logo-item--inner .txtbold {
+          font-size: 12px; }
+      .shipping-pricing-overview .overview-image .shipment-logo-2 .shipment-logo__list .logo-item--inner .logo--insert {
+        padding-bottom: 40%; }
+    .shipping-pricing-overview .groupAction-shipment {
+      margin-top: 20px; }
+    .shipping-pricing-overview .groupAction-shipment .btn-shipment {
+      width: 100%; } }
+
+.shipping-pricing-detail {
+  position: relative; }
+  .shipping-pricing-detail .navTabs-title {
+    border: 0;
+    margin: 0 0px;
+    -ms-justify-content: center;
+    justify-content: center; }
+    .shipping-pricing-detail .navTabs-title .nav-item {
+      margin: 0;
+      padding: 0px 10px 10px;
+      position: relative;
+      -ms-flex: 0 0 calc(100%/6);
+      flex: 0 0 calc(100%/6);
+      max-width: calc(100%/6); }
+      .shipping-pricing-detail .navTabs-title .nav-item .nav-link {
+        background: #ffffff;
+        border: 1px solid #f2f2f2;
+        outline: none;
+        opacity: 0.5;
+        filter: gray;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 0;
+        box-sizing: content-box;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        margin: auto; }
+        .shipping-pricing-detail .navTabs-title .nav-item .nav-link .logo--insert {
+          display: block;
+          width: 100%;
+          height: 0;
+          padding-bottom: 52%; }
+          .shipping-pricing-detail .navTabs-title .nav-item .nav-link .logo--insert img, .shipping-pricing-detail .navTabs-title .nav-item .nav-link .logo--insert svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 75%;
+            height: 68%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display: block;
+            font-family: "blur-up: auto", "object-fit: cover";
+            object-fit: contain; }
+          .shipping-pricing-detail .navTabs-title .nav-item .nav-link .logo--insert .lazyload {
+            opacity: 0;
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+            transition: opacity 500ms, filter 700ms;
+            -webkit-transition: opacity 500ms, filter 700ms; }
+          .shipping-pricing-detail .navTabs-title .nav-item .nav-link .logo--insert .lazyloading {
+            opacity: 0.3;
+            -webkit-filter: blur(8px);
+            filter: blur(8px);
+            transition: opacity 500ms, filter 700ms;
+            -webkit-transition: opacity 500ms, filter 700ms; }
+          .shipping-pricing-detail .navTabs-title .nav-item .nav-link .logo--insert .lazyloaded {
+            opacity: 1;
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            transition: opacity 500ms, filter 700ms;
+            -webkit-transition: opacity 500ms, filter 700ms; }
+        .shipping-pricing-detail .navTabs-title .nav-item .nav-link.active {
+          background: #ffffff;
+          opacity: 1;
+          -webkit-filter: grayscale(0);
+          filter: none;
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2); }
+      .shipping-pricing-detail .navTabs-title .nav-item .tooltip_info {
+        position: absolute;
+        left: 70%;
+        min-width: 175px;
+        top: 82%;
+        z-index: 9;
+        padding: 8px;
+        background: #061921;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: -0.35px;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        -ms-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+        -webkit-transform: rotate(1.1deg);
+        -ms-transform: rotate(1.1deg);
+        transform: rotate(1.1deg); }
+        .shipping-pricing-detail .navTabs-title .nav-item .tooltip_info.left-50 {
+          left: 50%; }
+        .shipping-pricing-detail .navTabs-title .nav-item .tooltip_info:before {
+          content: "";
+          position: absolute;
+          top: -7px;
+          left: 8px;
+          width: 0;
+          height: 0;
+          border-right: 14px solid transparent;
+          border-bottom: 10px solid #061921; }
+      .shipping-pricing-detail .navTabs-title .nav-item .nav-link:not(.active):hover ~ .tooltip_info {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg); }
+      .shipping-pricing-detail .navTabs-title .nav-item.has-stars:before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: -5px;
+        right: -2px;
+        background: #ffffff;
+        border: 1px solid #fff1b3;
+        border-radius: 50%;
+        z-index: 1;
+        filter: drop-shadow(0px 6px 10px rgba(68, 86, 249, 0.14)) drop-shadow(0px 1px 18px rgba(43, 96, 231, 0.12)) drop-shadow(0px 3px 5px rgba(40, 60, 239, 0.2));
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='26' height='25' viewBox='0 0 26 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.02319 24.7624L6.81199 15.7144L0 9.49519L9.15718 8.40319L12.9636 0L16.8324 8.37199L26 9.39639L19.2348 15.6676L21.0912 24.7L13.0416 20.202L5.02319 24.7624Z' fill='%23FFD759'/%3E%3Cpath d='M13 12.3811L0 9.49512L6.81199 15.7143L13 12.3811Z' fill='%23FABD3B'/%3E%3Cpath d='M13 12.3813L5.02322 24.7625L13.0416 20.2021L21.0912 24.7001L13 12.3813Z' fill='%23FABD3B'/%3E%3Cpath d='M12.9999 12.3813L25.9999 9.39648L19.2347 15.6677L12.9999 12.3813Z' fill='%23FABD3B'/%3E%3Cpath d='M12.9635 0L12.9999 12.3812L16.8323 8.37199L12.9635 0Z' fill='%23FABD3B'/%3E%3C/svg%3E%0A");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 75%; }
+    .shipping-pricing-detail .navTabs-title--expandable {
+      position: relative;
+      padding: 1px;
+      border-radius: 4px;
+      background: linear-gradient(180deg, #78D5FF 0%, rgba(120, 213, 255, 0) 100%), linear-gradient(0deg, #F6FCFF, #F6FCFF);
+      max-width: 720px;
+      margin: 8px auto 15px; }
+      .shipping-pricing-detail .navTabs-title--expandable .expandable-inner {
+        background: #F6FCFF;
+        padding: 5px 11px 0;
+        border-radius: 4px; }
+      .shipping-pricing-detail .navTabs-title--expandable .expandable-clicked {
+        padding: 5px;
+        cursor: pointer;
+        color: #0047BA;
+        font-size: 16px;
+        font-family: var(--hrv-font-family-bold);
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+        text-align: center; }
+        .shipping-pricing-detail .navTabs-title--expandable .expandable-clicked span {
+          margin-left: 5px;
+          display: inline-block;
+          width: 24px;
+          height: 24px; }
+        .shipping-pricing-detail .navTabs-title--expandable .expandable-clicked span svg {
+          width: 12px;
+          margin: auto;
+          transition: all 0.4s ease-in-out 0s;
+          -moz-transition: all 0.4s ease-in-out 0s;
+          -o-transition: all 0.4s ease-in-out 0s;
+          -webkit-transition: all 0.4s ease-in-out 0s;
+          -ms-transition: all 0.4s ease-in-out 0s; }
+      .shipping-pricing-detail .navTabs-title--expandable .expandable-content {
+        display: none; }
+        .shipping-pricing-detail .navTabs-title--expandable .expandable-content .nav-item {
+          margin: 0;
+          padding: 0px 5px 10px;
+          -ms-flex: 0 0 calc(100%/6);
+          flex: 0 0 calc(100%/6);
+          max-width: calc(100%/6); }
+          .shipping-pricing-detail .navTabs-title--expandable .expandable-content .nav-item .nav-link:not(.active) {
+            opacity: 0.56; }
+          .shipping-pricing-detail .navTabs-title--expandable .expandable-content .nav-item .tooltip_info {
+            font-size: 12px;
+            min-width: 140px; }
+      .shipping-pricing-detail .navTabs-title--expandable .expandable-inner.is-expand .expandable-clicked svg {
+        transform-origin: 50% 40%;
+        -moz-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg); }
+  .shipping-pricing-detail .navTabs-container {
+    position: relative;
+    margin-top: 8px;
+    padding: 0;
+    border: 0; }
+    .shipping-pricing-detail .navTabs-container p {
+      margin: 0; }
+    .shipping-pricing-detail .navTabs-container p + p {
+      margin-top: 4px; }
+    .shipping-pricing-detail .navTabs-container strong, .shipping-pricing-detail .navTabs-container b {
+      font-weight: initial;
+      font-family: 'sfuiText_semibold'; }
+    .shipping-pricing-detail .navTabs-container .table-service {
+      font-size: 16px;
+      letter-spacing: -0.25px;
+      margin-top: -1px; }
+      .shipping-pricing-detail .navTabs-container .table-service td, .shipping-pricing-detail .navTabs-container .table-service th {
+        padding: 15px 15px;
+        border: 1px solid #d5d5d5; }
+      .shipping-pricing-detail .navTabs-container .table-service thead th .txt-title {
+        margin: 0;
+        font-size: 18px;
+        font-family: 'sfuiText_bold';
+        letter-spacing: -0.25px;
+        color: #000000; }
+      .shipping-pricing-detail .navTabs-container .table-service tbody tr {
+        background: #ffffff; }
+    .shipping-pricing-detail .navTabs-container .table-price {
+      font-size: 16px;
+      letter-spacing: -0.25px; }
+      .shipping-pricing-detail .navTabs-container .table-price small {
+        margin: 0;
+        font-size: 88%; }
+      .shipping-pricing-detail .navTabs-container .table-price .tb-bold {
+        font-weight: initial;
+        font-family: 'sfuiText_bold'; }
+      .shipping-pricing-detail .navTabs-container .table-price td, .shipping-pricing-detail .navTabs-container .table-price th {
+        padding: 18px 15px;
+        border: 1px solid #d5d5d5; }
+      .shipping-pricing-detail .navTabs-container .table-price td .txt-mdu {
+        font-weight: initial;
+        font-family: 'sfuiText_medium'; }
+      .shipping-pricing-detail .navTabs-container .table-price td .tb-del {
+        font-size: 86%;
+        opacity: 0.6; }
+      .shipping-pricing-detail .navTabs-container .table-price td ins {
+        font-size: 90%;
+        vertical-align: 1px;
+        margin-left: 2px; }
+      .shipping-pricing-detail .navTabs-container .table-price thead th {
+        text-align: center; }
+        .shipping-pricing-detail .navTabs-container .table-price thead th .boxtitle {
+          font-family: 'sfuiText_bold';
+          letter-spacing: -0.25px;
+          color: #fff; }
+      .shipping-pricing-detail .navTabs-container .table-price tbody tr:nth-child(odd) {
+        background: #ffffff; }
+      .shipping-pricing-detail .navTabs-container .table-price tbody tr:nth-child(even) {
+        background: #fffdf5; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail {
+      margin-bottom: 25px; }
+      .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-banner {
+        margin-bottom: 15px; }
+      .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-noted {
+        font-size: 14px;
+        margin-top: -1px; }
+        .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-noted--tbl {
+          padding: 12px 16px;
+          border-top: 0;
+          border: 1px solid #D5D5D5; }
+      .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-textlist {
+        padding: 15px 15px 15px 10px; }
+        .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-textlist .txt-bold {
+          margin: 0 0 5px;
+          font-size: 22px;
+          color: #000000;
+          font-family: 'sfuiText_bold'; }
+        .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-textlist ul {
+          margin: 0; }
+        .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-textlist ul li {
+          position: relative;
+          padding-left: 30px;
+          color: #2A363B;
+          margin-top: 4px; }
+        .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-textlist ul li:before {
+          content: "";
+          width: 22px;
+          height: 22px;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='%230047da' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.80002 18.22L4.51001 12.94L6.27002 11.18L9.80002 14.7L17.73 6.77L19.49 8.53L9.80002 18.22Z' /%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center; }
+      .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .accordion-button .btn-click {
+        border: 0;
+        background: #E4F7FF;
+        border: 0;
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 12px;
+        color: #0047ba;
+        position: relative;
+        font-family: 'sfuiText_bold', sans-serif; }
+        .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .accordion-button .btn-click .sp-inline:after {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          margin-left: 10px;
+          background-color: #0047ba;
+          background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.91 0.294922L6.5 4.87492L11.09 0.294922L12.5 1.70492L6.5 7.70492L0.5 1.70492L1.91 0.294922Z' fill='%23FFF3E0'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-position: 50% 55%;
+          background-size: 13px; }
+        .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .accordion-button .btn-click .sp-lborder {
+          background-image: linear-gradient(to right, #0047ba 0%, #0047ba 100%);
+          background-size: 100% 1px;
+          background-position: 0px 100%;
+          background-repeat: no-repeat; }
+        .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .accordion-button .btn-click.btn-click-close .sp-inline:after {
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+      .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .wrap-detail-accordion {
+        display: none; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--noted .groupAction-shipment {
+      margin-top: 10px; }
+  .shipping-pricing-detail.hrvship-pricing-1 {
+    padding-top: 30px; }
+    .shipping-pricing-detail.hrvship-pricing-1 .pricing-content {
+      position: relative;
+      padding: 18px 15px 0; }
+      .shipping-pricing-detail.hrvship-pricing-1 .pricing-content:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80%;
+        background: linear-gradient(180deg, #D0F1FF 0%, rgba(208, 241, 255, 0) 100%);
+        border-radius: 12px 12px 0px 0px; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-service tbody tr {
+      background: #FFF0E1; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price td {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price thead th {
+        background: #ff9100; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price thead th:nth-child(4), .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price thead th:nth-child(5) {
+        width: 19%; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price thead th:nth-child(3) {
+        width: 22%; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price tbody td:nth-child(1) {
+        white-space: nowrap; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price tbody tr {
+        background: #ffffff; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price tbody tr .td-bglight {
+        background: #fffdf5;
+        color: #e65000;
+        font-size: 18px; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price tbody tr:nth-child(3), .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .table-price tbody tr:nth-child(4) {
+        background: #fffdf5; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .accordion-button .btn-click {
+      background: #FFCC9D;
+      color: #E65100; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .accordion-button .btn-click .sp-inline:after {
+        background-color: #E65100; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #E65100 0%, #E65100 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .block-textlist {
+      border-top: 3px solid #ff9100; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ghn .block-noted .block-noted--tbl {
+      background: #FFF6ED; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-service tbody tr {
+      background: #def9de; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-service tbody p {
+      font-style: italic; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-price {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-price thead th {
+        background: #01b14f; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-price tbody .boxkm {
+        margin-top: 12px;
+        min-width: 280px; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-price tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-price tbody td:nth-child(3) {
+        text-align: left; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .table-price tbody tr:nth-child(even) {
+        background: #f4fff6; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .accordion-button .btn-click {
+      background: #c6f8c6;
+      color: #037b37; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .accordion-button .btn-click .sp-inline:after {
+        background-color: #037b37; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #037b37 0%, #037b37 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--grabexp .block-textlist {
+      border-top: 3px solid #01b14f; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-service-vnpost thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-service-vnpost tbody tr {
+      background: #fff6e9; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost .tbt-mdu {
+        margin: 0;
+        color: #C75B04;
+        font-family: 'sfuiText_bold'; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost thead th {
+        background: #f6a91D; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost thead th:nth-child(2), .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost thead th:nth-child(3) {
+        width: 14%; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost thead th:nth-child(4) {
+        width: 25%; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost tbody tr.tr-border {
+        border-top: 4px solid #FFDDA3; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost tbody td.td-bg1 {
+        background: #FFFFE9; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost tbody td.td-bg2 {
+        background: #FFF6E9; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost tbody tr.tr-bg-white {
+        background: #ffffff; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .table-price-vnpost tbody tr.tr-bg-light {
+        background: #FEFEF4; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .accordion-button .btn-click {
+      background: #FFCC9D;
+      color: #E65100; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .accordion-button .btn-click .sp-inline:after {
+        background-color: #E65100; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #E65100 0%, #E65100 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vnpost .block-textlist {
+      border-top: 3px solid #f6a91D; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .table-service tbody tr {
+      background: #fef0f4; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .table-price {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .table-price thead th {
+        background: #ff6b00; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .table-price tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .table-price tbody .tb-del {
+        font-size: 86%;
+        opacity: 0.6; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .accordion-button .btn-click {
+      background: #ffd6e4;
+      color: #E12A3E; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .accordion-button .btn-click .sp-inline:after {
+        background-color: #E12A3E; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #E12A3E 0%, #E12A3E 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spship .block-textlist {
+      border-top: 3px solid #ff6b00; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .table-service tbody tr {
+      background: #dbf9fd; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .table-price {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .table-price thead th {
+        background: #00b8d4; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .table-price thead th:nth-child(1), .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .table-price thead th:nth-child(2), .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .table-price thead th:nth-child(3) {
+        width: 17%; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .table-price tbody tr:nth-child(even) {
+        background: #f3fcfd; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--snappy .block-textlist {
+      border-top: 3px solid #00b8d4; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .table-service tbody tr {
+      background: #fee8eb; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .table-price {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .table-price thead th {
+        background: #bb2031; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .table-price tbody td, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .table-price tbody th {
+        padding-top: 12px;
+        padding-bottom: 12px; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .table-price tbody tr {
+        background: #ffffff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .accordion-button .btn-click {
+      background: #f9b5bc;
+      color: #bb2030; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .accordion-button .btn-click .sp-inline:after {
+        background-color: #bb2030; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #bb2030 0%, #bb2030 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--njavan .block-textlist {
+      border-top: 3px solid #bb2031; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ahamove .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ahamove .table-service tbody tr {
+      background: #FFF0E1; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ahamove .table-price thead th {
+      background: #f26624; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ahamove .accordion-button .btn-click {
+      background: #FFCC9D;
+      color: #E65100; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ahamove .accordion-button .btn-click .sp-inline:after {
+        background-color: #E65100; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ahamove .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #E65100 0%, #E65100 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ahamove .block-textlist {
+      border-top: 3px solid #f26624; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .table-service tbody tr {
+      background: #def9de; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .table-service tbody p {
+      font-style: italic; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .table-price thead th {
+      background: #0e9c49; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .table-price tbody tr:nth-child(even) {
+      background: #f4fff6; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .accordion-button .btn-click {
+      background: #c6f8c6;
+      color: #037b37; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .accordion-button .btn-click .sp-inline:after {
+        background-color: #037b37; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #037b37 0%, #037b37 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--bbship .block-textlist {
+      border-top: 3px solid #0e9c49; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .table-service tbody tr {
+      background: #ffdfe3; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .table-service tbody p {
+      font-style: italic; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .table-service tbody tr td:first-child {
+      width: 35%; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .table-price thead th {
+      background: #ee1d32;
+      width: 20%; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .table-price tbody tr:nth-child(even) {
+      /*background: #fff3f4;*/
+      background: #fff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .table-price tbody td {
+      width: 20%; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .table-price ul {
+      list-style: disc;
+      padding-left: 15px; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .accordion-button .btn-click {
+      background: #ffdfe3;
+      color: #ee1d32; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .accordion-button .btn-click .sp-inline:after {
+        background-color: #ee1d32; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #ee1d32 0%, #ee1d32 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--vpship .block-textlist {
+      border-top: 3px solid #ee1d32; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .table-service tbody tr {
+      background: #d8f4ff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .table-price thead th {
+      background: #1AA7FF; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .table-price thead th:nth-child(1) {
+      width: 33%; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .table-price thead th:nth-child(2) {
+      width: 28%; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .table-price tbody td {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .table-price tbody tr {
+      background: #ffffff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .table-price tbody tr.tr-bg {
+      background: #f4fbff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .accordion-button .btn-click {
+      background: #c7ebff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--tikinow .block-textlist {
+      border-top: 3px solid #19a6ff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .table-service tbody tr {
+      background: #ffe0e5; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .table-price thead th {
+      background: #d72f4a; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .table-price tbody tr:nth-child(odd) {
+      background: #ffffff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .table-price tbody tr:nth-child(even) {
+      background: #fff5f7; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .accordion-button .btn-click {
+      background: #ffd2d9;
+      color: #e00213; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .accordion-button .btn-click .sp-inline:after {
+        background-color: #e00213; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #e00213 0%, #e00213 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--jtexp .block-service {
+      border-top: 3px solid #eb546d; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ship60 thead th {
+      background: #ff6709; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ship60 thead th:first-child, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ship60 thead th:nth-child(8) {
+      width: 15%; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ship60 thead th:nth-child(7), .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--ship60 thead th:nth-child(6) {
+      width: 18%; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--dhl thead th:first-child {
+      width: 26%; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--dhl thead th + th {
+      width: calc(74%/4); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--dhl thead th {
+      background: #ffcc00; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--nhattin {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--nhattin thead th {
+        background: #0047BA;
+        text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--nhattin thead th .boxtitle {
+        justify-content: center;
+        -webkit-justify-content: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--nhattin tbody tr:nth-child(even) {
+        background: #F8FDFF; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--nhattin tbody .td-light {
+        background: #6CCEFF;
+        font-family: 'sfuiText_bold'; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .table-service tbody tr {
+      background: #f2f4ff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .table-service tbody p {
+      font-style: italic; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .table-price thead th {
+      background: #0117ad; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .table-price tbody tr:nth-child(even) {
+      background: #f2f4ff; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .tt-vat {
+      padding: 10px; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .accordion-button .btn-click {
+      background: #ced4fd;
+      color: #0117ad; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .accordion-button .btn-click .sp-inline:after {
+        background-color: #0117ad; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .accordion-button .btn-click .sp-lborder {
+        background-image: linear-gradient(to right, #0117ad 0%, #0117ad 100%); }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--lzdexpress .block-textlist {
+      border-top: 3px solid #0117ad; }
+    .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress {
+      /*.table-responsive{margin-top: 30px;}*/ }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-title {
+        font-size: 20px;
+        font-family: 'sfuiText_bold';
+        margin: 0 0 15px;
+        text-transform: uppercase;
+        color: #0047BA;
+        text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-service thead th, .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-service tbody tr {
+        background: #FFF0E1; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price {
+        text-align: center; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price td {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price thead th {
+          background: #ee4d2d; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price thead th:nth-child(4), .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price thead th:nth-child(5) {
+          width: 19%; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price thead th:nth-child(3) {
+          width: 22%; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price tbody td:nth-child(1) {
+          white-space: nowrap; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price tbody tr {
+          background: #ffffff; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price tbody tr .td-bglight {
+          background: #fffdf5;
+          color: #e65000;
+          font-size: 18px; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price tbody tr:nth-child(3), .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .table-price tbody tr:nth-child(4) {
+          background: #fff0ed; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .accordion-button .btn-click {
+        background: #ffcdc3;
+        color: #ee4d2d; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .accordion-button .btn-click .sp-inline:after {
+          background-color: #ee4d2d; }
+        .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .accordion-button .btn-click .sp-lborder {
+          background-image: linear-gradient(to right, #E65100 0%, #E65100 100%); }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .block-textlist {
+        border-top: 3px solid #ff9100; }
+      .shipping-pricing-detail.hrvship-pricing-1 .navTabs-panel--spxexpress .block-noted .block-noted--tbl {
+        background: #FFF6ED; }
+  .shipping-pricing-detail.hrvship-pricing-2 {
+    border-bottom: 1px solid #AAE5FF;
+    overflow: hidden; }
+    .shipping-pricing-detail.hrvship-pricing-2 .pricing-insert--top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 74%;
+      z-index: -1;
+      background: linear-gradient(180deg, #EEF7FF 29.69%, #83C3FF 86.46%, #51ABFF 100%); }
+      .shipping-pricing-detail.hrvship-pricing-2 .pricing-insert--top .insert-vector {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        max-width: 1630px;
+        margin-right: auto;
+        margin-left: auto; }
+      .shipping-pricing-detail.hrvship-pricing-2 .pricing-insert--top .insert-vector:before, .shipping-pricing-detail.hrvship-pricing-2 .pricing-insert--top .insert-vector:after {
+        content: "";
+        position: absolute;
+        height: 65%;
+        bottom: 0px;
+        width: 32%;
+        background-image: url("../../../../file.hstatic.net/1000001117/file/ship-pricing-insert_929659ca55224df1ab139dd5fae29c79.png");
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .shipping-pricing-detail.hrvship-pricing-2 .pricing-insert--top .insert-vector:before {
+        left: 0%;
+        background-position: left bottom; }
+      .shipping-pricing-detail.hrvship-pricing-2 .pricing-insert--top .insert-vector:after {
+        right: 0%;
+        background-position: right bottom; }
+    .shipping-pricing-detail.hrvship-pricing-2 .pricing-insert--bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 26%;
+      z-index: -1;
+      background: url("../../../../file.hstatic.net/1000001117/file/ship-pricing-bgprice_4602edfcb8874c209d99a11c026f633b.png"), linear-gradient(180deg, #D3EAFF 21.32%, #F7FBFF 100%);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .shipping-pricing-detail.hrvship-pricing-2 .pricing-content {
+      position: relative;
+      z-index: 2; }
+      .shipping-pricing-detail.hrvship-pricing-2 .pricing-content:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 92%;
+        height: 82%;
+        width: 15vw;
+        z-index: -1;
+        background-image: url("../../../../file.hstatic.net/1000001117/file/ship-pricing-vector-2_bf39707f0c2f4376a734d5dbaba91eab.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain; }
+      .shipping-pricing-detail.hrvship-pricing-2 .pricing-content:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 96%;
+        height: 78%;
+        width: 9vw;
+        z-index: -1;
+        background-image: url("../../../../file.hstatic.net/1000001117/file/ship-pricing-vector-1_f30d425fa55b4c5ca8150c2def33d22b.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain; }
+    .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--bbship .table-price {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--bbship .table-price thead th {
+        background: #0e9c49; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--bbship .table-price tbody tr td {
+        width: 25%; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--bbship .table-price tbody tr:nth-child(odd) {
+        background: #ffffff; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--bbship .table-price tbody tr:nth-child(even) {
+        background: #ecfdf3; }
+    .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vpship .table-price {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vpship .table-price thead th {
+        background: #ee1d32; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vpship .table-price tbody {
+        /*tr:nth-child(odd) {background: #ffffff; }
+						tr:nth-child(even) {background: #ea9999; }*/ }
+        .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vpship .table-price tbody tr td {
+          width: 25%; }
+    .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price thead th {
+        background: #ff9100; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price thead th:nth-child(1) {
+        width: 20%; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price thead th:nth-child(2), .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price thead th:nth-child(5) {
+        width: 20%; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price thead th:nth-child(3), .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price thead th:nth-child(4) {
+        width: 20%; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price tbody td {
+        padding-top: 15px;
+        padding-bottom: 15px; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price tbody tr {
+        background: #ffffff; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price tbody td.td-bg2 {
+        background: #fff6e9; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .table-price tbody tr:nth-child(even) {
+        background: #fffdf5; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--ghn .block-noted .block-noted--tbl {
+        background: #FFF6ED; }
+    .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .tb-del {
+        font-size: 86%;
+        opacity: 0.6; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price thead th {
+        background: #ff6b00; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price thead th:nth-child(2), .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price thead th:nth-child(3) {
+        width: 14%; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price thead th:nth-child(4) {
+        width: 20%; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price tbody tr.tr-border {
+        border-top: 4px solid #FFDDA3; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price tbody td.td-bg1 {
+        background: #FFFFE9; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price tbody td.td-bg2 {
+        background: #FFF6E9; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price tbody tr.tr-bg-white {
+        background: #ffffff; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--sps .table-price tbody tr.tr-bg-light {
+        background: #FEFEF4; }
+    .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost {
+      text-align: center; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .tbt-mdu {
+        margin: 0;
+        color: #C75B04;
+        font-family: 'sfuiText_bold'; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price thead th {
+        background: #f6a91D; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price thead th:nth-child(2), .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price thead th:nth-child(3) {
+        width: 15%; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price thead th:nth-child(4) {
+        width: 25%; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price tbody tr.tr-border {
+        border-top: 4px solid #FFDDA3; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price tbody td.td-bg1 {
+        background: #FFFFE9; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price tbody td.td-bg2 {
+        background: #FFF6E9; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price tbody tr.tr-bg-white {
+        background: #ffffff; }
+      .shipping-pricing-detail.hrvship-pricing-2 .navTabs-panel--vnpost .table-price tbody tr.tr-bg-light {
+        background: #FEFEF4; }
+  @media (min-width: 992px) {
+    .shipping-pricing-detail .navTabs-title .nav-item .tooltip_info.left-50 {
+      left: 42%; }
+    .shipping-pricing-detail .navTabs-title .nav-item .tooltip_info.left-20 {
+      left: 30px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .shipping-pricing-detail .navTabs-title .nav-item {
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%; }
+    .shipping-pricing-detail .navTabs-title .nav-item .tooltip_info {
+      display: none; }
+    .shipping-pricing-detail .navTabs-title .nav-item.has-stars:before {
+      width: 28px;
+      height: 28px;
+      top: -9px;
+      right: -2px; }
+    .shipping-pricing-detail .navTabs-container .table-service {
+      font-size: 14px; }
+      .shipping-pricing-detail .navTabs-container .table-service td, .shipping-pricing-detail .navTabs-container .table-service th {
+        padding: 12px 15px; }
+      .shipping-pricing-detail .navTabs-container .table-service thead th .txt-title {
+        font-size: 14px; }
+    .shipping-pricing-detail .navTabs-container .table-price {
+      font-size: 14px; }
+      .shipping-pricing-detail .navTabs-container .table-price td, .shipping-pricing-detail .navTabs-container .table-price th {
+        padding: 12px 15px; }
+      .shipping-pricing-detail .navTabs-container .table-price thead th .boxtitle {
+        font-size: 14px; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .table-responsive {
+      border: 0; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-textlist .txt-bold {
+      font-size: 18px; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .accordion-button .btn-click {
+      padding: 12px 5px;
+      font-size: 13px; }
+      .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .accordion-button .btn-click .sp-inline:after {
+        width: 22px;
+        height: 22px;
+        background-size: 9px; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .wrap-detail-prices .block-left {
+      display: none; } }
+  @media (max-width: 767px) {
+    .shipping-pricing-detail {
+      padding: 40px 0 40px; }
+    .shipping-pricing-detail .navTabs-title .nav-item {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+      padding: 0px 6px 8px; }
+    .shipping-pricing-detail .navTabs-title .nav-item .tooltip_info {
+      display: none; }
+    .shipping-pricing-detail .navTabs-title .nav-item.has-stars:before {
+      width: 20px;
+      height: 20px;
+      right: 0;
+      top: -8px; }
+    .shipping-pricing-detail .navTabs-title--expandable .expandable-inner {
+      padding: 5px 11px 0; }
+    .shipping-pricing-detail .navTabs-title--expandable .expandable-clicked {
+      padding: 4px;
+      font-size: 14px; }
+      .shipping-pricing-detail .navTabs-title--expandable .expandable-clicked span {
+        width: 20px;
+        height: 20px; }
+    .shipping-pricing-detail .navTabs-title--expandable .expandable-content .nav-item {
+      margin: 0;
+      padding: 0px 4px 8px;
+      -ms-flex: 0 0 calc(100%/4);
+      flex: 0 0 calc(100%/4);
+      max-width: calc(100%/4); }
+    .shipping-pricing-detail .navTabs-container .table-service {
+      font-size: 13px; }
+      .shipping-pricing-detail .navTabs-container .table-service td, .shipping-pricing-detail .navTabs-container .table-service th {
+        padding: 10px 12px; }
+      .shipping-pricing-detail .navTabs-container .table-service thead th .txt-title {
+        font-size: 14px; }
+    .shipping-pricing-detail .navTabs-container .table-price {
+      font-size: 13px; }
+      .shipping-pricing-detail .navTabs-container .table-price td, .shipping-pricing-detail .navTabs-container .table-price th {
+        padding: 10px 12px; }
+      .shipping-pricing-detail .navTabs-container .table-price thead th .boxtitle {
+        font-size: 14px; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .table-responsive {
+      border: 0; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-textlist .txt-bold {
+      font-size: 18px; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-banner {
+      margin-bottom: 10px; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .block-noted {
+      font-size: 13px; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .accordion-button .btn-click {
+      padding: 12px 5px;
+      font-size: 13px; }
+      .shipping-pricing-detail .navTabs-container .navTabs-panel--detail .accordion-button .btn-click .sp-inline:after {
+        width: 22px;
+        height: 22px;
+        background-size: 9px; }
+    .shipping-pricing-detail .navTabs-container .navTabs-panel--noted {
+      font-size: 14px; }
+    .shipping-pricing-detail.hrvship-pricing-1 .pricing-content {
+      padding: 18px 0px 0; }
+    .shipping-pricing-detail.hrvship-pricing-1 .pricing-content:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: -12px;
+      right: -12px;
+      border-radius: 10px 10px 0px 0px; } }
+
+.shipping-pricing-process .process-item {
+  margin-bottom: 30px; }
+  .shipping-pricing-process .process-item__inner {
+    text-align: center; }
+  .shipping-pricing-process .process-item__image {
+    margin-bottom: 10px; }
+    .shipping-pricing-process .process-item__image .block-image {
+      max-width: 110px;
+      margin-left: auto;
+      margin-right: auto; }
+  .shipping-pricing-process .process-item__detail h3 {
+    margin: 0 0 5px;
+    color: #0047BA;
+    font-size: 22px;
+    font-family: var(--hrv-font-family-medium); }
+  .shipping-pricing-process .process-item__detail p {
+    margin: 0; }
+
+.shipping-pricing-process .groupAction-shipment {
+  margin-top: 20px; }
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .shipping-pricing-process .process-item__detail {
+    font-size: 20px; } }
+
+@media (max-width: 767px) {
+  .shipping-pricing-process .process-item:nth-child(odd) {
+    padding-right: 7px; }
+  .shipping-pricing-process .process-item:nth-child(even) {
+    padding-left: 7px; }
+  .shipping-pricing-process .process-item {
+    margin-bottom: 20px; }
+    .shipping-pricing-process .process-item__image .block-image {
+      max-width: 90px;
+      margin-left: auto;
+      margin-right: auto; }
+    .shipping-pricing-process .process-item__detail h3 {
+      font-size: 18px; }
+  .shipping-pricing-process .groupAction-shipment {
+    margin-top: 0; }
+  .shipping-pricing-process .groupAction-shipment .btn-shipment {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%; } }
+
+.shipping-pricing-feature {
+  background: #F4F8FF; }
+  .shipping-pricing-feature .feature-detail .box-item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 16px 16px 16px 85px;
+    -ms-transition: all 450ms linear 0.1s;
+    transition: all 450ms linear 0.1s;
+    background: transparent;
+    border-left: 3px solid transparent;
+    margin-bottom: 5px; }
+    .shipping-pricing-feature .feature-detail .box-item .box-icon {
+      position: absolute;
+      top: 12px;
+      bottom: 0;
+      left: 16px;
+      width: 54px;
+      height: 54px; }
+      .shipping-pricing-feature .feature-detail .box-item .box-icon svg {
+        width: 100%; }
+    .shipping-pricing-feature .feature-detail .box-item .box-title h3 {
+      margin: 0;
+      color: #0047BA;
+      font-size: 22px;
+      font-family: var(--hrv-font-family-medium);
+      letter-spacing: -0.35px; }
+    .shipping-pricing-feature .feature-detail .box-item .box-desc {
+      margin-top: 5px; }
+    .shipping-pricing-feature .feature-detail .box-item .box-desc p {
+      margin: 0; }
+    .shipping-pricing-feature .feature-detail .box-item.is-active {
+      background: #ffffff;
+      -ms-transition: 0s;
+      transition: 0s;
+      border-left: 3px solid #FDC8AA;
+      box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.06), 0px 8px 24px -4px rgba(24, 39, 75, 0.04); }
+  .shipping-pricing-feature .feature-picture .featureImages-carousel:not(.owl-loaded) {
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden; }
+    .shipping-pricing-feature .feature-picture .featureImages-carousel:not(.owl-loaded) .box-image {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%; }
+  .shipping-pricing-feature .groupAction-shipment {
+    margin-top: 35px; }
+  @media (min-width: 1200px) {
+    .shipping-pricing-feature {
+      padding: 40px 0; }
+    .shipping-pricing-feature .feature-detail {
+      padding-right: 60px; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .shipping-pricing-feature .template-detail {
+      padding-top: 00px; }
+    .shipping-pricing-feature .template-picture {
+      -ms-align-self: center;
+      align-self: center; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .shipping-pricing-feature .template-detail .box-item .box-title:before {
+      right: 12px; }
+    .shipping-pricing-feature .template-detail .box-item .box-desc--img {
+      display: block;
+      margin: 0; }
+    .shipping-pricing-feature .template-picture {
+      display: none; } }
+  @media (max-width: 767px) {
+    .shipping-pricing-feature .feature-detail .box-item {
+      margin-top: 18px;
+      padding: 12px 12px 12px 60px;
+      background: #ffffff;
+      border-left: 3px solid #FDC8AA;
+      box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.06), 0px 8px 24px -4px rgba(24, 39, 75, 0.04); }
+      .shipping-pricing-feature .feature-detail .box-item .box-icon {
+        top: 0px;
+        left: 10px;
+        width: 38px;
+        height: 38px; }
+      .shipping-pricing-feature .feature-detail .box-item .box-title h3 {
+        font-size: 18px; }
+    .shipping-pricing-feature .feature-picture {
+      display: none !important; }
+    .shipping-pricing-feature .groupAction-shipment {
+      margin-top: 20px; } }
+
+/*============== PROMOTION SHIP ===============*/
+/*animated owl-animated-in fxStickItIn  active*/
+/*animated owl-animated-out fxStickItOut*/
+@-webkit-keyframes fragment {
+  0% {
+    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+    transform: translateX(0) translateZ(0) scaleY(1); }
+  50% {
+    -webkit-transform: scale(1.1) translateX(-25%) translateZ(0);
+    transform: translateX(-25%) translateZ(0) scaleY(1); }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+    transform: translateX(-50%) translateZ(0) scaleY(1); } }
+
+@keyframes fragment {
+  0% {
+    -webkit-transform: translateX(0) translateZ(0) scale(1);
+    transform: translateX(0) translateZ(0) scale(1); }
+  50% {
+    -webkit-transform: scale(1.1) translateX(-25%) translateZ(0);
+    transform: translateX(-25%) translateZ(0) scale(1); }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateZ(0) scale(1); } }
+
+@-webkit-keyframes slideOutToBottom {
+  to {
+    -webkit-transform: scale(0.8) translateY(100%);
+    transform: scale(0.8) translateY(100%); } }
+
+@keyframes slideOutToBottom {
+  to {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+
+@-webkit-keyframes rotateBottomSideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1) translateZ(0px) rotateX(-25deg);
+    transform: scale(1) translateZ(0px) rotateX(-25deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateZ(0) rotateX(0deg);
+    transform: scale(1) translateZ(0) rotateX(0deg); } }
+
+@keyframes rotateBottomSideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1) translateZ(0px) rotateX(-25deg);
+    transform: scale(1) translateZ(0px) rotateX(-25deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateZ(0) rotateX(0deg);
+    transform: scale(1) translateZ(0) rotateX(0deg); } }
+
+@media (min-width: 992px) {
+  .fxStickIt .owl-stage {
+    -webkit-perspective: 1600px;
+    perspective: 1600px;
+    -webkit-transform: none !important;
+    transform: none !important;
+    width: 100% !important;
+    pointer-events: none;
+    position: relative;
+    height: 0;
+    border: none;
+    overflow: hidden;
+    display: block;
+    padding-top: 41.6666667%; }
+  .fxStickIt .owl-item {
+    opacity: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    opacity: 0;
+    z-index: 10;
+    pointer-events: auto; }
+  .fxStickIt .owl-item.active {
+    z-index: 20;
+    opacity: 1; }
+  .fxStickIt .owl-item.owl-animated-in {
+    opacity: 0; }
+  .fxStickIt .owl-item.fxStickItOut {
+    opacity: 1;
+    -webkit-animation: slideOutToBottom 0.7s;
+    animation: slideOutToBottom 0.7s; }
+  .fxStickIt .owl-item.fxStickItIn {
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation: rotateBottomSideIn 0.8s 0.1s forwards ease-in;
+    animation: rotateBottomSideIn 0.8s 0.1s forwards ease-in; } }
+
+.shipping-pricing-promotion {
+  background: #f2f9ff;
+  padding: 0 0 40px; }
+  .shipping-pricing-promotion .groupTitle-shipment {
+    margin-bottom: 12px; }
+  .shipping-pricing-promotion .shipping-promotion__navs .slider-nav {
+    padding-top: 20px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      position: relative;
+      border-top: 8px solid transparent;
+      border-bottom: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -moz-transition: all .4s ease;
+      -webkit-transition: all .4s ease; }
+      .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a {
+        background: #f3f3f3;
+        border: 1px solid #bdbdbd;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 20px 4px;
+        color: #3d5068; }
+        .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a .value {
+          font-size: 15px;
+          margin: 0;
+          font-family: 'sfuiText_bold';
+          letter-spacing: -0.3px; }
+        .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a .block {
+          display: block; }
+        .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a .value sup {
+          top: inherit;
+          font-size: 100%;
+          text-decoration: underline; }
+        .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a:after {
+          content: '';
+          position: absolute;
+          top: calc(100% - 10px);
+          right: calc(50% - 4px);
+          border: 8px solid transparent;
+          border-bottom-color: #fff;
+          border-left-color: #fff;
+          -moz-transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+          z-index: 9;
+          opacity: 0;
+          visibility: hidden; }
+    .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item.active {
+      border-top-color: #8accff; }
+    .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item.active a {
+      background: #ffffff;
+      border-top-color: #8accff;
+      border-bottom-color: transparent;
+      color: #0b7ee9; }
+    .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item.active a:after {
+      opacity: 1;
+      visibility: visible; }
+  .shipping-pricing-promotion .shipping-promotion__slider .promotion-item {
+    background-color: #ffffff; }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-carousel:not(.owl-loaded) {
+    display: flex;
+    overflow: hidden; }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-carousel:not(.owl-loaded) .promotion-item {
+    -webkit-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-nav .owl-prev, .shipping-pricing-promotion .shipping-promotion__slider .owl-nav .owl-next {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    color: #ffffff;
+    background-color: transparent;
+    text-align: center;
+    font-size: 0;
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -23px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    border-radius: 0;
+    text-indent: -9999px;
+    outline: none;
+    border: none; }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-nav .owl-prev {
+    left: 30px;
+    opacity: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    transform: rotate(-45deg); }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-nav .owl-prev:hover {
+    border-color: #ffffff;
+    border-width: 2px;
+    background: transparent; }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-nav .owl-next {
+    opacity: 1;
+    right: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    transform: rotate(-45deg); }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-nav .owl-next:hover {
+    border-color: #ffffff;
+    border-width: 2px;
+    background: transparent; }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-nav .owl-next.disabled, .shipping-pricing-promotion .shipping-promotion__slider .owl-nav .owl-prev.disabled {
+    opacity: 0; }
+  .shipping-pricing-promotion .shipping-promotion__slider .owl-dots {
+    margin: 5px auto 0;
+    min-height: 25px;
+    text-align: center; }
+    .shipping-pricing-promotion .shipping-promotion__slider .owl-dots .owl-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #2979ff;
+      font-size: 0;
+      margin: 0px 4px;
+      display: inline-block;
+      outline: none; }
+    .shipping-pricing-promotion .shipping-promotion__slider .owl-dots .owl-dot.active {
+      background: #2979ff; }
+  .shipping-pricing-promotion .wrapper-promotion {
+    padding: 65px 0 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; }
+    .shipping-pricing-promotion .wrapper-promotion:before {
+      content: "";
+      position: absolute;
+      width: 250%;
+      height: calc(100% + 10px);
+      z-index: -1;
+      bottom: -10px;
+      background-color: #0044C1;
+      background-image: url("../../../../file.hstatic.net/1000001117/file/ship-promote-bg_3fc4e00370de48b6acfbea3aa85c1db7.jpg");
+      background-position: bottom;
+      background-repeat: repeat no-repeat;
+      background-size: 45%;
+      animation: fragment backwards 200s linear infinite; }
+  .shipping-pricing-promotion .wrapper-buttons {
+    padding-top: 25px; }
+  @media (min-width: 1445px) {
+    .shipping-pricing-promotion .wrapper-promotion:before {
+      background-size: 38%; } }
+  @media (min-width: 992px) {
+    .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item + .slider-nav__item a {
+      border-left-color: transparent; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item {
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%; }
+      .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a {
+        padding: 10px 8px; }
+        .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a .value {
+          display: block; }
+    .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item:not(.active) {
+      display: none; } }
+  @media (max-width: 767px) {
+    .shipping-pricing-promotion .shipping-promotion__navs .slider-nav {
+      padding: 0; }
+      .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item {
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%; }
+        .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a {
+          font-size: 13px;
+          padding: 10px 8px; }
+          .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item a .value {
+            display: block; }
+      .shipping-pricing-promotion .shipping-promotion__navs .slider-nav__item:not(.active) {
+        display: none; }
+    .shipping-pricing-promotion .wrapper-buttons {
+      padding-top: 15px; }
+    .shipping-pricing-promotion .wrapper-promotion {
+      padding-top: 50px;
+      margin-bottom: 0px; }
+      .shipping-pricing-promotion .wrapper-promotion:before {
+        background-size: 70%; } }
+
+/*=================== MODAL ========================================================*/
+/* MODAL SUCCESS  */
+.modal.modalForm-success.fade.show {
+  opacity: 1; }
+
+.modal.modalForm-success.fade .modal-dialog {
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s; }
+
+.modal.modalForm-success.fade.show .modal-dialog {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.modal.modalForm-success {
+  background: rgba(3, 17, 27, 0.7);
+  padding: 0; }
+
+.modalForm-success .modal-content {
+  position: relative;
+  border: 0;
+  background-color: #0f29ff;
+  background: -moz-linear-gradient(140deg, #36d1dc 0%, #0f29ff 65%);
+  background: -webkit-linear-gradient(140deg, #36d1dc 0%, #0f29ff 65%);
+  background: -ms-linear-gradient(140deg, #36d1dc 0%, #0f29ff 65%); }
+
+.modalForm-success.modal-succes-haraads .modal-content {
+  background-color: #ff6d00;
+  background: -moz-linear-gradient(130deg, #fe994c 0%, #ff6d00 99%);
+  background: -webkit-linear-gradient(130deg, #fe994c 0%, #ff6d00 99%);
+  background: -ms-linear-gradient(130deg, #fe994c 0%, #ff6d00 99%); }
+
+.modalForm-success .modal-content:before, .modalForm-success .modal-content:after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  top: 0;
+  bottom: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.modalForm-success .modal-content:after {
+  right: 0;
+  background-image: url(../../../../file.hstatic.net/1000001117/file/modal-succes-vector-right-min.png); }
+
+.modalForm-success .modal-content:before {
+  left: 0;
+  background-image: url(../../../../file.hstatic.net/1000001117/file/modal-succes-vector-left-min.png); }
+
+.modalForm-success .modal-content .modal-body {
+  z-index: 2; }
+
+.modal.modalForm-success .modal-body img {
+  width: 200px; }
+
+.modalForm-success .modal-body .modal-title {
+  font-size: 30px;
+  color: #fff;
+  font-family: var(--hrv-font-family-bold);
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative; }
+
+.modalForm-success .modal-body .modal-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30%;
+  height: 1px;
+  background: #fff; }
+
+.modalForm-success .modal-body p:not(.modal-title) {
+  font-size: 18px;
+  font-family: var(--hrv-font-family-regular);
+  color: #fff;
+  margin: 34px 0 0; }
+
+.modalForm-success .hide_modal {
+  padding: 10px 30px;
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .modalForm-success .modal-dialog {
+    width: 600px; } }
+
+@media (max-width: 767px) {
+  .modalForm-success .modal-content:before,
+  .modalForm-success .modal-content:after {
+    width: 40%;
+    background-size: auto; } }
+
+/* MODAL Register  */
+.modalForm-register.fade.show {
+  opacity: 1; }
+
+.modalForm-register .modal-content {
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0px 0px 40px 0px rgba(0, 172, 193, 0.16);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden; }
+
+.modalForm-register .modal-heading {
+  background: #ffffff;
+  text-align: center;
+  border: 0;
+  padding: 15px 25px; }
+
+.modalForm-register .modal-heading .modal-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  margin-top: 0px;
+  opacity: 1;
+  float: initial;
+  text-shadow: none;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center; }
+
+.modalForm-register .modal-heading .modal-close svg {
+  fill: #33475b;
+  width: 26px;
+  height: 32px;
+  opacity: 0.7;
+  -webkit-transition: -webkit-transform .25s, opacity .25s;
+  -moz-transition: -moz-transform .25s, opacity .25s;
+  transition: transform .25s, opacity .25s; }
+
+.modalForm-register .modal-heading .modal-close:hover svg {
+  opacity: 0.9;
+  -webkit-transform: scale(1.12) rotate(270deg);
+  -moz-transform: scale(1.12) rotate(270deg);
+  transform: scale(1.12) rotate(270deg); }
+
+.modalForm-register .modal-heading .modal-title {
+  padding: 10px 25px 0;
+  line-height: 1.3;
+  color: #0047ba;
+  font-size: 32px;
+  margin: 0px auto 5px;
+  font-family: var(--hrv-font-family-bold); }
+
+.modalForm-register .modal-heading .modal-subtitle {
+  color: #2a363b;
+  font-size: 20px;
+  position: relative;
+  margin: 0 auto;
+  font-family: var(--hrv-font-family-regular); }
+
+.modalForm-register .modal-bodyform {
+  padding: 15px 40px 10px; }
+
+/* Modal body form  */
+.field-group {
+  margin-bottom: 20px; }
+
+.field-group .field-messages {
+  font-size: 13px;
+  margin: 5px 0 0;
+  padding: 0 20px;
+  color: #bababa; }
+
+.field-group .field-label {
+  font-size: 14px;
+  color: #2a363b;
+  font-family: 'sfuiText_semibold';
+  display: block;
+  font-weight: initial;
+  padding: 0;
+  margin: 0 0 5px; }
+
+.field-group .field-label b {
+  color: #ff0000;
+  font-weight: initial;
+  font-family: initial;
+  font-size: 11px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.field-group .field-note {
+  font-weight: initial;
+  font-family: 'sfuiText_regular'; }
+
+.field-group .field-label.red {
+  color: #ff0000; }
+
+.field-input-wrapper {
+  position: relative; }
+
+.field-input-wrapper .field-placeholder {
+  font-size: 12px;
+  color: #3d5067;
+  font-family: 'sfuiText_regular';
+  display: block;
+  font-weight: initial;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  z-index: 1;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms; }
+
+.field-input-wrapper .field-input,
+.field-input-wrapper .field-select,
+.field-input-wrapper .field-textarea {
+  font-size: 14px;
+  color: #1976d2;
+  background-color: #f5f8fa;
+  border: 1px solid #cbd6e2;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-transition: padding 150ms;
+  -moz-transition: padding 150ms;
+  transition: padding 150ms; }
+
+.field-group .field-input-wrapper .field-input[type=number]::-webkit-outer-spin-button,
+.field-group .field-input-wrapper .field-input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.field-group .field-input-wrapper .field-input::-webkit-input-placeholder {
+  color: #3d5067; }
+
+.field-group .field-input-wrapper .field-input::-moz-placeholder {
+  color: #3d5067; }
+
+.field-group .field-input-wrapper .field-input::-ms-input-placeholder {
+  color: #3d5067; }
+
+/* textarea */
+.field-input-wrapper .field-textarea {
+  width: 100%;
+  resize: none; }
+
+/* select */
+.field-input-wrapper .field-select-dropdown {
+  position: relative; }
+
+.field-input-wrapper .field-select-dropdown:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #bababa transparent transparent transparent; }
+
+.field-input-wrapper .field-select-dropdown .field-select {
+  padding-right: 40px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.field-input-wrapper .field-select-dropdown .field-select option,
+.field-input-wrapper .field-select-dropdown .field-select:invalid {
+  color: #3d5067;
+  font-size: 15px; }
+
+.field-input-wrapper .field-select-dropdown .field-select option[value="null"],
+.field-input-wrapper .field-select-dropdown .field-select option[value=""] {
+  color: #bababa; }
+
+/* checkbox- radio */
+.listChoice-option .checkbox-primary, .listChoice-option .radio-primary {
+  position: relative;
+  margin: 0 0 8px;
+  padding: 0; }
+
+.listChoice-option .radio-primary input[type='radio'] + label,
+.listChoice-option .checkbox-primary input[type='checkbox'] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  color: #33475b;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 0; }
+
+.listChoice-option .radio-primary input[type='radio'],
+.listChoice-option .checkbox-primary input[type='checkbox'] {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  color: #fff;
+  background: #f5f8fa;
+  border: 2px solid #cbd6e2;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  margin: 0;
+  transition: all 0.15s ease-out 0s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+.listChoice-option .radio-primary input[type='radio']:before,
+.listChoice-option .checkbox-primary input[type='checkbox']:before {
+  content: "\2713";
+  font-family: helvetica;
+  font-size: 12px;
+  height: 14px;
+  width: 14px;
+  line-height: 14px;
+  opacity: 0;
+  position: absolute;
+  display: inline-block;
+  text-align: center; }
+
+.listChoice-option .radio-primary .input-radius[type='radio'],
+.listChoice-option .radio-primary .input-radius[type='radio']:after {
+  border-radius: 50%; }
+
+.listChoice-option .radio-primary input[type='radio']:hover:before,
+.listChoice-option .checkbox-primary input[type='checkbox']:hover:before {
+  opacity: 1;
+  color: #00b0ff; }
+
+.listChoice-option .radio-primary input[type='radio']:hover,
+.listChoice-option .checkbox-primary input[type='checkbox']:hover {
+  background: #fff; }
+
+.listChoice-option .radio-primary input[type='radio']:checked,
+.listChoice-option .checkbox-primary input[type='checkbox']:checked {
+  background: #00b0ff;
+  border-color: #00b0ff; }
+
+.listChoice-option .radio-primary input[type='radio']:checked:after,
+.listChoice-option .checkbox-primary input[type='checkbox']:checked:after {
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+  background: #00b0ff;
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s; }
+
+.listChoice-option .radio-primary input[type='radio']:checked:before,
+.listChoice-option .checkbox-primary input[type='checkbox']:checked:before {
+  opacity: 1;
+  color: #ffffff; }
+
+@keyframes click-wave {
+  0% {
+    height: 15px;
+    width: 15px;
+    opacity: 0.35;
+    position: relative; }
+  100% {
+    height: 40px;
+    width: 40px;
+    margin-left: -12.5px;
+    margin-top: -12.5px;
+    opacity: 0; } }
+
+.listChoice-flexbox-option {
+  margin: 0 -8px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.listChoice-flexbox-option .radio-primary {
+  position: relative;
+  -webkit-flex: 1 1;
+  flex: 1 1;
+  max-width: calc(100%/3 - 16px);
+  margin: 0px 8px; }
+
+.listChoice-flexbox-option .radio-primary input[type='radio'] + label {
+  cursor: pointer;
+  color: #3d5067;
+  font-size: 14px;
+  background-color: #f5f8fa;
+  border: 1px solid #cbd6e2;
+  padding: 8px 8px;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+.listChoice-flexbox-option .radio-primary input.option-input[type='radio']:checked + label {
+  background: #00b0ff;
+  border-color: #00b0ff;
+  color: #fff; }
+
+.listChoice-flexbox-option .radio-primary input.option-input[type='radio'] {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  height: 18px;
+  visibility: hidden; }
+
+.listChoice-flexbox-option-2 .radio-primary {
+  flex: 0 0 33%; }
+
+.checkbox.checkbox-primary.input-text {
+  color: #6f6c90;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+  flex: 0 0 64%; }
+  .checkbox.checkbox-primary.input-text input, .checkbox.checkbox-primary.input-text textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    color: #6f6c90;
+    width: 100%;
+    padding-left: 15px; }
+  .checkbox.checkbox-primary.input-text textarea {
+    height: 24px; }
+
+/* js-active */
+.js-is-field.field-input-wrapper .field-placeholder + .field-input {
+  padding-top: 18px;
+  padding-bottom: 6px; }
+
+.js-is-field.field-input-wrapper .field-placeholder {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+
+.field-group.field-group-error .field-input-wrapper .field-label {
+  color: #ff0000; }
+
+/* button */
+.field-group-button .btn-submit-form {
+  position: relative;
+  outline: none;
+  overflow: hidden;
+  font-size: 18px;
+  font-family: 'sfuiText_bold', sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  min-width: 50%;
+  color: #ffffff;
+  background: #ff9800;
+  border: 0;
+  padding: 12px 35px;
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  margin: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.field-group-button .btn-submit-form:before {
+  content: "";
+  background: #f4c918;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.field-group-button .btn-submit-form:hover,
+.field-group-button .btn-submit-form:focus {
+  outline: none; }
+
+.field-group-button .btn-submit-form:hover:before,
+.field-group-button .btn-submit-form:focus:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+@media (min-width: 768px) {
+  .modalForm-register .modal-dialog {
+    max-width: 670px; }
+  .field-group.pd-left {
+    padding-left: 7px; }
+  .field-group.pd-right {
+    padding-right: 7px; } }
+
+@media (max-width: 767px) {
+  .modalForm-register .modal-header.modal-heading {
+    padding: 40px 15px 20px; }
+  .modalForm-register .modal-heading .modal-title {
+    font-size: 24px; }
+  .modalForm-register .modal-heading .modal-subtitle {
+    font-size: 14px; }
+  .modalForm-register .modal-body {
+    padding: 15px 15px; }
+  .field-input-wrapper .field-input,
+  .field-input-wrapper .field-select {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .field-input-wrapper .field-placeholder {
+    left: 15px; }
+  .field-input-wrapper .field-input, .field-input-wrapper .field-select {
+    font-size: 14px; }
+  .listChoice-flexbox-option .radio-primary {
+    max-width: calc(100%/2 - 8px);
+    margin: 0px 4px; }
+  #radioChoice-two .radio-primary,
+  #radioChoice-one .radio-primary {
+    -webkit-flex: 0 0 calc(100% - 16px);
+    flex: 0 0 calc(100% - 16px);
+    max-width: calc(100% - 16px);
+    margin: 0 8px 8px; }
+  .field-group-button .btn-submit-form {
+    width: 100%; }
+  .checkbox.checkbox-primary.input-text {
+    flex: 0 0 90%; } }
+
+/*===== POPUP PROMOTION ========================*/
+.popup-promotion.fade .modal-dialog {
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all .32s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s; }
+
+.popup-promotion.fade.show .modal-dialog {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.popup-promotion .modal-dialog {
+  max-width: 500px; }
+
+.popup-promotion .modal-body {
+  padding: 0; }
+
+.popup-promotion .modal-content {
+  border: 0;
+  background: transparent; }
+
+.popup-promotion .close-popup {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 2;
+  border-radius: 50%;
+  opacity: 1;
+  text-align: center;
+  outline: none; }
+
+.popup-promotion .close-popup svg {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 12px;
+  text-align: center;
+  fill: #f3f3f3; }
+
+.popup-promotion .close-popup:hover {
+  background-color: black; }
+
+.popup-promotion .close-popup:hover svg {
+  fill: #fff; }
+
+/* RICH MEDIA */
+@-webkit-keyframes popuprich {
+  from {
+    transform: translateY(100%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes popuprich {
+  from {
+    transform: translateY(100%); }
+  to {
+    transform: translateY(0); } }
+
+.popup-richmedia {
+  position: fixed;
+  width: 250px;
+  height: auto;
+  bottom: 0;
+  z-index: 50;
+  display: none; }
+
+.popup-richmedia .rich-banner {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  display: table;
+  max-width: 100%;
+  z-index: 100;
+  animation: popuprich .5s;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.popup-richmedia .rich-img {
+  display: inline-block;
+  margin: auto;
+  max-width: 100%;
+  height: auto; }
+
+.popup-richmedia .rich-close {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  right: -1px;
+  cursor: pointer;
+  z-index: 9999;
+  background: #ffffff;
+  border-radius: 50%; }
+
+.popup-richmedia .rich-close svg {
+  fill: #4f5456;
+  display: block; }
+
+.popup-richmedia .click-here {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  background-color: transparent;
+  z-index: 9999; }
+
+@media (max-width: 767px) {
+  .popup-richmedia .rich-banner {
+    bottom: -330px; }
+  .mainFooter-mediarich .footer-hrv-bottom {
+    padding-bottom: 45px; } }

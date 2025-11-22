@@ -1,0 +1,1882 @@
+/*============ 0. Reset =============*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'sfuiText_regular',Helvetica,sans-serif;
+  font-size: 16px;
+  color: #2c2c2c;
+  line-height: 1.55;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px; } }
+
+/* 1.2 - HTML5 Elements */
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a, a:hover {
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+a:hover {
+  text-decoration: none; }
+
+img, svg {
+  max-width: 100%; }
+
+ol, ul {
+  margin: 0; }
+
+p {
+  margin: 0 0 10px; }
+
+/*============ 0. svg ==============*/
+.brand-tchouse--1 {
+  fill: #000; }
+
+.brand-juno-1 {
+  fill: #e01b22; }
+
+.brand-concung-1 {
+  fill: #ea377c; }
+
+.brand-googleretail-1 {
+  fill: #4885ed; }
+
+.brand-googleretail-2 {
+  fill: #db3236; }
+
+.brand-googleretail-3 {
+  fill: #f4c20d; }
+
+.brand-googleretail-4 {
+  fill: #3cba54; }
+
+.brand-googleretail-5 {
+  fill: #73716f; }
+
+/*======== GENERAL ========= */
+.owl-carousel .owl-item img {
+  width: auto !important; }
+
+@media (min-width: 1200px) {
+  .container.container-w {
+    max-width: 1270px; } }
+
+@-webkit-keyframes bubble-ripple {
+  0% {
+    transform: scale(1);
+    opacity: .75; }
+  25% {
+    transform: scale(1);
+    opacity: .75; }
+  100% {
+    transform: scale(1.5);
+    opacity: 0; } }
+
+@keyframes bubble-ripple {
+  0% {
+    transform: scale(1);
+    opacity: .75; }
+  25% {
+    transform: scale(1);
+    opacity: .75; }
+  100% {
+    transform: scale(1.5);
+    opacity: 0; } }
+
+.os-animation, .staggered-animation {
+  opacity: 0; }
+
+.os-animation.animated, .staggered-animation.animated {
+  opacity: 1; }
+
+@media (max-width: 991px) {
+  .os-animation, .staggered-animation {
+    opacity: 1;
+    animation-name: none !important; }
+  .os-animation.animated, .staggered-animation.animated {
+    opacity: 1;
+    animation-name: none !important; } }
+
+.lds-spinner {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 38%;
+  transform: translateY(-50%); }
+
+.lds-spinner span {
+  display: block;
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite; }
+
+.lds-spinner span:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff; }
+
+.lds-spinner span:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s; }
+
+.lds-spinner span:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s; }
+
+.lds-spinner span:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s; }
+
+.lds-spinner span:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s; }
+
+.lds-spinner span:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s; }
+
+.lds-spinner span:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s; }
+
+.lds-spinner span:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s; }
+
+.lds-spinner span:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s; }
+
+.lds-spinner span:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s; }
+
+.lds-spinner span:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s; }
+
+.lds-spinner span:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s; }
+
+.lds-spinner span:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s; }
+
+@keyframes lds-spinner {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*======== MAIN LDP ========= */
+.sitebox-header {
+  margin-bottom: 28px; }
+  .sitebox-header h2, .sitebox-header .hTitle {
+    line-height: 1.4;
+    font-size: 28px;
+    color: #1c1c1c;
+    margin: 0 0;
+    font-family: var(--hrv-font-family-bold); }
+  .sitebox-header h2.cl-white, .sitebox-header .hTitle.cl-white {
+    color: #ffffff; }
+  .sitebox-header .subtitle {
+    font-size: 18px;
+    color: #3D5067;
+    margin: 5px 0 0; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .sitebox-header h2, .sitebox-header .hTitle {
+      font-size: 26px; } }
+  @media (max-width: 767px) {
+    .sitebox-header {
+      margin-bottom: 18px; }
+    .sitebox-header h2, .sitebox-header .hTitle {
+      font-size: 22px; }
+    .sitebox-header .subtitle {
+      font-size: 16px; } }
+
+.sitebox-actions .btn-omni {
+  font-size: 18px;
+  font-family: 'sfuiText_bold',sans-serif;
+  color: #ffffff;
+  background: #fcc027;
+  border: 1px solid #fcc027;
+  padding: 12px 35px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); }
+  .sitebox-actions .btn-omni:before {
+    background-color: #ff9800; }
+  .sitebox-actions .btn-omni.disabled {
+    pointer-events: none;
+    opacity: 0.7; }
+  .sitebox-actions .btn-omni--white {
+    color: #fcc027;
+    background: #ffffff; }
+  .sitebox-actions .btn-omni:hover, .sitebox-actions .btn-omni:focus {
+    color: #ffffff;
+    background: #ff9800;
+    border-color: #ff9800; }
+  .sitebox-actions .btn-omni--white:hover, .sitebox-actions .btn-omni--white:focus {
+    color: #ffffff;
+    background: #ff9800;
+    border-color: #ff9800; }
+
+.sitebox-actions .txt-note {
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0; }
+
+@media (max-width: 767px) {
+  .sitebox-actions .btn-omni {
+    font-size: 16px;
+    min-width: auto;
+    width: 100%; } }
+
+[class^="section-hrweb-"] {
+  margin-bottom: 70px; }
+
+@media (max-width: 767px) {
+  [class^="section-hrweb-"] {
+    margin-bottom: 45px; } }
+
+.section-hrweb-overview {
+  position: relative;
+  overflow: hidden;
+  padding: 65px 0;
+  background: #202587;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #202587 0%, #202587 44%, #1d2084 60%, #1a1d79 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #202587 0%, #202587 44%, #1d2084 60%, #1a1d79 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #202587 0%, #202587 44%, #1d2084 60%, #1a1d79 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202587', endColorstr='#1a1d79',GradientType=0 );
+  /* IE6-9 */ }
+  .section-hrweb-overview .overview-detail h1 {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: var(--hrv-font-family-bold);
+    text-transform: uppercase; }
+  .section-hrweb-overview .overview-detail .subhead {
+    color: #ffffff;
+    margin: 0px 0 30px;
+    font-size: 20px;
+    line-height: 1.6; }
+  .section-hrweb-overview .overview-detail .group-partner__text p {
+    font-size: 16px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'sfuiText_semibold',sans-serif; }
+  .section-hrweb-overview .overview-detail .group-partner__list .partner--list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center; }
+  .section-hrweb-overview .overview-detail .group-partner__list .partner--item {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-width: 24%;
+    margin-right: 32px; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo {
+      box-sizing: content-box;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      margin: auto; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo .logo--insert {
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 50%; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo .logo--insert img, .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo .logo--insert svg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block;
+      font-family: "blur-up: auto", "object-fit: cover";
+      object-fit: contain; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo .logo--insert svg {
+      fill: #ffffff;
+      opacity: 0.8;
+      transition: opacity 200ms ease-in-out; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo:hover svg {
+      opacity: 1; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo .logo--insert .lazyload {
+      opacity: 0;
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+      transition: opacity 500ms, filter 700ms;
+      -webkit-transition: opacity 500ms, filter 700ms; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo .logo--insert .lazyloading {
+      opacity: 0.3;
+      -webkit-filter: blur(8px);
+      filter: blur(8px);
+      transition: opacity 500ms, filter 700ms;
+      -webkit-transition: opacity 500ms, filter 700ms; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item__logo .logo--insert .lazyloaded {
+      opacity: 1;
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      transition: opacity 500ms, filter 700ms;
+      -webkit-transition: opacity 500ms, filter 700ms; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item:nth-child(3) .partner--item__logo .logo--insert svg {
+      width: 75%; }
+    .section-hrweb-overview .overview-detail .group-partner__list .partner--item:last-child {
+      margin-right: 0; }
+  .section-hrweb-overview .overview-detail .group-txtlist ul {
+    margin: 12px 0 15px; }
+  .section-hrweb-overview .overview-detail .group-txtlist ul li {
+    position: relative;
+    padding-left: 18px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'sfuiText_medium';
+    font-size: 14px; }
+  .section-hrweb-overview .overview-detail .group-txtlist ul li:before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ffffff; }
+  .section-hrweb-overview .overview-detail .group-txtlist ul li + li {
+    margin-left: 5px; }
+  @media (min-width: 992px) {
+    .section-hrweb-overview .overview-detail {
+      -webkit-align-self: center;
+      align-self: center; }
+    .section-hrweb-overview .overview-image {
+      -webkit-align-self: center;
+      align-self: center;
+      padding-left: 0; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .section-hrweb-overview .overview-detail {
+      padding-right: 35px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-hrweb-overview .overview-detail {
+      margin-bottom: 50px; }
+      .section-hrweb-overview .overview-detail .subhead {
+        max-width: 80%; }
+      .section-hrweb-overview .overview-detail .group-partner__list .partner--list {
+        max-width: 450px; }
+      .section-hrweb-overview .overview-detail .sitebox-actions .btn-omni {
+        min-width: 45%; }
+    .section-hrweb-overview .container-fluid {
+      max-width: 720px; } }
+  @media (max-width: 767px) {
+    .section-hrweb-overview {
+      padding: 45px 0; }
+    .section-hrweb-overview .overview-detail {
+      margin-bottom: 30px; }
+      .section-hrweb-overview .overview-detail h1 {
+        font-size: 26px; }
+      .section-hrweb-overview .overview-detail .group-txtlist ul {
+        margin: 8px 0 15px; }
+      .section-hrweb-overview .overview-detail .group-txtlist ul li {
+        padding-left: 16px; }
+    .section-hrweb-overview .container-fluid {
+      max-width: 540px; } }
+
+.section-hrweb-industries .industry-loop {
+  margin-bottom: 30px; }
+  .section-hrweb-industries .industry-loop__inner {
+    height: 100%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    -ms-justify-content: space-between;
+    justify-content: space-between; }
+  .section-hrweb-industries .industry-loop .block--photo {
+    margin-bottom: 10px; }
+  .section-hrweb-industries .industry-loop .block--text {
+    margin: 0;
+    text-align: center; }
+    .section-hrweb-industries .industry-loop .block--text .textlink {
+      position: relative;
+      text-transform: capitalize;
+      padding-bottom: 2px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #000000;
+      background-image: linear-gradient(to right, #000000 0%, #000000 100%);
+      background-size: 100% 1px;
+      background-position: 0px 90%;
+      background-repeat: no-repeat;
+      transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s; }
+    .section-hrweb-industries .industry-loop .block--text .textlink:hover {
+      background-size: 0px 1px;
+      text-decoration: none; }
+  .section-hrweb-industries .industry-loop .block--link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer; }
+  .section-hrweb-industries .industry-loop__inner:hover .block--text .textlink {
+    background-size: 0px 1px;
+    text-decoration: none; }
+  .section-hrweb-industries .industry-loop__inner:hover .block--photo img {
+    opacity: 0.8;
+    transition-duration: 0.5s; }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .section-hrweb-industries .industry-rowlist {
+    margin-left: -8px;
+    margin-right: -8px; }
+  .section-hrweb-industries .industry-loop {
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px; }
+    .section-hrweb-industries .industry-loop .block--text .textlink {
+      font-size: 16px; } }
+
+@media (max-width: 767px) {
+  .section-hrweb-industries {
+    margin-bottom: 30px; }
+  .section-hrweb-industries .industry-rowlist {
+    margin-left: -8px;
+    margin-right: -8px; }
+  .section-hrweb-industries .industry-loop {
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px; }
+    .section-hrweb-industries .industry-loop .block--text .textlink {
+      font-size: 14px; }
+  .section-hrweb-industries .industry-loop:nth-child(1) {
+    -ms-flex-order: 1;
+    order: 1; }
+  .section-hrweb-industries .industry-loop:nth-child(2) {
+    -ms-flex-order: 2;
+    order: 2; }
+  .section-hrweb-industries .industry-loop:nth-child(3) {
+    -ms-flex-order: 4;
+    order: 4; }
+  .section-hrweb-industries .industry-loop:nth-child(4) {
+    -ms-flex-order: 3;
+    order: 3; }
+  .section-hrweb-industries .industry-loop:nth-child(5) {
+    -ms-flex-order: 6;
+    order: 6; }
+  .section-hrweb-industries .industry-loop:nth-child(6) {
+    -ms-flex-order: 5;
+    order: 5; }
+  .section-hrweb-industries .industry-loop:nth-child(7) {
+    -ms-flex-order: 7;
+    order: 7; }
+  .section-hrweb-industries .industry-loop:nth-child(8) {
+    -ms-flex-order: 8;
+    order: 8; } }
+
+.section-hrweb-haraweb {
+  background: #E8F8FF;
+  padding: 60px 0; }
+  .section-hrweb-haraweb .sitebox-header h2 {
+    font-size: 36px;
+    color: #0047BA; }
+  .section-hrweb-haraweb .item-haraweb .item-detail {
+    color: #2A363B;
+    text-align: center;
+    margin-top: 5px; }
+  @media (max-width: 991px) {
+    .section-hrweb-haraweb .sitebox-header h2 {
+      font-size: 26px; }
+    .section-hrweb-haraweb .wrapper-content .row {
+      flex-flow: nowrap;
+      overflow-x: scroll; } }
+  @media (max-width: 767px) {
+    .section-hrweb-haraweb {
+      padding: 40px 0; }
+      .section-hrweb-haraweb .sitebox-header h2 {
+        font-size: 22px; } }
+
+.section-hrweb-features .features-detail .block-info {
+  margin-bottom: 30px; }
+
+.section-hrweb-features .features-detail .block-info h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #000000;
+  font-family: 'sfuiText_semibold';
+  line-height: 1.45; }
+
+.section-hrweb-features .features-detail .block-info p, .section-hrweb-features .features-detail .block-info ul {
+  margin: 0;
+  color: #3C4F5E; }
+
+.section-hrweb-features .features-detail .block-info ul li {
+  margin: 0;
+  position: relative;
+  padding-left: 22px; }
+
+.section-hrweb-features .features-detail .block-info ul li + li {
+  margin-top: 6px; }
+
+.section-hrweb-features .features-detail .block-info ul li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #3C4F5E;
+  position: absolute;
+  left: 5px;
+  top: 9px; }
+
+.section-hrweb-features .features-picture__inner.lowligh {
+  position: relative;
+  background: #F0F0F4;
+  padding: 35px 45px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .section-hrweb-features .features-picture__inner.lowligh:before {
+    content: "";
+    background: #FEBDF0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    border-radius: 200px 0px 0px 200px; }
+
+.section-hrweb-features .features-screen .screen-video {
+  position: relative;
+  z-index: 1; }
+  .section-hrweb-features .features-screen .screen-video--device {
+    width: 100%;
+    max-width: 48%;
+    margin-left: auto;
+    margin-right: auto; }
+  .section-hrweb-features .features-screen .screen-video--boximg {
+    position: relative;
+    margin: 0 auto;
+    background: #3A4245;
+    padding: 3px;
+    box-shadow: 0px 2px 4px rgba(0, 21, 64, 0.05), 0px 0px 2px rgba(0, 21, 64, 0.14); }
+    .section-hrweb-features .features-screen .screen-video--boximg, .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame {
+      border-radius: 22px; }
+    .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame {
+      background: #121515;
+      padding: 12px 10px 15px; }
+      .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--notch {
+        background: #131515;
+        width: 50%;
+        border-radius: 0 0 12px 12px;
+        padding: 5px 0 6px;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center; }
+        .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--notch span {
+          margin: 0 3px; }
+        .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--notch span:nth-child(1) {
+          display: block;
+          width: 32px;
+          height: 4px;
+          border-radius: 12px;
+          background: #262C2D; }
+        .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--notch span:nth-child(2) {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 2px solid #262C2D; }
+        .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--notch span:nth-child(2):before {
+          content: "";
+          width: 1px;
+          height: 1px;
+          background: #636F73;
+          opacity: 0.4;
+          display: block;
+          margin: 2px auto 0; }
+      .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--lazy {
+        border-radius: 16px;
+        overflow: hidden; }
+        .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--lazy .lazyload-image__placeholder {
+          padding-bottom: 222%; }
+        .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--lazy .lazyloaded + .lds-spinner {
+          display: none; }
+        .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--lazy video {
+          max-width: 100%;
+          height: auto; }
+  .section-hrweb-features .features-screen .screen-video--cover {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 2%;
+    text-align: center; }
+    .section-hrweb-features .features-screen .screen-video--cover svg {
+      height: 100%;
+      width: 100%;
+      max-width: 540px; }
+
+.section-hrweb-features.wrapper-features-2 {
+  background: #242D8E; }
+  .section-hrweb-features.wrapper-features-2 .features-detail .block-info h3 {
+    color: #ffffff; }
+  .section-hrweb-features.wrapper-features-2 .features-detail .block-info p,
+  .section-hrweb-features.wrapper-features-2 .features-detail .block-info ul {
+    color: #d9d9d9; }
+  .section-hrweb-features.wrapper-features-2 .features-detail .block-info ul li:before {
+    background: #d9d9d9; }
+
+@media (min-width: 1200px) {
+  .section-hrweb-features .screen-frame {
+    -webkit-align-self: center;
+    align-self: center; }
+  .section-hrweb-features.wrapper-features-2 .features-detail__inner {
+    float: left;
+    width: 100%;
+    max-width: calc((1140px/2) - 30px); } }
+
+@media (min-width: 992px) {
+  .section-hrweb-features.wrapper-features-1 .features-detail .block-info {
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 33%;
+    margin-bottom: 0; }
+  .section-hrweb-features.wrapper-features-2 .container-fluid {
+    max-width: 1550px; }
+  .section-hrweb-features.wrapper-features-2 .features-detail {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .section-hrweb-features.wrapper-features-2 .features-picture {
+    padding-left: 0;
+    -ms-align-self: end;
+    align-self: end; } }
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .section-hrweb-features .features-screen .screen-video--device {
+    max-width: 58%; }
+  .section-hrweb-features.wrapper-features-2 .features-detail {
+    padding-bottom: 30px; }
+    .section-hrweb-features.wrapper-features-2 .features-detail__inner {
+      float: left;
+      width: 100%;
+      max-width: calc((960px/2) - 30px); }
+    .section-hrweb-features.wrapper-features-2 .features-detail .sitebox-header {
+      margin-bottom: 20px; }
+    .section-hrweb-features.wrapper-features-2 .features-detail .block-info {
+      margin-bottom: 20px;
+      font-size: 15px; }
+  .section-hrweb-features.wrapper-features-2 .features-picture {
+    padding-right: 0; }
+  .section-hrweb-features.wrapper-features-3 .features-detail {
+    padding-right: 0; } }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .section-hrweb-features .sitebox-header h2, .section-hrweb-features .sitebox-header .hTitle {
+    font-size: 28px;
+    max-width: 84%; }
+  .section-hrweb-features .features-picture {
+    margin-bottom: 60px; }
+    .section-hrweb-features .features-picture__inner.lowligh {
+      margin-bottom: 0; }
+  .section-hrweb-features .features-screen {
+    margin-bottom: 60px; }
+    .section-hrweb-features .features-screen__inner {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto; }
+  .section-hrweb-features.wrapper-features-1 .wrapper-header .sitebox-actions {
+    display: none; }
+  .section-hrweb-features.wrapper-features-2 {
+    padding: 70px 0; } }
+
+@media (max-width: 767px) {
+  .section-hrweb-features .features-detail .block-info {
+    margin-bottom: 25px; }
+  .section-hrweb-features .features-detail .block-info h3 {
+    margin: 0 0 10px;
+    font-size: 16px; }
+  .section-hrweb-features .features-detail .block-info ul li + li {
+    margin-top: 5px; }
+  .section-hrweb-features .features-picture {
+    margin-bottom: 25px; }
+    .section-hrweb-features .features-picture__inner.lowligh {
+      padding: 16px 10px;
+      margin-top: 0px;
+      margin-bottom: 0px; }
+  .section-hrweb-features .features-screen {
+    margin-bottom: 25px; }
+    .section-hrweb-features .features-screen .screen-video {
+      position: relative;
+      z-index: 1; }
+      .section-hrweb-features .features-screen .screen-video--device {
+        max-width: 65%; }
+      .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame {
+        padding: 10px 7px 12px; }
+        .section-hrweb-features .features-screen .screen-video--boximg .boximg-frame--notch {
+          padding: 3px 0 5px; }
+  .section-hrweb-features.wrapper-features-1 .wrapper-header .sitebox-actions {
+    display: none; }
+  .section-hrweb-features.wrapper-features-2 {
+    padding: 45px 0; } }
+
+#wrapper-features-1, #wrapper-features-2, #wrapper-features-3, #section-hrweb-apps {
+  scroll-margin-block-start: 90px; }
+
+.section-hrweb-tablist {
+  position: relative; }
+  .section-hrweb-tablist .flex-container-tablist {
+    margin: 0 0 35px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    .section-hrweb-tablist .flex-container-tablist > div[class*='tablist-column-'] {
+      padding: 0; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title {
+      border: 0; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-item {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link {
+      border: 1px solid #dfe2eb;
+      padding: 20px 25px 20px 15px;
+      border-radius: 8px;
+      color: #2a363b;
+      font-size: 16px;
+      background: #fff;
+      cursor: pointer;
+      display: block;
+      margin: 0 0 12px;
+      letter-spacing: -0.25px; }
+      .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link .step-count {
+        font-size: 14px;
+        color: #1667e6;
+        font-family: 'sfuiText_bold';
+        text-transform: uppercase; }
+      .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link .step-text {
+        font-size: 15px; }
+      .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link .step-text b {
+        font-weight: initial;
+        font-family: 'sfuiText_bold'; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link.active {
+      background-color: #e0f2ff;
+      border-color: #c9e8ff;
+      text-decoration: none; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link:not(.active):hover,
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link:not(.active):focus {
+      background-color: #e0f2ff;
+      text-decoration: none; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image {
+      background: #f4f4f4;
+      border: 1px solid #e0e3eb;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .choose-list {
+      background: #f2f4f8;
+      height: 38px;
+      line-height: 38px;
+      border-bottom: 1px solid #e0e3eb;
+      padding: 0 5px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .choose-list span {
+      display: inline-block;
+      vertical-align: middle;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 5px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .choose-list span:nth-child(1) {
+      background: #ef5350; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .choose-list span:nth-child(2) {
+      background: #fbc02d; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .choose-list span:nth-child(3) {
+      background: #00c853; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist {
+      overflow: hidden; }
+      .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .tab-pane {
+        transform: scale(1.01);
+        -o-transition: opacity 0s linear, transform 0s linear;
+        transition: opacity 0s linear, transform 0s linear; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .tab-pane.active {
+          transform: scale(1);
+          -webkit-transition: opacity .2s linear, transform .4s linear;
+          -o-transition: opacity .2s linear, transform .4s linear;
+          transition: opacity .2s linear, transform .4s linear; }
+      .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-title {
+        display: none;
+        padding: 14px 15px;
+        padding-right: 35px;
+        cursor: pointer;
+        position: relative; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-title:before {
+          content: "";
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M6.43,2.26A.88.88,0,1,0,5.19,3.49L9,7.25,5.19,11a.88.88,0,1,0,1.24,1.24l4.38-4.38a.87.87,0,0,0,0-1.24Z'%3E%3C/path%3E%3C/svg%3E");
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          right: 10px;
+          top: 17px;
+          -webkit-transform: rotate(0);
+          transform: rotate(0);
+          transition: -webkit-transform 0.15s ease-in-out;
+          transition: transform 0.15s ease-in-out;
+          transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-title .step-count {
+          margin: 0;
+          font-size: 13px;
+          color: #1667e6;
+          font-family: 'sfuiText_bold';
+          text-transform: uppercase; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-title .step-text {
+          margin: 0;
+          font-size: 14px;
+          font-family: 'sfuiText_medium';
+          font-size: 15px; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-title .step-text b {
+          font-weight: initial;
+          font-family: 'sfuiText_bold'; }
+      .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-image {
+        border-top: 1px solid #dfe2eb; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-image img, .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-image .lazyloading, .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-image .lazyload {
+          transition: 0s; }
+  @media (min-width: 1200px) {
+    .section-hrweb-tablist .navtabs-title {
+      margin-top: 38px; }
+    .section-hrweb-tablist .flex-container-tablist > div[class*='tablist-column-'] {
+      height: auto; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left {
+      width: 300px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right {
+      width: calc(100% - 285px);
+      margin-left: -15px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image {
+      height: 100%; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link.active {
+      margin-left: -15px;
+      padding-left: 30px; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .section-hrweb-tablist .navtabs-title {
+      margin-top: 38px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link {
+      padding: 16px 25px 16px 15px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link .step-text {
+      font-size: 14px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link .step-count {
+      font-size: 12px; }
+    .section-hrweb-tablist .flex-container-tablist > div[class*='tablist-column-'] {
+      height: auto; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left {
+      width: 280px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right {
+      width: calc(100% - 265px);
+      margin-left: -15px; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image {
+      height: 100%; }
+    .section-hrweb-tablist .flex-container-tablist .tablist-column-left .navtabs-title .nav-link.active {
+      margin-left: -15px;
+      padding-left: 30px; } }
+  @media (max-width: 991px) {
+    .section-hrweb-tablist .flex-container-tablist {
+      margin-bottom: 30px; }
+      .section-hrweb-tablist .flex-container-tablist .tablist-column-left {
+        display: none; }
+      .section-hrweb-tablist .flex-container-tablist .tablist-column-right {
+        width: 100%; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image {
+          border: 0;
+          background: transparent; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .choose-list {
+          display: none; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .tab-pane {
+          background: #ffffff;
+          border: 1px solid #dfe2eb;
+          border-radius: 8px;
+          display: block;
+          opacity: 1;
+          transform: scale(1); }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .tab-pane + .tab-pane {
+          margin-top: 20px; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-title {
+          display: block;
+          border-radius: 8px 8px 0 0; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .panel-step-image {
+          display: none; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .tab-pane.is-accordion {
+          border-radius: 8px 8px 0 0; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .tab-pane.is-accordion .panel-step-title {
+          background-color: #ffffff; }
+        .section-hrweb-tablist .flex-container-tablist .tablist-column-right .tablist-image .content-tabslist .tab-pane.is-accordion .panel-step-title:before {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); } }
+
+.section-hrweb-apps {
+  background: #242D8E;
+  position: relative;
+  z-index: 1; }
+  .section-hrweb-apps .apps-detail .wrap-info {
+    color: #ffffff;
+    margin-bottom: 30px; }
+    .section-hrweb-apps .apps-detail .wrap-info p {
+      margin: 0; }
+  .section-hrweb-apps .apps-images__inner {
+    background: #ffffff; }
+  @media (min-width: 1200px) {
+    .section-hrweb-apps {
+      /*&{
+		background: #6db3f2;
+		background: -moz-linear-gradient(to right, #242D8E 0%,#242D8E 50%,#ffffff 50%,#ffffff 100%);
+		background: -webkit-linear-gradient(to right, #242D8E 0%,#242D8E 50%,#ffffff 50%,#ffffff 100%);
+		background: linear-gradient(to right, #242D8E 0%,#242D8E 50%,#ffffff 50%,#ffffff 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242D8E', endColorstr='#ffffff',GradientType=1 );
+	}*/ }
+      .section-hrweb-apps .apps-images__inner {
+        max-width: 695px; }
+      .section-hrweb-apps .apps-detail__inner {
+        float: right;
+        width: 100%;
+        max-width: calc((1140px/2) - 30px); } }
+  @media (min-width: 992px) {
+    .section-hrweb-apps {
+      padding-top: 0;
+      padding-bottom: 0; }
+    .section-hrweb-apps .container-fluid {
+      max-width: 100%; }
+    .section-hrweb-apps .apps-detail__inner, .section-hrweb-apps .apps-images__inner {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-justify-content: center;
+      justify-content: center; }
+    .section-hrweb-apps .apps-images {
+      padding-right: 0; }
+    .section-hrweb-apps .apps-detail__inner {
+      padding-right: 80px;
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .section-hrweb-apps .apps-detail__inner {
+      float: right;
+      width: 100%;
+      max-width: calc((960px/2) - 30px); }
+    .section-hrweb-apps .apps-detail__inner {
+      padding-right: 30px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-hrweb-apps {
+      padding: 70px 0; }
+    .section-hrweb-apps .apps-detail {
+      margin-bottom: 50px; } }
+  @media (max-width: 767px) {
+    .section-hrweb-apps {
+      padding: 45px 0; }
+    .section-hrweb-apps .apps-detail {
+      margin-bottom: 20px; }
+      .section-hrweb-apps .apps-detail .sitebox-header {
+        margin-bottom: 12px; }
+      .section-hrweb-apps .apps-detail .wrap-info {
+        margin-bottom: 20px; } }
+
+.trusted-brands {
+  margin-top: 50px; }
+  .trusted-brands__title {
+    position: relative;
+    padding: 15px 0;
+    margin-bottom: 15px; }
+    .trusted-brands__title:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 200px;
+      margin: auto;
+      height: 1px;
+      background: #FF1744; }
+    .trusted-brands__title h3 {
+      color: #3F3F3F;
+      font-size: 18px;
+      margin: 0 0 5px;
+      font-family: 'sfuiText_medium'; }
+    .trusted-brands__title .cl_light {
+      color: #FF1744; }
+  .trusted-brands__list {
+    position: relative; }
+    .trusted-brands__list:before, .trusted-brands__list:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #0049BE;
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto; }
+    .trusted-brands__list:before {
+      top: 0; }
+    .trusted-brands__list:after {
+      bottom: 0; }
+    .trusted-brands__list .brand-item {
+      padding: 10px 18px; }
+      .trusted-brands__list .brand-item--logo {
+        box-sizing: content-box;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        margin: auto; }
+      .trusted-brands__list .brand-item--logo .logo--insert {
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-bottom: 60%; }
+      .trusted-brands__list .brand-item--logo .logo--insert img,
+      .trusted-brands__list .brand-item--logo .logo--insert svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        max-height: 90%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: block;
+        font-family: "blur-up: auto", "object-fit: cover";
+        object-fit: contain; }
+      .trusted-brands__list .brand-item--logo .logo--insert svg {
+        width: 100%;
+        height: 100%; }
+      .trusted-brands__list .brand-item--logo .lazyload {
+        opacity: 0;
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        transition: opacity 500ms, filter 700ms;
+        -webkit-transition: opacity 500ms, filter 700ms; }
+      .trusted-brands__list .brand-item--logo .lazyloading {
+        opacity: 0.3;
+        -webkit-filter: blur(8px);
+        filter: blur(8px);
+        transition: opacity 500ms, filter 700ms;
+        -webkit-transition: opacity 500ms, filter 700ms; }
+      .trusted-brands__list .brand-item--logo .lazyloaded {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        transition: opacity 500ms, filter 700ms;
+        -webkit-transition: opacity 500ms, filter 700ms; }
+    .trusted-brands__list .brand-item.brand-bitis .brand-item--logo img,
+    .trusted-brands__list .brand-item.brand-vietjet .brand-item--logo img {
+      max-width: 84%; }
+    .trusted-brands__list .brand-item.brand-aeon .brand-item--logo svg,
+    .trusted-brands__list .brand-item.brand-vinamilk .brand-item--logo img {
+      max-width: 80%; }
+    .trusted-brands__list .brand-item.brand-tchouse .brand-item--logo svg {
+      max-width: 52%; }
+    .trusted-brands__list:not(.owl-loaded) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      overflow: hidden; }
+    .trusted-brands__list:not(.owl-loaded) .brand-item {
+      -ms-flex: 0 0 calc(100%/9);
+      flex: 0 0 calc(100%/9);
+      max-width: calc(100%/9); }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .trusted-brands__list:before, .trusted-brands__list:after {
+      max-width: 960px; }
+    .trusted-brands__list:not(.owl-loaded) .brand-item {
+      -ms-flex: 0 0 calc(100%/8);
+      flex: 0 0 calc(100%/8);
+      max-width: calc(100%/8); } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .trusted-brands__list:before, .trusted-brands__list:after {
+      max-width: 700px; }
+    .trusted-brands__list:not(.owl-loaded) .brand-item {
+      -ms-flex: 0 0 calc(100%/6);
+      flex: 0 0 calc(100%/6);
+      max-width: calc(100%/6); } }
+  @media (max-width: 767px) {
+    .trusted-brands__title {
+      padding: 5px 0 8px; }
+      .trusted-brands__title h3 {
+        font-size: 16px; }
+      .trusted-brands__title:before {
+        max-width: 150px; }
+    .trusted-brands__list:before, .trusted-brands__list:after {
+      left: 15px;
+      right: 15px;
+      max-width: 540px; }
+    .trusted-brands__list .brand-item {
+      padding: 12px 10px; }
+    .trusted-brands__list:not(.owl-loaded) .brand-item {
+      -ms-flex: 0 0 calc(100%/4);
+      flex: 0 0 calc(100%/4);
+      max-width: calc(100%/4); } }
+
+.section-hrweb-customers {
+  position: relative;
+  overflow: hidden; }
+  .section-hrweb-customers .testimonial-item__inner {
+    padding: 16px 12px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 15px; }
+  .section-hrweb-customers .testimonial-item__quote blockquote {
+    margin: 0 0; }
+  .section-hrweb-customers .testimonial-item__quote .quote__stars {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -ms-align-items: center;
+    align-items: center; }
+    .section-hrweb-customers .testimonial-item__quote .quote__stars svg {
+      width: 20px; }
+  .section-hrweb-customers .testimonial-item__quote .quote__text {
+    color: #2c2c2c;
+    margin: 12px 0 25px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'sfuiText_regular', sans-serif; }
+  .section-hrweb-customers .testimonial-item__quote .quote__name {
+    display: block;
+    color: #2c2c2c;
+    font-style: normal;
+    font-size: 16px;
+    font-family: 'sfuiText_semibold', sans-serif; }
+  .section-hrweb-customers .testimonial-item__quote .quote__cite {
+    font-style: normal;
+    font-size: 12px;
+    color: #A7A7A7; }
+  .section-hrweb-customers .testimonial-item__quote .quote__video {
+    position: relative;
+    margin-top: 8px; }
+    .section-hrweb-customers .testimonial-item__quote .quote__video .ico-play {
+      box-shadow: 7px 6px 13.16px 0.84px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: calc(50% - 20px);
+      left: calc(50% - 20px);
+      z-index: 2; }
+      .section-hrweb-customers .testimonial-item__quote .quote__video .ico-play:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-radius: 2px;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 12px solid #ffffff; }
+      .section-hrweb-customers .testimonial-item__quote .quote__video .ico-play, .section-hrweb-customers .testimonial-item__quote .quote__video .ico-play span {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        background: #FF0000;
+        text-align: center; }
+      .section-hrweb-customers .testimonial-item__quote .quote__video .ico-play .bubble-ripple, .section-hrweb-customers .testimonial-item__quote .quote__video .ico-play .bubble-ripple-inner {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: -1;
+        -webkit-animation: bubble-ripple 1.8s linear infinite;
+        -moz-animation: bubble-ripple 1.8s linear infinite;
+        -o-animation: bubble-ripple 1.8s linear infinite;
+        animation: bubble-ripple 1.8s linear infinite; }
+  .section-hrweb-customers .testimonial-item__avtar {
+    border-top: 1px solid #E5E5E5;
+    margin-top: 15px;
+    padding-top: 15px; }
+    .section-hrweb-customers .testimonial-item__avtar .quote__brand {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -ms-justify-content: space-between;
+      justify-content: space-between; }
+      .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo {
+        -ms-flex: 0 0 calc(100% - 50px);
+        flex: 0 0 calc(100% - 50px);
+        max-width: calc(100% - 50px);
+        padding-right: 15px; }
+        .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo svg {
+          height: 100%; }
+        .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo svg, .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo img {
+          max-height: 50px; }
+        .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo .logo-tch svg {
+          height: 40px;
+          width: 40px; }
+        .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo .logo-tch p {
+          padding-left: 12px;
+          margin: 0;
+          font-size: 14px;
+          font-family: 'sfuiText_semibold', sans-serif; }
+        .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo .logo-aothun svg {
+          max-height: 30px; }
+        .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo .logo-ibasic img {
+          max-height: 30px; }
+        .section-hrweb-customers .testimonial-item__avtar .quote__brand--logo .logo-giaybom img {
+          max-height: 38px; }
+      .section-hrweb-customers .testimonial-item__avtar .quote__brand--avt {
+        -ms-flex: 0 0 54px;
+        flex: 0 0 54px;
+        max-width: 54px; }
+  .section-hrweb-customers .grid-listrow .grid-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 350px; }
+  .section-hrweb-customers .grid-listrow:not(.owl-loaded) {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow: hidden; }
+    .section-hrweb-customers .grid-listrow:not(.owl-loaded) .grid-item {
+      -ms-flex: 0 350px;
+      flex: 0 0 350px;
+      max-width: 350px; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-hrweb-customers .grid-listrow .grid-item {
+      width: 320px; }
+    .section-hrweb-customers .grid-listrow:not(.owl-loaded) .grid-item {
+      -ms-flex: 0 320px;
+      flex: 0 0 320px;
+      max-width: 320px; }
+    .section-hrweb-customers .testimonial-item__inner {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-justify-content: space-between;
+      justify-content: space-between; } }
+  @media (max-width: 767px) {
+    .section-hrweb-customers .grid-listrow .grid-item {
+      width: 300px; }
+    .section-hrweb-customers .grid-listrow:not(.owl-loaded) .grid-item {
+      -ms-flex: 0 300px;
+      flex: 0 0 300px;
+      max-width: 300px; }
+    .section-hrweb-customers .testimonial-item__inner {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-justify-content: space-between;
+      justify-content: space-between; }
+    .section-hrweb-customers .testimonial-item__quote .quote__video {
+      margin-top: 30px; }
+    .section-hrweb-customers .testimonial-item__quote .quote__text {
+      font-size: 14px; }
+    .section-hrweb-customers .testimonial-item__quote .quote__name {
+      font-size: 13px; } }
+
+.section-hrweb-started {
+  padding: 70px 0;
+  background: #202587;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #202587 0%, #202587 37%, #1d2084 70%, #1c2081 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #202587 0%, #202587 37%, #1d2084 70%, #1c2081 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #202587 0%, #202587 37%, #1d2084 70%, #1c2081 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202587', endColorstr='#1c2081',GradientType=0 );
+  /* IE6-9 */ }
+  @media (max-width: 767px) {
+    .section-hrweb-started {
+      padding: 45px 0; } }
+
+.section-hrweb-questions .questions-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #1B2754;
+  border-radius: 15px; }
+  .section-hrweb-questions .questions-item__title {
+    position: relative;
+    padding-right: 40px;
+    cursor: pointer; }
+    .section-hrweb-questions .questions-item__title h3 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #000000;
+      font-family: 'sfuiText_medium', sans-serif; }
+    .section-hrweb-questions .questions-item__title .plus-icon {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: -5px;
+      top: calc(50% - 12px); }
+      .section-hrweb-questions .questions-item__title .plus-icon:after, .section-hrweb-questions .questions-item__title .plus-icon:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #0a0c0f;
+        -moz-transition: transform .25s linear;
+        -o-transition: transform .25s linear;
+        -webkit-transition: transform .25s linear;
+        transition: transform .25s linear; }
+      .section-hrweb-questions .questions-item__title .plus-icon:before {
+        width: 15px;
+        height: 2px;
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .section-hrweb-questions .questions-item__title .plus-icon:after {
+        width: 2px;
+        height: 15px;
+        transform-origin: center;
+        -moz-transform: translate(-50%, -50%) scale(1, 1);
+        -ms-transform: translate(-50%, -50%) scale(1, 1);
+        -webkit-transform: translate(-50%, -50%) scale(1, 1);
+        transform: translate(-50%, -50%) scale(1, 1); }
+  .section-hrweb-questions .questions-item__content {
+    padding-top: 15px;
+    display: none; }
+    .section-hrweb-questions .questions-item__content p {
+      font-size: 16px;
+      line-height: 150%;
+      color: #3C4F5E;
+      margin: 0; }
+    .section-hrweb-questions .questions-item__content p a {
+      padding-bottom: 2px;
+      text-decoration: none;
+      letter-spacing: -0.43px;
+      color: #1876d2;
+      background-image: linear-gradient(to right, #1876d2 0%, #1876d2 100%);
+      background-size: 100% 1px;
+      background-position: 0px 90%;
+      background-repeat: no-repeat;
+      transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s; }
+    .section-hrweb-questions .questions-item__content p a:hover {
+      background-size: 0px 1px;
+      text-decoration: none; }
+  .section-hrweb-questions .questions-item.is-active .questions-item__title .plus-icon:after {
+    -moz-transform: translate(-50%, -50%) scale(1, 0);
+    -ms-transform: translate(-50%, -50%) scale(1, 0);
+    -webkit-transform: translate(-50%, -50%) scale(1, 0);
+    transform: translate(-50%, -50%) scale(1, 0); }
+
+@media (max-width: 767px) {
+  .section-hrweb-questions .questions-item {
+    padding: 15px; }
+    .section-hrweb-questions .questions-item__title h3 {
+      font-size: 16px; }
+    .section-hrweb-questions .questions-item__content p {
+      font-size: 14px; } }
+
+/*======== SLIDER HOME =========================*/
+@-webkit-keyframes scaleSlide {
+  0% {
+    opacity: 0;
+    transform: scale(1.12);
+    -ms-transform: scale(1.12); }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    -ms-transform: scale(1); } }
+
+@keyframes scaleSlide {
+  0% {
+    opacity: 0;
+    transform: scale(1.12);
+    -ms-transform: scale(1.12); }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    -ms-transform: scale(1); } }
+
+.scaleSlide {
+  -webkit-animation-name: scaleSlide;
+  animation-name: scaleSlide; }
+
+.section-omni-customers {
+  background: #0044a4;
+  margin-bottom: 0; }
+
+.section-omni-customers .owl-carousel img {
+  width: auto !important;
+  margin: auto; }
+
+/* Testimonial  partner */
+.testimonial-carousel.owl-carousel .owl-item {
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; }
+
+.testimonial-carousel.owl-carousel .owl-item .customer-item img {
+  width: auto !important;
+  margin: auto; }
+
+.wrapper-customers-testimonial {
+  position: relative;
+  margin: 0 -15px;
+  max-width: 1600px; }
+
+.testimonial-shape {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.testimonial-carousel {
+  overflow: hidden;
+  position: initial; }
+  .testimonial-carousel .blockquote-slider:not(.owl-loaded) {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    overflow: hidden; }
+  .testimonial-carousel .blockquote-slider:not(.owl-loaded) .blockquote-item {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .testimonial-carousel .owl-nav {
+    display: none; }
+    .testimonial-carousel .owl-nav button.owl-prev, .testimonial-carousel .owl-nav button.owl-next {
+      width: 68px;
+      height: 68px;
+      text-align: center;
+      border-radius: 50%;
+      background: #fff;
+      border: 1px solid #bbdefb;
+      color: #2979ff;
+      font-size: 0px;
+      position: absolute;
+      top: calc(50% - 34px);
+      outline: none; }
+      .testimonial-carousel .owl-nav button.owl-prev svg, .testimonial-carousel .owl-nav button.owl-next svg {
+        fill: #2979ff;
+        height: 66px;
+        width: 25px; }
+    .testimonial-carousel .owl-nav button.owl-prev {
+      left: 0px; }
+    .testimonial-carousel .owl-nav button.owl-next {
+      right: 0px; }
+    .testimonial-carousel .owl-nav button .naviprev, .testimonial-carousel .owl-nav button .navinext {
+      color: #fff;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      white-space: nowrap;
+      font-size: 14px;
+      border-radius: 3px;
+      border: 0;
+      position: absolute;
+      z-index: 65;
+      opacity: 1;
+      display: none;
+      left: -15px;
+      right: -15px;
+      bottom: -60px;
+      background-color: #2979ff;
+      -webkit-box-shadow: 0 5px 10px 0 rgba(36, 50, 56, 0.2);
+      box-shadow: 0 5px 10px 0 rgba(36, 50, 56, 0.2); }
+    .testimonial-carousel .owl-nav button .naviprev:after,
+    .testimonial-carousel .owl-nav button .navinext:after {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: block;
+      z-index: 50;
+      height: 20px;
+      width: 20px;
+      background-color: #2979ff;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .testimonial-carousel .owl-nav button.owl-prev:hover .naviprev,
+    .testimonial-carousel .owl-nav button.owl-next:hover .navinext {
+      display: block; }
+  .testimonial-carousel .owl-dots {
+    margin: 0;
+    counter-reset: li;
+    list-style: none;
+    text-align: center;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .testimonial-carousel .owl-dots .owl-dot {
+      font-size: 0;
+      outline: none;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      transition: transform 0.4s linear; }
+    .testimonial-carousel .owl-dots .owl-dot:before {
+      content: counter(li);
+      counter-increment: li;
+      color: #B9AA85;
+      border-bottom: 1px solid transparent;
+      font-size: 14px;
+      font-family: 'sfuiText_bold'; }
+    .testimonial-carousel .owl-dots .owl-dot.active, .testimonial-carousel .owl-dots .owl-dot:hover {
+      background: transparent;
+      transform: scale(1.4); }
+    .testimonial-carousel .owl-dots .owl-dot.active:before {
+      border-bottom-color: #B9AA85; }
+  .testimonial-carousel .testimonial-item {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+    .testimonial-carousel .testimonial-item__quote {
+      text-align: center; }
+      .testimonial-carousel .testimonial-item__quote .quote-txt {
+        font-size: 18px;
+        color: #ffffff;
+        letter-spacing: 0.4px;
+        margin: 0px 0 30px;
+        font-family: 'sfuiText_semibold'; }
+      .testimonial-carousel .testimonial-item__quote .quote-txt span {
+        font-family: 'sfuiText_bold'; }
+      .testimonial-carousel .testimonial-item__quote .quote-brand, .testimonial-carousel .testimonial-item__quote .quote-name {
+        margin: 0;
+        color: #b9aa85;
+        font-size: 16px;
+        margin: 0;
+        font-family: 'sfuiText_bold';
+        text-transform: uppercase; }
+      .testimonial-carousel .testimonial-item__quote .quote-pos {
+        color: #A7A7A7;
+        font-size: 14px;
+        margin: 0; }
+      .testimonial-carousel .testimonial-item__quote .quote__inner {
+        position: relative;
+        padding-top: 55px;
+        padding-bottom: 60px; }
+        .testimonial-carousel .testimonial-item__quote .quote__inner:before {
+          content: "";
+          background-image: url("data:image/svg+xml,%0A%3Csvg width='23' height='15' viewBox='0 0 23 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.008 14.496C18.24 13.28 17.28 12 16.128 10.656C15.04 9.312 14.08 8 13.248 6.72C12.416 5.376 11.968 4.256 11.904 3.36C11.904 2.464 12.288 1.696 13.056 1.056C13.824 0.351999 14.656 0 15.552 0C15.936 1.152 16.672 2.368 17.76 3.648C18.848 4.864 19.872 6.08 20.832 7.296C21.792 8.448 22.272 9.536 22.272 10.56C22.272 11.328 21.92 12.064 21.216 12.768C20.512 13.472 19.776 14.048 19.008 14.496ZM7.104 14.496C6.336 13.28 5.376 12 4.224 10.656C3.136 9.312 2.176 8 1.344 6.72C0.512001 5.376 0.0640001 4.256 0 3.36C0 2.464 0.384001 1.696 1.152 1.056C1.92 0.351999 2.752 0 3.648 0C4.032 1.152 4.768 2.368 5.856 3.648C6.944 4.864 7.968 6.08 8.928 7.296C9.888 8.448 10.368 9.536 10.368 10.56C10.368 11.328 10.016 12.064 9.312 12.768C8.608 13.472 7.872 14.048 7.104 14.496Z' fill='%23B9AA85'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          top: 0;
+          left: calc(50% - 12px);
+          width: 24px;
+          height: 15px; }
+    .testimonial-carousel .testimonial-item__image .lazybox-image {
+      box-sizing: content-box;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      margin: auto; }
+    .testimonial-carousel .testimonial-item__image .lazybox-image .lazybox-image__insert {
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 68.5106%; }
+    .testimonial-carousel .testimonial-item__image .lazybox-image .lazybox-image__insert img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border: none;
+      overflow: hidden;
+      font-family: "blur-up: auto", "object-fit: cover";
+      object-fit: contain; }
+    .testimonial-carousel .testimonial-item__image .blockquote-image .lazybox-image img {
+      opacity: 0;
+      transition: opacity 300ms linear;
+      -webkit-transition: opacity 300ms linear; }
+    .testimonial-carousel .testimonial-item__image .blockquote-image.is-active .lazybox-image img {
+      opacity: 1;
+      transition: opacity 300ms linear;
+      -webkit-transition: opacity 300ms linear; }
+  @media (min-width: 1200px) {
+    .testimonial-carousel .owl-dots {
+      float: right;
+      width: 100%;
+      max-width: calc((1140px/2) - 0px); }
+    .testimonial-carousel .testimonial-item__quote .quote__inner {
+      float: right;
+      width: 100%;
+      max-width: calc((1140px/2) - 0px); } }
+  @media (min-width: 992px) {
+    .testimonial-carousel .testimonial-item__image {
+      padding-right: 0px;
+      padding-left: 0; }
+    .testimonial-carousel .testimonial-item__quote {
+      padding-right: 0px;
+      padding-left: 0; }
+    .testimonial-carousel .testimonial-item__quote .quote__inner {
+      padding-right: 35px;
+      padding-left: 15px; }
+    .testimonial-carousel .owl-dots {
+      padding-right: 35px;
+      padding-left: 15px; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .testimonial-carousel .owl-dots {
+      float: right;
+      width: 100%;
+      max-width: calc((960px/2) - 0px); }
+    .testimonial-carousel .testimonial-item__quote .quote__inner {
+      float: right;
+      width: 100%;
+      max-width: calc((960px/2) - 0px); }
+    .testimonial-carousel .testimonial-item .quote-txt {
+      font-size: 16px;
+      margin-bottom: 20px; }
+    .testimonial-carousel .testimonial-item__quote .quote__inner {
+      padding-right: 25px;
+      padding-left: 15px;
+      padding-top: 35px;
+      padding-bottom: 45px; }
+    .testimonial-carousel .owl-dots {
+      padding-right: 25px;
+      padding-left: 15px; } }
+  @media (max-width: 991px) {
+    .testimonial-carousel {
+      display: none; } }
+
+@media (max-width: 991px) {
+  .section-omni-customers {
+    display: none; } }
+
+/*================= BRAND HARAVAN =================*/
+.section-brands-trusted {
+  padding: 0 0 60px; }
+
+.listing_brands_logo {
+  margin: 0 -0.5px;
+  border-top: 0.5px solid #d1ebfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+
+.listing_brands_logo .brand_logo {
+  padding: 0.5px;
+  width: 16.6666667%;
+  float: left;
+  background-color: #d1ebfd; }
+
+.listing_brands_logo .brand_logo .brand_logo__block {
+  padding: 5px 5px;
+  height: 97px;
+  width: 100%;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #fff;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.listing_brands_logo .brand_logo .brand_logo__block img {
+  max-height: 57px;
+  display: inline-block; }
+
+.listing_brands_logo .brand_logo .brand_logo__block svg {
+  max-width: 65%;
+  max-height: 57px;
+  display: inline-block; }
+
+.listing_brands_logo .brand_logo .brand_logo__block svg {
+  height: 57px; }
+
+.listing_brands_logo .brand_logo.brand-senior-3 .brand_logo__block img {
+  max-width: 75%; }
+
+.listing_brands_logo .brand_logo.brand-bitis .brand_logo__block svg {
+  max-width: 54%; }
+
+.brand-tchouse-1 {
+  fill: #000; }
+
+.brand-thlong-1 {
+  fill: #ea2028; }
+
+.brand-thlong-1, .brand-thlong-2, .brand-thlong-3, .brand-thlong-4, .brand-thlong-5 {
+  fill-rule: evenodd; }
+
+.brand-thlong-2 {
+  fill: #02adee; }
+
+.brand-thlong-3 {
+  fill: #055caa; }
+
+.brand-thlong-4 {
+  fill: #0a0a0a; }
+
+.brand-thlong-5 {
+  fill: #005aab; }
+
+.brand-bitis-cl1, .brand-bitis-cl2 {
+  fill: #034ea1; }
+
+.brand-bitis-cl1, .brand-bitis-cl3 {
+  fill-rule: evenodd; }
+
+.brand-bitis-cl3 {
+  fill: #ec1c24; }
+
+.brand-loreal-1 {
+  fill-rule: evenodd; }
+
+.brand-maison-1 {
+  fill: #030303; }
+
+.brand-nestle-1 {
+  fill: #2463a9; }
+
+.brand-nestle-2 {
+  fill: #fff; }
+
+.brand-ghn-1 {
+  fill: #ff8200; }
+
+.brand-ghn-2 {
+  fill: #074f80; }
+
+.brand-tfshop-1 {
+  fill: #040404; }
+
+.brand-tfshop-2 {
+  fill: #090808; }
+
+.brand-tfshop-3 {
+  fill: #080707; }
+
+.brand-tfshop-4 {
+  fill: #070606; }
+
+.brand-tfshop-5 {
+  fill: #080808; }
+
+.brand-tfshop-6 {
+  fill: #060505; }
+
+.brand-tfshop-7 {
+  fill: #0a0909; }
+
+.brand-tfshop-8 {
+  fill: #0c0b0b; }
+
+.brand-tfshop-9 {
+  fill: #131010; }
+
+.brand-tfshop-10 {
+  fill: #232121; }
+
+@media (max-width: 767px) {
+  .section-brands-trusted {
+    padding: 00px 0 45px; }
+  .section-brands-trusted .sitebox-header h2 {
+    font-size: 17px; }
+  .listing_brands_logo .brand_logo {
+    width: 25%; }
+  .listing_brands_logo .brand_logo .brand_logo__block {
+    height: 100%;
+    min-height: 70px; }
+  .listing_brands_logo .brand_logo .brand_logo__block svg {
+    max-width: 75%;
+    height: 42px; } }
+
+.fancybox-container-hrweb .fancybox-image {
+  cursor: pointer; }
+
+.fancybox-container-hrweb .fancybox-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  outline: none; }
+
+.fancybox-container-hrweb .fancybox-slide--image {
+  padding: 50px 70px; }
+
+.fancybox-container-hrweb .fancybox-button[disabled] {
+  display: none; }
+
+@media (max-width: 767px) {
+  .fancybox-container-hrweb .fancybox-slide--image {
+    padding-left: 12px;
+    padding-right: 12px; } }

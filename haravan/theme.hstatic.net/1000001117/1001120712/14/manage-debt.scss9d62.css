@@ -1,0 +1,800 @@
+/*============ 0. Reset =============*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'sfuiText_regular',Helvetica,sans-serif;
+  font-size: 16px;
+  color: #3c3c3c;
+  line-height: 1.6;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px; } }
+
+/* 1.2 - HTML5 Elements */
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a, a:hover {
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+a:hover {
+  text-decoration: none; }
+
+img, svg {
+  max-width: 100%; }
+
+ol, ul {
+  margin: 0; }
+
+p {
+  margin: 0 0 10px; }
+
+/*============ 1. GENERAL ==============*/
+.brand-thlong-1 {
+  fill: #ea2028; }
+
+.brand-thlong-1, .brand-thlong-2, .brand-thlong-3, .brand-thlong-4, .brand-thlong-5 {
+  fill-rule: evenodd; }
+
+.brand-thlong-2 {
+  fill: #02adee; }
+
+.brand-thlong-3 {
+  fill: #055caa; }
+
+.brand-thlong-4 {
+  fill: #0a0a0a; }
+
+.brand-thlong-5 {
+  fill: #005aab; }
+
+.os-animation, .staggered-animation {
+  opacity: 0; }
+
+.os-animation.animated, .staggered-animation.animated {
+  opacity: 1; }
+
+@media (max-width: 991px) {
+  .os-animation, .staggered-animation {
+    opacity: 1;
+    animation-name: none !important; }
+  .os-animation.animated, .staggered-animation.animated {
+    opacity: 1;
+    animation-name: none !important; } }
+
+.brand-googleretail-1 {
+  fill: #4885ed; }
+
+.brand-googleretail-2 {
+  fill: #db3236; }
+
+.brand-googleretail-3 {
+  fill: #f4c20d; }
+
+.brand-googleretail-4 {
+  fill: #3cba54; }
+
+.brand-googleretail-5 {
+  fill: #73716f; }
+
+.sitebox-header {
+  margin-bottom: 30px; }
+  .sitebox-header h2 {
+    line-height: 1.4;
+    font-size: 28px;
+    color: #000000;
+    margin: 0 0 5px;
+    font-family: 'sfuiText_semibold';
+    text-transform: uppercase; }
+  .sitebox-header h2.color-white {
+    color: #ffffff; }
+  .sitebox-header .subtitle {
+    font-size: 18px;
+    color: #00294d;
+    margin: 0; }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .sitebox-header h2 {
+      font-size: 30px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .sitebox-header h2 {
+      font-size: 22px; } }
+  @media (max-width: 767px) {
+    .sitebox-header {
+      margin-bottom: 20px; }
+    .sitebox-header h2 {
+      font-size: 18px; }
+    .sitebox-header .subtitle {
+      font-size: 14px; } }
+
+.sitebox-actions .btn-trial {
+  font-size: 18px;
+  font-family: 'sfuiText_bold';
+  min-width: 270px;
+  color: #ffffff;
+  background: #fcc027;
+  border: 1px solid #fcc027;
+  padding: 12px 35px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); }
+  .sitebox-actions .btn-trial:before {
+    background-color: #ff9800; }
+  .sitebox-actions .btn-trial.disabled {
+    pointer-events: none;
+    opacity: 0.7; }
+  .sitebox-actions .btn-trial--white {
+    color: #fcc027;
+    background: #ffffff; }
+  .sitebox-actions .btn-trial:hover, .sitebox-actions .btn-trial:focus {
+    color: #ffffff;
+    background: #ff9800;
+    border-color: #ff9800; }
+  .sitebox-actions .btn-trial--white:hover, .sitebox-actions .btn-trial--white:focus {
+    color: #ffffff;
+    background: #ff9800;
+    border-color: #ff9800; }
+
+.sitebox-actions .txt-note {
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0; }
+
+@media (max-width: 767px) {
+  .sitebox-actions .btn-trial {
+    font-size: 14px;
+    padding: 10px 15px;
+    min-width: 70%; } }
+
+[class^="section-debt-"] {
+  margin-bottom: 60px; }
+
+@media (max-width: 767px) {
+  [class^="section-debt-"] {
+    margin-bottom: 40px; } }
+
+.section-debt-overview {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 80px 0 80px;
+  margin-bottom: 0;
+  background-color: #fbfbfb; }
+  .section-debt-overview .overview-infor h1 {
+    margin: 0 0 10px;
+    line-height: 1.25;
+    color: #000000;
+    font-size: 36px;
+    font-family: 'sfuiText_semibold'; }
+  .section-debt-overview .overview-infor .txtdesc {
+    color: #0A0C0F;
+    margin: 0px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 445px; }
+  .section-debt-overview .overview-image {
+    padding-right: 0;
+    max-width: 945px; }
+    .section-debt-overview .overview-image .block-image {
+      position: relative; }
+    .section-debt-overview .overview-image .block-image .image-normal .lazyload-image__placeholder {
+      padding-bottom: 77.8823529%; }
+    .section-debt-overview .overview-image .sitebox-actions {
+      display: none; }
+  .section-debt-overview .sitebox-actions {
+    margin-top: 30px; }
+  @media (min-width: 1200px) {
+    .section-debt-overview .overview-infor--inner {
+      float: right;
+      width: 100%;
+      max-width: calc((1140px/2) - 30px);
+      padding-right: 60px; } }
+  @media (min-width: 992px) {
+    .section-debt-overview:before {
+      content: "";
+      background-image: url("../../../../file.hstatic.net/1000001117/file/debt-vectortop-min_277002bb27b0464e962b74aa3f0a11bf.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      z-index: -1;
+      left: 48%;
+      width: 52%;
+      top: -28px;
+      bottom: -40px;
+      max-width: 980px; }
+    .section-debt-overview .overview-infor {
+      -webkit-align-self: center;
+      align-self: center; }
+    .section-debt-overview .overview-image {
+      -webkit-align-self: center;
+      align-self: center;
+      padding-right: 0; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .section-debt-overview .overview-infor h1 {
+      font-size: 32px; }
+    .section-debt-overview .overview-infor--inner {
+      float: right;
+      width: 100%;
+      max-width: calc((960px/2) - 30px);
+      padding-right: 40px; }
+    .section-debt-overview .overview-image {
+      padding-left: 0px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-debt-overview {
+      /*.mainBanner-infor--inner{float: right;  width: 100%;  max-width: calc((720px/2) - 30px);}*/ }
+      .section-debt-overview {
+        padding: 50px 0; }
+      .section-debt-overview .overview-infor {
+        text-align: center; }
+        .section-debt-overview .overview-infor h1 {
+          font-size: 32px; }
+        .section-debt-overview .overview-infor .txtdesc {
+          max-width: 540px;
+          margin: 0 auto 0px; }
+        .section-debt-overview .overview-infor .sitebox-actions {
+          display: none; }
+      .section-debt-overview .overview-image {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px; }
+        .section-debt-overview .overview-image .block-image {
+          margin: 25px auto;
+          max-width: 600px; }
+        .section-debt-overview .overview-image .block-image .image-normal .lazyload-image__placeholder {
+          padding-bottom: 59.9415205%; }
+        .section-debt-overview .overview-image .sitebox-actions {
+          display: block; }
+      .section-debt-overview .container-fluid {
+        max-width: 720px; } }
+  @media (max-width: 767px) {
+    .section-debt-overview {
+      padding: 40px 0 30px; }
+    .section-debt-overview .overview-infor {
+      text-align: center; }
+      .section-debt-overview .overview-infor h1 {
+        font-size: 24px; }
+      .section-debt-overview .overview-infor .txtdesc {
+        font-size: 15px;
+        margin: 0 auto 0px; }
+      .section-debt-overview .overview-infor .sitebox-actions {
+        display: none; }
+    .section-debt-overview .overview-image {
+      padding-right: 15px;
+      text-align: center; }
+      .section-debt-overview .overview-image .block-image {
+        margin: 20px 0 25px; }
+      .section-debt-overview .overview-image .block-image .image-normal .lazyload-image__placeholder {
+        padding-bottom: 59.9415205%; }
+      .section-debt-overview .overview-image .sitebox-actions {
+        display: block; }
+    .section-debt-overview .container-fluid {
+      max-width: 540px; } }
+
+.section-debt-introduce {
+  background-color: #0047ba;
+  padding: 40px 0 0px; }
+  .section-debt-introduce .wrapper-content {
+    border-top: 1px solid #ffffff; }
+  .section-debt-introduce .intro-item + .intro-item {
+    border-left: 1px solid #ffffff; }
+  .section-debt-introduce .intro-item {
+    margin-bottom: 0px;
+    text-align: center; }
+    .section-debt-introduce .intro-item__inner {
+      padding: 60px 40px;
+      height: 100%;
+      -ms-display: flex;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .section-debt-introduce .intro-item__detail {
+      font-size: 18px;
+      height: 100%;
+      -ms-display: flex;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .section-debt-introduce .intro-item__detail h3 {
+        font-size: 24px;
+        color: #ffffff;
+        margin: 0px 0 18px;
+        font-family: 'sfuiText_semibold'; }
+      .section-debt-introduce .intro-item__detail .txt-desc {
+        margin: 0 0 20px;
+        color: #ffffff; }
+      .section-debt-introduce .intro-item__detail .txt-link {
+        font-family: 'sfuiText_medium';
+        margin-top: auto;
+        margin-bottom: 0; }
+        .section-debt-introduce .intro-item__detail .txt-link .link--secondary {
+          color: #ffffff; }
+        .section-debt-introduce .intro-item__detail .txt-link .link--secondary .link--arrow {
+          overflow: hidden;
+          height: 12px;
+          margin-left: 5px;
+          margin-bottom: -0.125em;
+          stroke: currentColor;
+          stroke-width: 2;
+          fill: transparent; }
+        .section-debt-introduce .intro-item__detail .txt-link .link--secondary .link--arrow .link--arrow-inner {
+          transform: translateX(-30px);
+          transition: transform 200ms cubic-bezier(0.4, 0.22, 0.28, 1); }
+        .section-debt-introduce .intro-item__detail .txt-link .link--secondary:hover .link--arrow-inner,
+        .section-debt-introduce .intro-item__detail .txt-link .link--secondary:focus .link--arrow-inner {
+          transform: translateX(-10px);
+          transition: transform 300ms cubic-bezier(0.4, 0.22, 0.28, 1); }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .section-debt-introduce .intro-item__inner {
+      padding: 55px 35px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-debt-introduce .intro-item__inner {
+      padding: 40px 5px; }
+    .section-debt-introduce .intro-item__detail {
+      font-size: 15px; }
+      .section-debt-introduce .intro-item__detail h3 {
+        font-size: 20px; } }
+  @media (max-width: 767px) {
+    .section-debt-introduce {
+      padding: 35px 0 5px; }
+    .section-debt-introduce .wrapper-content {
+      border-top: 0; }
+    .section-debt-introduce .intro-item + .intro-item {
+      border-left: 0; }
+    .section-debt-introduce .sitebox-header {
+      margin-bottom: 0px; }
+    .section-debt-introduce .intro-item {
+      margin-bottom: 30px;
+      text-align: left; }
+      .section-debt-introduce .intro-item__inner {
+        padding: 0; }
+      .section-debt-introduce .intro-item__detail {
+        font-size: 14px; }
+        .section-debt-introduce .intro-item__detail h3 {
+          font-size: 18px;
+          margin-top: 30px;
+          margin-bottom: 15px; }
+        .section-debt-introduce .intro-item__detail .txt-desc {
+          margin-bottom: 15px; }
+    .section-debt-introduce .intro-item + .intro-item .intro-item__inner {
+      border-top: 1px solid #E0E0E0; } }
+
+.section-debt-pillar {
+  margin-bottom: 80px; }
+  .section-debt-pillar .pillar-flexrow + .pillar-flexrow {
+    margin-top: 60px; }
+  .section-debt-pillar .pillar-detail__image.bglight {
+    background: #F8F8FE;
+    padding: 0 15px; }
+  .section-debt-pillar .pillar-detail__image .wrapbox-lazyload {
+    overflow: hidden; }
+  .section-debt-pillar .pillar-detail__image .wrapbox-lazyload .boximg-1 {
+    -ms-flex: 0 0 20.8%;
+    flex: 0 0 20.8%;
+    max-width: 20.8%;
+    -ms-align-self: end;
+    align-self: end;
+    padding-top: 14px; }
+  .section-debt-pillar .pillar-detail__image .wrapbox-lazyload .boximg-2 {
+    -ms-flex: 0 0 79.2%;
+    flex: 0 0 79.2%;
+    max-width: 79.2%;
+    -ms-align-self: center;
+    align-self: center; }
+  .section-debt-pillar .pillar-detail__mrgin {
+    margin-bottom: 30px; }
+  .section-debt-pillar .pillar-detail__title {
+    padding-bottom: 4px; }
+    .section-debt-pillar .pillar-detail__title h2 {
+      position: relative;
+      padding-left: 50px;
+      margin: 0px;
+      line-height: 1.45;
+      color: #407bff;
+      font-size: 24px;
+      font-family: 'sfuiText_semibold';
+      text-transform: uppercase; }
+    .section-debt-pillar .pillar-detail__title h2:before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='32' height='36' viewBox='0 0 32 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.3817 2.23318C14.8767 1.95824 15.4337 1.81396 16 1.81396C16.5663 1.81396 17.1233 1.95824 17.6183 2.23318L30.1433 9.18984C30.403 9.33424 30.6194 9.54544 30.77 9.80155C30.9206 10.0577 31 10.3494 31 10.6465V24.3715C30.9999 24.9659 30.8408 25.5495 30.5392 26.0617C30.2377 26.574 29.8047 26.9963 29.285 27.2848L17.6183 33.7682C17.1233 34.0431 16.5663 34.1874 16 34.1874C15.4337 34.1874 14.8767 34.0431 14.3817 33.7682L2.715 27.2848C2.19559 26.9964 1.76272 26.5744 1.46119 26.0624C1.15966 25.5505 1.00044 24.9673 1 24.3732V10.6465C0.999988 10.3494 1.0794 10.0577 1.23003 9.80155C1.38065 9.54544 1.59699 9.33424 1.85667 9.18984L14.3833 2.23318H14.3817Z' stroke='%23407BFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.5 5.5L23.5 13.8333V19.6667M6 18.5467L11 21.3333' stroke='%23407BFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 17.9998V33.8332M1 9.6665L16 17.9998L1 9.6665ZM16 17.9998L31 9.6665L16 17.9998Z' stroke='%23407BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+    .section-debt-pillar .pillar-detail__title .sTitle {
+      margin: 0;
+      color: #000000;
+      font-size: 28px;
+      font-family: 'sfuiText_semibold'; }
+  .section-debt-pillar .pillar-detail__textlist .box-row {
+    margin-top: 10px; }
+  .section-debt-pillar .pillar-detail__textlist .box-item {
+    margin-top: 20px; }
+  .section-debt-pillar .pillar-detail__textlist .box-item h3 {
+    margin: 0 0 10px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'sfuiText_medium'; }
+  .section-debt-pillar .pillar-detail__textlist .box-item p {
+    margin: 0px 0;
+    font-size: 18px; }
+  .section-debt-pillar .pillar-detail__button {
+    margin-top: 25px; }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .section-debt-pillar {
+      margin-bottom: 60px; }
+    .section-debt-pillar .pillar-flexrow + .pillar-flexrow {
+      margin-top: 0px; }
+    .section-debt-pillar .pillar-detail__image {
+      margin-top: 20px; }
+      .section-debt-pillar .pillar-detail__image .wrapbox-lazyload {
+        max-width: 97%;
+        margin: 0 auto; }
+    .section-debt-pillar .pillar-detail__button {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .section-debt-pillar {
+      margin-bottom: 40px; }
+    .section-debt-pillar .pillar-flexrow + .pillar-flexrow {
+      margin-top: 0px; }
+    .section-debt-pillar .pillar-detail__image.bglight {
+      padding: 0 0px; }
+    .section-debt-pillar .pillar-detail__image {
+      margin-top: 20px; }
+      .section-debt-pillar .pillar-detail__image .wrapbox-lazyload {
+        max-width: 99%;
+        margin: 0 auto; }
+      .section-debt-pillar .pillar-detail__image .wrapbox-lazyload .boximg-1 {
+        padding-left: 5px; }
+    .section-debt-pillar .pillar-detail__title h2 {
+      font-size: 18px;
+      padding-left: 40px; }
+    .section-debt-pillar .pillar-detail__title h2:before {
+      width: 24px;
+      height: 24px; }
+    .section-debt-pillar .pillar-detail__title .sTitle {
+      font-size: 18px; }
+    .section-debt-pillar .pillar-detail__mrgin {
+      margin-bottom: 0px; }
+    .section-debt-pillar .pillar-detail__textlist .box-item h3 {
+      font-size: 16px; }
+    .section-debt-pillar .pillar-detail__textlist .box-item p {
+      font-size: 14px; }
+    .section-debt-pillar .pillar-detail__button {
+      text-align: center; } }
+
+.section-debt-benefit .benefit-item__inner {
+  text-align: center;
+  height: 100%;
+  padding: 60px 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(12, 12, 12, 0.05); }
+
+.section-debt-benefit .benefit-item__icon {
+  margin-bottom: 30px; }
+
+.section-debt-benefit .benefit-item__body p {
+  margin: 0;
+  font-size: 18px;
+  color: #000000;
+  font-family: 'sfuiText_semibold'; }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .section-debt-benefit .benefit-item {
+    margin-bottom: 30px; }
+    .section-debt-benefit .benefit-item__inner {
+      padding: 25px 15px; }
+    .section-debt-benefit .benefit-item__icon svg {
+      height: 60px; }
+    .section-debt-benefit .benefit-item__body p {
+      font-size: 15px; } }
+
+@media (max-width: 767px) {
+  .section-debt-benefit .benefit-item:nth-child(odd) {
+    padding-right: 10px; }
+  .section-debt-benefit .benefit-item:nth-child(even) {
+    padding-left: 10px; }
+  .section-debt-benefit .benefit-item {
+    margin-bottom: 20px; }
+  .section-debt-benefit .benefit-item__inner {
+    padding: 20px 15px; }
+  .section-debt-benefit .benefit-item__icon {
+    margin-bottom: 20px; }
+  .section-debt-benefit .benefit-item__icon svg {
+    height: 52px; }
+  .section-debt-benefit .benefit-item__body p {
+    font-size: 14px; } }
+
+.section-debt-highlight {
+  padding: 20px 0 30px; }
+  .section-debt-highlight .wrapper-highlight {
+    position: relative;
+    overflow: hidden;
+    margin: 0 -15px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    background: linear-gradient(94.36deg, #0044A4 0.2%, #0068E2 100%); }
+  .section-debt-highlight .highlight-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 730px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #ffffff; }
+  .section-debt-highlight .highlight-inner h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin: 0 auto;
+    font-family: 'sfuiText_bold';
+    text-transform: uppercase; }
+  .section-debt-highlight .highlight-inner p {
+    margin: 0; }
+  .section-debt-highlight .highlight-inner .sitebox-actions {
+    margin-top: 25px; }
+  .section-debt-highlight .simple_shapes .shape-1 {
+    position: absolute;
+    bottom: 0;
+    left: 2.5%; }
+  .section-debt-highlight .simple_shapes .shape-2 {
+    position: absolute;
+    bottom: 0;
+    left: 1%; }
+  .section-debt-highlight .simple_shapes .shape-3 {
+    position: absolute;
+    top: 10%;
+    right: 6%; }
+  .section-debt-highlight .simple_shapes .shape-4 {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  @media (max-width: 991px) {
+    .section-debt-highlight {
+      display: none; } }
+
+/*================= BRADND HARAVAN =================*/
+.brand-tchouse--1 {
+  fill: #000; }
+
+.brand-juno-1 {
+  fill: #e01b22; }
+
+.brand-concung-1 {
+  fill: #ea377c; }
+
+.section-debt-brands .sitebox-header {
+  margin-bottom: 5px; }
+
+.listBrand-logo {
+  margin: 0 -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+
+.listBrand-logo .brand-item {
+  padding: 8px 10px;
+  -ms-flex: 0 0 calc(100%/7);
+  flex: 0 0 calc(100%/7);
+  max-width: calc(100%/7); }
+
+.listBrand-logo .brand-item .brand-item--logo {
+  box-sizing: content-box;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: auto; }
+
+.listBrand-logo .brand-item .brand-item--logo .logo--insert {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; }
+
+.listBrand-logo .brand-item .brand-item--logo .logo--insert img,
+.listBrand-logo .brand-item .brand-item--logo .logo--insert svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  font-family: "blur-up: auto", "object-fit: cover";
+  object-fit: contain; }
+
+.listBrand-logo .brand-item .brand-item--logo .logo--insert svg {
+  width: 100%;
+  height: 100%; }
+
+.listBrand-logo .brand-item .brand-item--logo .lazyload {
+  opacity: 0;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: opacity 500ms, filter 700ms;
+  -webkit-transition: opacity 500ms, filter 700ms; }
+
+.listBrand-logo .brand-item .brand-item--logo .lazyloading {
+  opacity: 0.3;
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+  transition: opacity 500ms, filter 700ms;
+  -webkit-transition: opacity 500ms, filter 700ms; }
+
+.listBrand-logo .brand-item .brand-item--logo .lazyloaded {
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  transition: opacity 500ms, filter 700ms;
+  -webkit-transition: opacity 500ms, filter 700ms; }
+
+.listBrand-logo .brand-item.brand-bitis .brand-item--logo svg {
+  max-width: 84%; }
+
+.listBrand-logo .brand-item.brand-aeon .brand-item--logo svg {
+  max-width: 80%; }
+
+.listBrand-logo .brand-item.brand-tchouse .brand-item--logo svg {
+  max-width: 65%; }
+
+@media (max-width: 991px) {
+  .section-debt-brands {
+    display: none; } }
+
+/*================= INSIDE HARAVAN =================*/
+.section-hrv-inside {
+  background: #f5f7fb;
+  padding: 50px 0; }
+
+.section-hrv-inside .hrv-inside--heading {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #c2c7cb; }
+
+.section-hrv-inside .hrv-inside--heading h2 {
+  line-height: 1.4;
+  font-size: 30px;
+  color: #000000;
+  margin: 0 0 4px;
+  font-family: var(--hrv-font-family-bold);
+  text-transform: uppercase; }
+
+.section-hrv-inside .hrv-inside--heading .sub-title {
+  font-size: 22px;
+  color: #000000;
+  margin: 0;
+  font-family: var(--hrv-font-family-regular); }
+
+.section-hrv-inside .inside-item {
+  margin-top: 40px; }
+
+.section-hrv-inside .inside-item__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.section-hrv-inside .inside-item__inner .inside--image {
+  -ms-flex: 0 0 34%;
+  flex: 0 0 34%;
+  max-width: 34%;
+  padding-top: 4px; }
+
+.section-hrv-inside .inside-item__inner .inside--text {
+  -ms-flex: 0 0 66%;
+  flex: 0 0 66%;
+  max-width: 66%;
+  padding-left: 14px; }
+
+.section-hrv-inside .inside-item__inner .inside--text p {
+  margin: 0;
+  font-size: 18px;
+  color: #0a0c0f;
+  line-height: 1.6; }
+
+.section-hrv-inside .inside-item__inner .inside--image .boxlazy-image {
+  max-width: 216px;
+  box-sizing: content-box;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.section-hrv-inside .inside-item__inner .inside--image .boxlazy--insert {
+  padding-bottom: 52%;
+  height: 0;
+  display: block;
+  width: 100%; }
+
+.section-hrv-inside .inside-item__inner .inside--image .boxlazy--insert img,
+.section-hrv-inside .inside-item__inner .inside--image .boxlazy--insert svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  font-family: "blur-up: auto", "object-fit: cover";
+  object-fit: contain; }
+
+.section-hrv-inside .inside-item__inner .inside--image .boxlazy--insert .lazyload {
+  opacity: 0;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: opacity 300ms, filter 400ms;
+  -webkit-transition: opacity 300ms, filter 400ms; }
+
+.section-hrv-inside .inside-item__inner .inside--image .boxlazy--insert .lazyloading {
+  opacity: 0.3;
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+  transition: opacity 300ms, filter 400ms;
+  -webkit-transition: opacity 300ms, filter 400ms; }
+
+.section-hrv-inside .inside-item__inner .inside--image .boxlazy--insert .lazyloaded {
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  transition: opacity 300ms, filter 400ms;
+  -webkit-transition: opacity 300ms, filter 400ms; }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .section-hrv-inside .hrv-inside--heading h2 {
+    font-size: 28px; }
+  .section-hrv-inside .hrv-inside--heading .sub-title {
+    font-size: 20px; }
+  .section-hrv-inside .inside-item__inner .inside--text p {
+    font-size: 16px; }
+  .section-hrv-inside .inside-item__inner .inside--image .boxlazy-image {
+    max-width: 76%; } }
+
+@media (max-width: 767px) {
+  .section-hrv-inside {
+    padding: 35px 0; }
+  .section-hrv-inside .hrv-inside--heading {
+    padding-bottom: 20px; }
+  .section-hrv-inside .hrv-inside--heading h2 {
+    font-size: 25px; }
+  .section-hrv-inside .hrv-inside--heading .sub-title {
+    font-size: 18px; }
+  .section-hrv-inside .inside-item {
+    margin-top: 25px; }
+  .section-hrv-inside .inside-item__inner .inside--text p {
+    font-size: 13px; }
+  .section-hrv-inside .inside-item__inner .inside--image .boxlazy-image {
+    max-width: 100%; } }

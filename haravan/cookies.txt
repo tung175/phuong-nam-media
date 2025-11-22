@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.haravan.com	TRUE	/daily	FALSE	1999999999	_landing_page	%252Fpages%252Fdaily
+www.haravan.com	TRUE	/daily	FALSE	1999999999	_orig_referer	http%253A%252F%252Fwww.haravan.com%252F
+www.haravan.com	TRUE	/	FALSE	1999999999	_landing_page	%252Fpages%252Fpolicy
+www.haravan.com	TRUE	/	FALSE	1999999999	_orig_referer	http%253A%252F%252Fwww.haravan.com%252F
+www.haravan.com	TRUE	/	FALSE	1999999999	_haravan_utm_p	utm_source%253Dblog%2526utm_medium%253Dreferral%2526utm_campaign%253Dahamove-Jan06
+
